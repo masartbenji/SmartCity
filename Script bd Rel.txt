@@ -1,75 +1,68 @@
 create schema [SmartCity];
 
-drop table [SmartCity].Annonce;
-drop table [SmartCity].Images;
-drop table [SmartCity].Animal;
-drop table[SmartCity].breed;
-drop table[SmartCity].Species;
-drop table [SmartCity].[Personne];
-drop table [SmartCity].[Ville];
-drop table [SmartCity].[Status];
+drop table dbo.Announcement;
+drop table Images;
+drop table dbo.Animal;
+drop table breed;
+drop table Species;
+drop table [Personne];
+drop table [Status];
+drop table [role];
+drop table color;
 
 
-create table [SmartCity].[Status](
+create table [Status](
 	id [int] not null identity(1,1),
 	primary key(id),
-	[State] [NVARCHAR](100)
+	[State] [NVARCHAR](20)
 );
 
-create table [SmartCity].Ville(
-	[Name] [NVarchar](50),
-	PostalCode [int] not null,
-	primary key(PostalCode)
-);
-
-create table [SmartCity].[Personne](
-	[Login] [NVARCHAR](25) not null,
+create table [ApplicationUser](
+	[Login] [NVARCHAR](25) not null primary key,
 	[Password][nvarchar](25) not null,
 	LastName [nvarchar](50)not null,
 	FirstName[nvarchar](50)not null,
-	phone[int],
-	email [nvarchar](255) not null,
-	IDStatus [int] not null references [SmartCity].[status](id),
-	postalCode [int] not null references [SmartCity].[Ville](PostalCode),
-	constraint PK_Personne primary key([Login],[Password])
+	Phone[int],
+	Email [nvarchar](255) not null
 );
 
-create table [SmartCity].Species(
-	id [int] not null identity(1,1) primary key,
-	[name] [nvarchar](25) not null
+create table  Species(
+	[name] [nvarchar](25) not null primary key
 );
 
-create table [SmartCity].[Breed](
+create table [Breed](
 	id [int] not null identity(1,1) primary key,
 	[name] [nvarchar](25) not null,
-	idSpecies [int] not null references [SmartCity].Species(id)
+	idSpecies [nvarchar](25) not null references  Species([name])
 );
 
+create table [Color]([Name] [nvarchar](25) primary key);
 
-create table [SmartCity].[Animal](
+
+create table [Animal](
 	id [int] not null identity(1,1) primary key,
 	[name] [nvarchar](25) not null,
 	[color] [nvarchar](25) not null,
-	idBreed [int] not null references [SmartCity].[Breed](id)
+	idBreed [int] not null references [Breed](id),
+	idColor [nvarchar](25) not null references [Color]([Name]),
+	loginPersonne[nvarchar](25) references [ApplicationUser]([Login])
 );
 
 
-create table [SmartCity].Images(
+create table Images(
 	id [int] not null identity(1,1) primary key,
 	title[nvarchar] (25) not null,
-	idAnimal[int] not null references [SmartCity].Animal(id)
+	idAnimal[int] not null references Animal(id)
 );
 
 
-create table [SmartCity].Annonce(
+create table Announcement(
 	id [int] not null identity(1,1) primary key,
 	[date] [DATETIME] not null,
 	[description] [nvarchar](100) not null,
-	idStatus [int] not null references [SmartCity].[Status](id),
-	idAnimal [int] not null references [SmartCity].Animal(id),
-	pwPersonne [nvarchar](25),
-	loginPersonne[nvarchar](25),
-	constraint FK_annonce 
-		foreign key(loginPersonne,pwPersonne) 
-		references [SmartCity].Personne([login],[password])
+	coordX [int] not null,
+	coordY [int] not null,
+	idStatus [int] not null references  [Status](id),
+	idAnimal [int] not null references  Animal(id),
+	
 );
