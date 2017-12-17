@@ -66,3 +66,56 @@ create table Announcement(
 	idAnimal [int] not null references  Animal(id),
 	
 );
+
+insert into dbo.Species ([Name]) values ('Chien');
+insert into dbo.Species ([Name]) values ('Chat');
+insert into dbo.Species ([Name]) values ('Souris');
+insert into dbo.Species ([Name]) values ('Rat');
+insert into dbo.Species ([Name]) values ('Lapin');
+insert into dbo.Species ([Name]) values ('Tortue');
+insert into dbo.Species ([Name]) values ('Iguane');
+insert into dbo.Species ([Name]) values ('Python');
+insert into dbo.Species ([Name]) values ('Boa');
+insert into dbo.Species ([Name]) values ('Grenouille');
+insert into dbo.Species ([Name]) values ('Araignée');
+
+insert into dbo.Breed([name],[idSpecies]) values ('Berger allemand','Chien');
+insert into dbo.Breed([name],[idSpecies]) values ('Golden retriever','Chien');
+insert into dbo.Breed([name],[idSpecies]) values ('Labrador','Chien');
+insert into dbo.Breed([name],[idSpecies]) values ('Rottweiler','Chien');
+insert into dbo.Breed([name],[idSpecies]) values ('Chihuahua','Chien');
+insert into dbo.Breed([name],[idSpecies]) values ('Siamois','Chat');
+insert into dbo.Breed([name],[idSpecies]) values ('Persan','Chat');
+insert into dbo.Breed([name],[idSpecies]) values ('Ragdoll','Chat');
+insert into dbo.Breed([name],[idSpecies]) values ('Sphynx','Chat');
+insert into dbo.Breed([name],[idSpecies]) values ('Bengal','Chat');
+insert into dbo.Breed([name],[idSpecies]) values ('Hollandais','Lapin');
+insert into dbo.Breed([name],[idSpecies]) values ('Alaska','Lapin');
+insert into dbo.Breed([name],[idSpecies]) values ('Tête de lion','Lapin');
+insert into dbo.Breed([name],[idSpecies]) values ('Californien','Lapin');
+insert into dbo.Breed([name],[idSpecies]) values ('Bleu de Vienne','Lapin');
+insert into dbo.Breed([name],[idSpecies]) values ('Japonais','Lapin');
+insert into dbo.Breed([name],[idSpecies]) values ('Agouti','Rat');
+insert into dbo.Breed([name],[idSpecies]) values ('Bleu russe','Rat');
+insert into dbo.Breed([name],[idSpecies]) values ('Havane Agouti','Rat');
+insert into dbo.Breed([name],[idSpecies]) values ('Hooded','Rat');
+insert into dbo.Breed([name],[idSpecies]) values ('Husky','Rat');
+insert into dbo.Breed([name],[idSpecies]) values ('Dumbo','Rat');
+insert into dbo.Breed([name],[idSpecies]) values ('Nu','Rat');
+
+insert into dbo.Color ([name]) values('Acajou');
+insert into dbo.Color ([name]) values('Blanc');
+insert into dbo.Color ([name]) values('Bleu');
+insert into dbo.Color ([name]) values('Cerf');
+insert into dbo.Color ([name]) values('Chatain');
+insert into dbo.Color ([name]) values('Chevreuil');
+insert into dbo.Color ([name]) values('Citron');
+insert into dbo.Color ([name]) values('Louvet');
+insert into dbo.Color ([name]) values('Sésame Noir');
+insert into dbo.Color ([name]) values('Sable');
+insert into dbo.Color ([name]) values('Noir');
+insert into dbo.Color ([name]) values('Lilas');
+insert into dbo.Color ([name]) values('Roux');
+insert into dbo.Color ([name]) values('Cannelle');
+insert into dbo.Color ([name]) values('Ambre');
+insert into dbo.Color ([name]) values('Abricot');
