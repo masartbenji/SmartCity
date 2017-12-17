@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/inscriptionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:text="Inscription"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textPasswordInscription"
+        android:layout_alignStart="@+id/textPasswordInscription"
+        android:layout_below="@+id/inscriptionTitle"
+        android:layout_marginTop="27dp"
+        android:text="Login *:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textLogin"
+        android:layout_alignBottom="@+id/textLogin"
+        android:layout_toEndOf="@+id/textFirstName"
+        android:layout_toRightOf="@+id/textFirstName"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+    <TextView
+        android:id="@+id/textPasswordInscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/inscriptionTitle"
+        android:layout_alignRight="@+id/inscriptionTitle"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="21dp"
+        android:text="Mot de passe *:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textPasswordInscription"
+        android:layout_alignStart="@+id/textPasswordInscription"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="21dp"
+        android:text="Nom *:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/textFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textName"
+        android:layout_alignStart="@+id/textName"
+        android:layout_centerVertical="true"
+        android:text="Prénom *:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textPasswordInscription"
+        android:layout_alignBottom="@+id/textPasswordInscription"
+        android:layout_toEndOf="@+id/textPasswordInscription"
+        android:layout_toRightOf="@+id/textPasswordInscription"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+</RelativeLayout>
