@@ -19,7 +19,7 @@
         android:layout_above="@+id/password"
         android:layout_alignLeft="@+id/password"
         android:layout_alignStart="@+id/password"
-        android:text="Mot de passe :" />
+        android:text="@string/mot_de_passe_Co" />
 
     <EditText
         android:id="@+id/login"
@@ -39,7 +39,7 @@
         android:layout_above="@+id/login"
         android:layout_alignLeft="@+id/login"
         android:layout_alignStart="@+id/login"
-        android:text="Login :" />
+        android:text="@string/login_Co" />
 
     <Button
         android:id="@+id/connexionButton"
@@ -48,7 +48,7 @@
         android:layout_below="@+id/password"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp"
-        android:text="@string/connexion" />
+        android:text="@string/connexion_Co" />
 
     <Button
         android:id="@+id/forgetPasswordButton"
@@ -64,8 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textLogin"
-        android:layout_alignEnd="@+id/textPasswordInscription"
-        android:layout_alignRight="@+id/textPasswordInscription"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="41dp"
         android:layout_marginEnd="12dp"
         android:layout_marginRight="12dp"

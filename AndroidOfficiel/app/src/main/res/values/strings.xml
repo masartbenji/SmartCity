@@ -3,7 +3,7 @@
     <string name="trouve">Trouve1</string>
     <string name="perdu">Perdu1</string>
     <string name="mot_de_passe_oubli">Mot de passe oublié</string>
-    <string name="connexion">Connexion</string>
+    <string name="connexion_Co">Connexion</string>
     <string name="connexionCompte">Connexion</string>
     <string name="a_adopter">A Adopter</string>
     <string name="connexion_menu">Connexion</string>
@@ -12,7 +12,14 @@
     <string name="inscription_act">Inscription</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mot_de_passe_Ins">Mot de passe *:</string>
+    <string name="inscription_Ins">Inscription</string>
+    <string name="login_Ins">Login *:</string>
+    <string name="nom_Ins">Nom *:</string>
+    <string name="pr_nom_Ins">Prénom *:</string>
+    <string name="bt_inscription_Ins">Inscription</string>
+    <string name="login_Co">Login :</string>
+    <string name="mot_de_passe_Co">Mot de passe :</string>
 
 </resources>
 

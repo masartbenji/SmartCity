@@ -12,7 +12,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="25dp"
-        android:text="Inscription"
+        android:text="@string/inscription_Ins"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
@@ -23,7 +23,7 @@
         android:layout_alignStart="@+id/textPasswordInscription"
         android:layout_below="@+id/inscriptionTitle"
         android:layout_marginTop="27dp"
-        android:text="Login *:"
+        android:text="@string/login_Ins"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <EditText
@@ -46,7 +46,7 @@
         android:layout_alignRight="@+id/inscriptionTitle"
         android:layout_below="@+id/login"
         android:layout_marginTop="21dp"
-        android:text="Mot de passe *:"
+        android:text="@string/mot_de_passe_Ins"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <TextView
@@ -55,23 +55,14 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textPasswordInscription"
         android:layout_alignStart="@+id/textPasswordInscription"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/textPasswordInscription"
         android:layout_marginTop="21dp"
-        android:text="Nom *:"
+        android:text="@string/nom_Ins"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-    <TextView
-        android:id="@+id/textFirstName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textName"
-        android:layout_alignStart="@+id/textName"
-        android:layout_centerVertical="true"
-        android:text="Prénom *:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textPasswordInscription"
@@ -81,4 +72,51 @@
         android:ems="10"
         android:inputType="textPassword"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textName"
+        android:layout_alignBottom="@+id/textName"
+        android:layout_toEndOf="@+id/textName"
+        android:layout_toRightOf="@+id/textName"
+
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/textFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textName"
+        android:layout_alignStart="@+id/textName"
+        android:layout_below="@+id/nom"
+        android:layout_marginTop="21dp"
+        android:text="@string/pr_nom_Ins"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textFirstName"
+        android:layout_alignBottom="@+id/textFirstName"
+        android:layout_toEndOf="@+id/textFirstName"
+        android:layout_toRightOf="@+id/textFirstName"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <Button
+        android:id="@+id/button_Ins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prenom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:text="@string/bt_inscription_Ins" />
+
+
 </RelativeLayout>

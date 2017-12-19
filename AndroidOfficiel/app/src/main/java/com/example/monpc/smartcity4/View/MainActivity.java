@@ -18,14 +18,30 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        TabHost tabHost = findViewById(android.R.id.tabhost);
+        tabHost.setup();
 
+        TabHost.TabSpec spec = tabHost.newTabSpec("found");
+        spec.setContent(R.id.Trouvé);
+        spec.setIndicator("found");
+        tabHost.addTab(spec);
 
+        spec = tabHost.newTabSpec("lost");
+        spec.setContent(R.id.Perdu);
+        spec.setIndicator("lost");
+        tabHost.addTab(spec);
+
+        spec = tabHost.newTabSpec("spa");
+        spec.setContent(R.id.Adopter);
+        spec.setIndicator("spa");
+        tabHost.addTab(spec);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         this.getMenuInflater().inflate(R.menu.menu_base,menu);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
