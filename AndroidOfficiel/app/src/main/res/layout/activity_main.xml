@@ -15,7 +15,6 @@
         android:layout_toStartOf="@+id/recherche"
         android:visibility="visible"
         app:srcCompat="@mipmap/ic_launcher" />
-
     <SearchView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,7 +24,6 @@
         android:layout_alignTop="@+id/recherche"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
     <EditText
         android:id="@+id/recherche"
         android:layout_width="150dp"
@@ -36,7 +34,6 @@
         android:layout_toStartOf="@+id/searchButton"
         android:ems="10"
         android:inputType="text" />
-
     <TabHost
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -45,56 +42,46 @@
         android:layout_below="@+id/mainImage"
         android:layout_marginTop="20dp"
         android:id="@+id/tabHost">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
                 <LinearLayout
                     android:id="@+id/Trouvé"
                     android:text="@string/trouve"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-
                     <ListView
                         android:id="@+id/found_list"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
-
                 </LinearLayout>
-
                 <LinearLayout
                     android:id="@+id/Perdu"
                     android:text="@string/perdu"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-
                     <ListView
                         android:id="@+id/lost_list"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
                 </LinearLayout>
-
                 <LinearLayout
                     android:text="@string/a_adopter"
                     android:id="@+id/Adopter"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-
                     <ListView
                         android:id="@+id/spa_list"
                         android:layout_width="match_parent"

@@ -20,6 +20,19 @@
     <string name="bt_inscription_Ins">Inscription</string>
     <string name="login_Co">Login :</string>
     <string name="mot_de_passe_Co">Mot de passe :</string>
+    <string name="nom_An">Nom :</string>
+    <string name="couleur_An">Couleur :</string>
+    <string name="espece_An">Espèce :</string>
+    <string name="race_An">Race :</string>
+    <string name="statu_An">Statu</string>
+    <string name="images_An">Images :</string>
+    <string name="nouveau_animal_An">Nouveau Animal</string>
+    <string name="ajouter_images_An">Ajouter Images</string>
+    <string name="ajouter_animal_An">Ajouter animal</string>
+    <string name="nouvelle_annonce_Ano">Nouvelle annonce</string>
+    <string name="status_Ano">Status</string>
+    <string name="coordonne_Ano">Coordonnée</string>
+    <string name="ajouter_annonce_Ano">Ajouter annoncée</string>
 
 </resources>
 

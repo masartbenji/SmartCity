@@ -9,11 +9,21 @@
     <item
         android:id="@+id/inscription"
         android:title="Item"
-        android:icon="@android:drawable/ic_input_add"
+        android:icon="@android:drawable/ic_menu_directions"
         app:showAsAction="always" />
     <item
         android:id="@+id/addAnnonce"
         android:icon="@android:drawable/ic_input_add"
         android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/aide"
+        android:title="Item"
+        android:icon="@android:drawable/ic_dialog_info"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/disconnect"
+        android:title="Item"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
         app:showAsAction="always" />
 </menu>

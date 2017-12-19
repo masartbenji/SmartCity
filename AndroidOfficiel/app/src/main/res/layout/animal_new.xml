@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    >
+
+    <RelativeLayout
+        android:id="@+id/cadre_animal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp">
+
+        <TextView
+            android:id="@+id/title_animal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:text="@string/nouveau_animal_An"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/textName_An"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_animal"
+            android:layout_marginTop="27dp"
+            android:text="@string/nom_An"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/name_An"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textName_An"
+            android:layout_alignBottom="@+id/textName_An"
+            android:layout_toEndOf="@+id/textName_An"
+            android:layout_toRightOf="@+id/textName_An"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+        <TextView
+            android:id="@+id/textCouleur_An"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textName_An"
+            android:layout_marginTop="27dp"
+            android:text="@string/couleur_An"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Spinner
+            android:id="@+id/spinner_couleur_An"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textCouleur_An"
+            android:layout_toEndOf="@+id/textCouleur_An"
+            android:layout_toRightOf="@+id/textCouleur_An"
+            android:ems="20" />
+
+        <TextView
+            android:id="@+id/textEspece_An"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCouleur_An"
+            android:layout_marginTop="27dp"
+            android:text="@string/espece_An"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Spinner
+            android:id="@+id/spinner_espece_An"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textEspece_An"
+            android:layout_toEndOf="@+id/textEspece_An"
+            android:layout_toRightOf="@+id/textEspece_An"
+            android:ems="20" />
+
+        <TextView
+            android:id="@+id/textRace_An"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textEspece_An"
+            android:layout_marginTop="27dp"
+            android:text="@string/race_An"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Spinner
+            android:id="@+id/spinner_race_An"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textRace_An"
+            android:layout_toEndOf="@+id/textRace_An"
+            android:layout_toRightOf="@+id/textRace_An"
+            android:ems="20" />
+
+        <Button
+            android:id="@+id/bt_ajout_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textRace_An"
+            android:layout_centerHorizontal="true"
+            android:text="@string/ajouter_images_An" />
+
+        <Button
+            android:id="@+id/bt_ajout_animal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/bt_ajout_images"
+            android:layout_margin="20dp"
+            android:text="@string/ajouter_animal_An" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
