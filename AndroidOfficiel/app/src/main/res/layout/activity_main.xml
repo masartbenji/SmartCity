@@ -3,7 +3,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent">
-
     <ImageView
         android:id="@+id/mainImage"
         android:layout_width="100dp"
@@ -40,11 +39,11 @@
 
     <TabHost
         android:layout_width="match_parent"
-        android:layout_height="315dip"
+        android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/mainImage"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="20dp"
         android:id="@+id/tabHost">
 
         <LinearLayout
@@ -64,47 +63,43 @@
 
                 <LinearLayout
                     android:id="@+id/trouvé"
+                    android:text="@string/trouve"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <ListView
+                        android:id="@+id/found_list"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/Perdu"
+                    android:text="@string/perdu"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <ListView
+                        android:id="@+id/lost_list"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/aAdopter"
+                    android:text="@string/a_adopter"
+                    android:id="@+id/Adopter"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <ListView
+                        android:id="@+id/spa_list"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
                 </LinearLayout>
             </FrameLayout>
         </LinearLayout>
     </TabHost>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="65dip"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="Page suivante" />
-
-
 </RelativeLayout>

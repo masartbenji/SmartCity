@@ -48,7 +48,7 @@
         android:layout_below="@+id/password"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp"
-        android:text="Connexion" />
+        android:text="@string/connexion" />
 
     <Button
         android:id="@+id/forgetPasswordButton"
@@ -57,7 +57,7 @@
         android:layout_below="@+id/connexionButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="Mot de passe oublié" />
+        android:text="@string/mot_de_passe_oubli" />
 
     <TextView
         android:id="@+id/connexionTitle"
@@ -69,6 +69,6 @@
         android:layout_marginBottom="41dp"
         android:layout_marginEnd="12dp"
         android:layout_marginRight="12dp"
-        android:text="Connexion"
+        android:text="@string/connexionCompte"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 </RelativeLayout>

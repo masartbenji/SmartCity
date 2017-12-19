@@ -3,15 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/email"
         android:icon="@android:drawable/sym_action_email"
         android:title="Item"
         app:showAsAction="always" />
     <item
         android:id="@+id/inscription"
-        android:title="Inscription"
+        android:title="@string/inscription_menu"
         app:showAsAction="always" />
     <item
         android:id="@+id/connexion"
-        android:title="Connexion"
+        android:title="@string/connexion_menu"
         app:showAsAction="always" />
 </menu>
