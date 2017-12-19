@@ -23,7 +23,6 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.MainActivity"/>
-
         </activity>
         <activity
             android:name=".View.ConnectionActivity"
@@ -32,9 +31,15 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.MainActivity"/>
-
         </activity>
-
+        <activity
+            android:name=".View.MainIdActivity"
+            android:label="@string/connexion_act"
+            android:parentActivityName=".View.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MainActivity"/>
+        </activity>
     </application>
 
 </manifest>

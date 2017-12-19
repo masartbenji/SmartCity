@@ -19,7 +19,6 @@
         android:text="@string/nouvelle_annonce_Ano"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-
         <TextView
             android:id="@+id/textAnimal_Ano"
             android:layout_width="wrap_content"
