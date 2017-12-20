@@ -3,6 +3,8 @@
     package="com.example.monpc.smartcity4">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -11,6 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBvO2j1t6KHW_89X13z21b1bOF4wS_wuZk"/>
+
+
         <activity android:name=".View.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -72,6 +80,13 @@
                 android:value=".View.MainIdActivity"/>
         </activity>
         <activity android:name=".View.NouvelleAnnonceActivity"
+            android:label="@string/nouvelle_annonce_act"
+            android:parentActivityName=".View.MainIdActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MainIdActivity"/>
+        </activity>
+        <activity android:name=".View.Localisation"
             android:label="@string/nouvelle_annonce_act"
             android:parentActivityName=".View.MainIdActivity">
             <meta-data
