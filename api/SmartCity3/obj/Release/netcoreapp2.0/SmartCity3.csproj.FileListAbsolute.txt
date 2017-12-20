@@ -1,0 +1,11 @@
+C:\Users\masartbenji\Desktop\SmartCity3\bin\Release\netcoreapp2.0\SmartCity3.deps.json
+C:\Users\masartbenji\Desktop\SmartCity3\bin\Release\netcoreapp2.0\SmartCity3.runtimeconfig.json
+C:\Users\masartbenji\Desktop\SmartCity3\bin\Release\netcoreapp2.0\SmartCity3.runtimeconfig.dev.json
+C:\Users\masartbenji\Desktop\SmartCity3\bin\Release\netcoreapp2.0\SmartCity3.dll
+C:\Users\masartbenji\Desktop\SmartCity3\bin\Release\netcoreapp2.0\SmartCity3.pdb
+C:\Users\masartbenji\Desktop\SmartCity3\obj\Release\netcoreapp2.0\SmartCity3.csprojResolveAssemblyReference.cache
+C:\Users\masartbenji\Desktop\SmartCity3\obj\Release\netcoreapp2.0\SmartCity3.csproj.CoreCompileInputs.cache
+C:\Users\masartbenji\Desktop\SmartCity3\obj\Release\netcoreapp2.0\SmartCity3.AssemblyInfoInputs.cache
+C:\Users\masartbenji\Desktop\SmartCity3\obj\Release\netcoreapp2.0\SmartCity3.AssemblyInfo.cs
+C:\Users\masartbenji\Desktop\SmartCity3\obj\Release\netcoreapp2.0\SmartCity3.dll
+C:\Users\masartbenji\Desktop\SmartCity3\obj\Release\netcoreapp2.0\SmartCity3.pdb
