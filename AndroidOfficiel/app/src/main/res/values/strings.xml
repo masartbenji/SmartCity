@@ -10,7 +10,6 @@
     <string name="connexion_act">Connexion</string>
     <string name="inscription_menu">Inscription</string>
     <string name="inscription_act">Inscription</string>
-
     <!-- TODO: Remove or change this placeholder text -->
     <string name="mot_de_passe_Ins">Mot de passe *:</string>
     <string name="inscription_Ins">Inscription</string>
@@ -36,6 +35,20 @@
     <string name="sujet_rem">Sujet :</string>
     <string name="description_Rem">Description</string>
     <string name="envoyer_Rem">Envoyer</string>
+    <string name="nom_Rech">Nom :</string>
+    <string name="crit_re_de_recherche_Rech">Critère de recherche</string>
+    <string name="couleur_Rech">Couleur :</string>
+    <string name="espece_Rech">Espece :</string>
+    <string name="race_Rech">Race :</string>
+    <string name="date_Rech">Date</string>
+    <string name="statut_Rech">Statut :</string>
+    <string name="main_ID_Act">MainIDActivity</string>
+    <string name="recherche_activity">Recherche</string>
+    <string name="calendrier_act">Calendrier</string>
+    <string name="historique_act">Historique_Act</string>
+    <string name="remarque_act">Remarque</string>
+    <string name="nouvelle_annonce_act">Nouvelle Annonce</string>
+
 
 </resources>
 

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.monpc.smartcity4">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -34,12 +36,49 @@
         </activity>
         <activity
             android:name=".View.MainIdActivity"
-            android:label="@string/connexion_act"
+            android:label="@string/main_ID_Act"
             android:parentActivityName=".View.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".View.MainActivity"/>
         </activity>
+        <activity
+            android:name=".View.RechercheActivity"
+            android:label="@string/recherche_activity"
+            android:parentActivityName=".View.MainIdActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MainIdActivity"/>
+        </activity>
+        <activity android:name=".View.CalendarActivity"
+            android:label="@string/calendrier_act"
+            android:parentActivityName=".View.MainIdActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MainIdActivity"/>
+        </activity>
+        <activity android:name=".View.HistoriqueActivity"
+            android:label="@string/historique_act"
+            android:parentActivityName=".View.MainIdActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MainIdActivity"/>
+        </activity>
+        <activity android:name=".View.RemarqueActivity"
+            android:label="@string/remarque_act"
+            android:parentActivityName=".View.MainIdActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MainIdActivity"/>
+        </activity>
+        <activity android:name=".View.NouvelleAnnonceActivity"
+            android:label="@string/nouvelle_annonce_act"
+            android:parentActivityName=".View.MainIdActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.MainIdActivity"/>
+        </activity>
+
     </application>
 
 </manifest>
