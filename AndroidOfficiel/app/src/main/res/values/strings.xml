@@ -33,6 +33,9 @@
     <string name="status_Ano">Status</string>
     <string name="coordonne_Ano">Coordonnée</string>
     <string name="ajouter_annonce_Ano">Ajouter annoncée</string>
+    <string name="sujet_rem">Sujet :</string>
+    <string name="description_Rem">Description</string>
+    <string name="envoyer_Rem">Envoyer</string>
 
 </resources>
 

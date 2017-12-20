@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/recherche"
-        android:icon="@android:drawable/ic_menu_search"
-        android:title="Item"
-        app:showAsAction="always" />
-    <item
-        android:id="@+id/inscription"
-        android:title="Item"
-        android:icon="@android:drawable/ic_menu_directions"
-        app:showAsAction="always" />
-    <item
-        android:id="@+id/addAnnonce"
-        android:icon="@android:drawable/ic_input_add"
-        android:title="Item"
-        app:showAsAction="always" />
-    <item
-        android:id="@+id/aide"
-        android:title="Item"
-        android:icon="@android:drawable/ic_dialog_info"
-        app:showAsAction="always" />
-    <item
-        android:id="@+id/disconnect"
-        android:title="Item"
-        android:icon="@android:drawable/ic_menu_close_clear_cancel"
-        app:showAsAction="always" />
+xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/recherche"
+    android:icon="@android:drawable/ic_menu_search"
+    android:title="Item"
+    app:showAsAction="always" />
+<item
+    android:id="@+id/inscription"
+    android:title="Item"
+    android:icon="@android:drawable/ic_menu_directions"
+    app:showAsAction="always" />
+<item
+    android:id="@+id/addAnnonce"
+    android:icon="@android:drawable/ic_input_add"
+    android:title="Item"
+    app:showAsAction="always" />
+<item
+    android:id="@+id/aide"
+    android:title="Item"
+    android:icon="@android:drawable/ic_dialog_info"
+    app:showAsAction="always" />
+<item
+    android:id="@+id/disconnect"
+    android:icon="@android:drawable/ic_menu_close_clear_cancel"
+    android:title="Item"
+    app:showAsAction="always" />
 </menu>
