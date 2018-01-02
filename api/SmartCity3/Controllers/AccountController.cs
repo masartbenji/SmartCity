@@ -13,7 +13,7 @@ namespace SmartCity3.Controllers
 {
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Produces("application/json")]
-    [Route("api/[controller]")]
+    [Route("api/Account")]
     public class AccountController : BaseController
     {
         private UserManager<ApplicationUser> _userManager;

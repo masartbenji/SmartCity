@@ -22,6 +22,7 @@ namespace NavApp1
     /// </summary>
     public sealed partial class Login : Page
     {
+        
         public Login()
         {
             this.InitializeComponent();

@@ -10,7 +10,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace NavApp1.ViewModel
 {
-    class ModificationUserViewModel : ViewModelBase, INotifyPropertyChanged
+    public class ModificationUserViewModel : ViewModelBase, INotifyPropertyChanged
     {
         private INavigationService navPage;
 

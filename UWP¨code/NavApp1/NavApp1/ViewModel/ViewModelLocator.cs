@@ -19,11 +19,12 @@ namespace NavApp1.ViewModel
             SimpleIoc.Default.Register<LoginViewModel>();
             SimpleIoc.Default.Register<UserManagementViewModel>();
             SimpleIoc.Default.Register<NewUserViewModel>();
+            SimpleIoc.Default.Register<ModificationUserViewModel>();
 
             NavigationService navigationPages = new NavigationService();
             SimpleIoc.Default.Register<INavigationService>(() => navigationPages);
-            
 
+            navigationPages.Configure("ModificationUser", typeof(ModificationUser));
             navigationPages.Configure("Login", typeof(Login));//login dans xaml xCLAssee ATTEntion 
             navigationPages.Configure("UserManagement", typeof(UserManagement));
             navigationPages.Configure("NewUser", typeof(NewUser));
@@ -46,6 +47,13 @@ namespace NavApp1.ViewModel
         {
             get {
                 return ServiceLocator.Current.GetInstance<NewUserViewModel>();
+            }
+        }
+        public ModificationUserViewModel ModificationUser
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<ModificationUserViewModel>();
             }
         }
     }

@@ -81,7 +81,7 @@ namespace NavApp1.ViewModel
             navPage = lg;
         }
         public void OnNavigatedTo(NavigationEventArgs e) {
-            accueil = "Bienvenu "+(string)e.Parameter+" !";
+            accueil = "Bienvenue "+(string)e.Parameter+" !";
         }
     }
 }

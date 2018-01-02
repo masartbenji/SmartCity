@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 
 
-
 namespace NavApp1.ViewModel
 {
     public class LoginViewModel : ViewModelBase, INotifyPropertyChanged
@@ -20,11 +19,14 @@ namespace NavApp1.ViewModel
         private ICommand singIn;
         private INavigationService navPage;
 
-        public string ULogin {
-            get {
+        public string ULogin
+        {
+            get
+            {
                 return uLogin;
             }
-            set{
+            set
+            {
                 uLogin = value;
                 RaisePropertyChanged("ULogin");
             }
@@ -41,10 +43,13 @@ namespace NavApp1.ViewModel
                 RaisePropertyChanged("Password");
             }
         }
-        public ICommand SingIn {
+        public ICommand SingIn
+        {
 
-            get {
-                if (singIn == null) {
+            get
+            {
+                if (singIn == null)
+                {
                     singIn = new RelayCommand(async () => await Connection());
                 }
                 return singIn;
@@ -52,26 +57,30 @@ namespace NavApp1.ViewModel
         }
         public async Task Connection()
         {
-            /*    
-                    Token token;
-                    var http = new HttpClient();
-                    string json = JsonConvert.SerializeObject(Login);
-                    HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
-                    try
-                    {
-                        var stringInput = await http.PostAsync(new Uri(CoursierApi.URL_BASE + CoursierApi.URL_JWT), content);
-                        var content2 = await stringInput.Content.ReadAsStringAsync();
-                        token = JsonConvert.DeserializeObject<Token>(content2);
-                    }
-                    catch (HttpRequestException e)
-                    {
-                        Console.Write(e);
-                        token = null;
-                    }
-                if (token==null) {
-                    navPage.NavigateTo("UserManagement", Login);
-                }   **/
-            navPage.NavigateTo("UserManagement",ULogin);
+            Token token = new Token();
+            var http = new HttpClient();
+            StringContent content = new StringContent(@"{Username: uLogin, password:password}", Encoding.UTF8, "application/json");
+            var idUser = new IdUser() { UserName = ULogin, Password = Password };
+            try
+            {
+                var stringInput = await http.PostAsJsonAsync("http://smartcityanimal.azurewebsites.net/api/Jwt", idUser);
+                if(stringInput.ReasonPhrase != "Unauthorized")
+                {
+                    var content2 = await stringInput.Content.ReadAsStringAsync();
+                    var tokenSplit = content2.Split('{', '}', ':', ',');
+                    token.Id = tokenSplit[2].TrimEnd('\"').TrimStart('\"');
+                    var d = Convert.ToInt16(tokenSplit[4]);
+                    token.ExpirationTime = new DateTime(d);
+                }
+            }
+            catch (HttpRequestException e)
+            {
+                token.Id = null;
+            }
+            if (token.Id == null)
+            {
+            }
+            navPage.NavigateTo("UserManagement", ULogin);
         }
         public LoginViewModel(INavigationService lg)
         {
@@ -81,5 +90,10 @@ namespace NavApp1.ViewModel
         {
             navPage.NavigateTo("Login");
         }
+    }
+    class IdUser
+    {
+        public string UserName { get; set; }
+        public string Password { get; set; }
     }
 }
