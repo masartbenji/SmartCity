@@ -2,7 +2,6 @@
     x:Class="NavApp1.UserManagement"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:NavApp1"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
@@ -40,10 +39,32 @@
                         <Button Content = "Modification" HorizontalAlignment="Stretch" Command="{Binding ModifUser}"/>
                         <Button Content = "Gestion Annonce" HorizontalAlignment="Stretch" Command="{Binding GestionAnnonce}"/>
                     </StackPanel>
-                <StackPanel Grid.Column="1">
-                        
-                        
-                </StackPanel>
+                <Grid Grid.Column="1" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="10*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                          
+                        </Grid.RowDefinitions>
+
+                        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+
+                            <SearchBox Width="250"
+                                       PlaceholderText="Recherche un user"
+                                       SearchHistoryEnabled="False"                                            
+                                       QuerySubmitted="{Binding Recherche}"
+                                       />
+                            <TextBlock Text="{Binding Test}" TextAlignment="Right" HorizontalAlignment="Left">zaerzeaz</TextBlock>
+                        </StackPanel>
+                        <ListView  
+                            SelectionMode="Single"
+                            Grid.Row="1"
+                            ItemsSource="{Binding Utilisateurs}" 
+                            >
+                        </ListView>
+                        <Button Grid.Row="2" HorizontalAlignment="Center" FontSize="20" Command="{Binding Suppression}">Supprimer</Button>
+                    
+                    </Grid>
 
 
                 </Grid>
