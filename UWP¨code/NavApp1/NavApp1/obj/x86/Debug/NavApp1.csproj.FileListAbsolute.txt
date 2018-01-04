@@ -485,3 +485,24 @@ C:\Users\Mon PC\Desktop\SmartCity\UWP¨code\NavApp1\NavApp1\bin\x86\Debug\System
 C:\Users\Mon PC\Desktop\SmartCity\UWP¨code\NavApp1\NavApp1\bin\x86\Debug\Newtonsoft.Json.dll
 C:\Users\Mon PC\Desktop\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.CommonWebApiResources.resw
 C:\Users\Mon PC\Desktop\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.Resources.resw
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\NavApp1.csprojResolveAssemblyReference.cache
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\App.g.i.cs
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\App.g.cs
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\ModificationUser.g.i.cs
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\ModificationUser.g.cs
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\NewUser.g.i.cs
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\NewUser.g.cs
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\Login.g.i.cs
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\Login.g.cs
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\UserManagement.g.i.cs
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\UserManagement.g.cs
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\App.xaml
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\ModificationUser.xaml
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\NewUser.xaml
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\Login.xaml
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\UserManagement.xaml
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\App.xbf
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\ModificationUser.xbf
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\NewUser.xbf
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\Login.xbf
+C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\UserManagement.xbf

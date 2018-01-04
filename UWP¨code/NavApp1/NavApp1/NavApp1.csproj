@@ -107,11 +107,15 @@
     <Compile Include="Model\Species.cs" />
     <Compile Include="Model\Status.cs" />
     <Compile Include="Model\Token.cs" />
+    <Compile Include="ViewModel\GestiuonAnnonceViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\ModificationUserViewModel.cs" />
     <Compile Include="ViewModel\NewUserViewModel.cs" />
     <Compile Include="ViewModel\UserManagementViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="View\GestionAnnoce.xaml.cs">
+      <DependentUpon>GestionAnnoce.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ModificationUser.xaml.cs">
       <DependentUpon>ModificationUser.xaml</DependentUpon>
     </Compile>
@@ -147,6 +151,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="View\GestionAnnoce.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\ModificationUser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -169,7 +177,7 @@
       <Version>5.2.3</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.0.1</Version>
+      <Version>6.0.5</Version>
     </PackageReference>
     <PackageReference Include="MvvmLight">
       <Version>5.3.0</Version>

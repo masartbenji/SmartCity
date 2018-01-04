@@ -1,25 +1,38 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Views;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+
 
 namespace NavApp1.ViewModel
 {
     public class UserManagementViewModel : ViewModelBase, INotifyPropertyChanged
     {
         private ICommand ajoutUser;
-        private ICommand modifUser;
+        private ICommand utilisateures;
         private ICommand gestionAnnonce;
+        private ICommand modifUser;
+        private ICommand utilisateur;
         private INavigationService navPage;
         private string accueil;
+
+        private string test;
+
+        public string Test
+        {
+            get
+            {
+                return test;
+            }
+            set
+            {
+                test = value;
+                RaisePropertyChanged("Test");
+            }
+        }
 
         public string Accueil
         {
@@ -65,6 +78,17 @@ namespace NavApp1.ViewModel
                 return ajoutUser;
             }
         }
+        public ICommand Utilisateurs
+        {
+            get
+            {
+                if (utilisateur == null)
+                {
+                    utilisateur = new RelayCommand(() => AddUtilisateurs());
+                }
+                return utilisateur;
+            }
+        }
         public void AddUser() {
             navPage.NavigateTo("NewUser");
         }
@@ -83,6 +107,30 @@ namespace NavApp1.ViewModel
         public void OnNavigatedTo(NavigationEventArgs e) {
             accueil = "Bienvenue "+(string)e.Parameter+" !";
         }
+
+        public void Recherche(SearchBox sender, SearchBoxQuerySubmittedEventArgs textRecherche)
+        {
+            // todo  1 recherche par rapport a "textRecherhce.QuarryText";
+            string s = textRecherche.QueryText;
+            test = s;
+        }
+        
+        public void Suppression(ListViewItem userSelect)
+        {
+
+
+
+
+        }
+        public void AddUtilisateurs()
+        {
+            //ApplicatioUser user;
+
+
+            //todo init liste de user 
+        }
+
+
     }
 }
      
