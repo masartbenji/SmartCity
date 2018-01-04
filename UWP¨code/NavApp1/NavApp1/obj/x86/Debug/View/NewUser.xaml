@@ -29,23 +29,15 @@
                 <TextBox Grid.Column="1" Grid.Row= "0" Text= "{Binding Login ,Mode=TwoWay}" Width= "200" />
                 <TextBlock FontSize= "19" Grid.Column= "0" Grid.Row= "1" Text= "Mot de passe :" TextAlignment= "Center" />
                 <TextBox Grid.Column= "1" Grid.Row= "1" Text= "{Binding Password,Mode=TwoWay}" Width= "200" />
-                <TextBlock FontSize= "19" Grid.Column= "0" Grid.Row= "2" Text= "Nom :  " TextAlignment= "Center" />
-                <TextBox Grid.Column= "1" Grid.Row= "2" Text= "{Binding Nom,Mode=TwoWay}" Width= "200" />
-                <TextBlock FontSize= "19" Grid.Column= "0" Grid.Row= "3" Text= "Prenom :  " TextAlignment= "Center" />
-                <TextBox Grid.Column= "1" Grid.Row= "3" Text= "{Binding Prenom,Mode=TwoWay}" Width= "200" />
                 <TextBlock FontSize= "19" Grid.Column= "0" Grid.Row= "4" Text= "Email :  " TextAlignment= "Center" />
                 <TextBox Grid.Column= "1" Grid.Row= "4" Text= "{Binding Email,Mode=TwoWay}" Width= "200" />
                 <TextBlock FontSize= "19" Grid.Column= "0" Grid.Row= "5" Text= "Telefone :  " TextAlignment= "Center" />
                 <TextBox Grid.Column= "1" Grid.Row= "5" Text= "{Binding Tel,Mode=TwoWay}" Width= "200" />
-                <TextBlock FontSize= "19" Grid.Column= "0" Grid.Row= "6" Text= "Code Postal :  " TextAlignment= "Center" />
-                <TextBox Grid.Column= "1" Grid.Row= "6" Text= "{Binding CodePostal,Mode=TwoWay}" Width= "200" />
+
             </Grid>
             <StackPanel Margin="50" >
                 <TextBlock Text="Type d'utilisateur" VerticalAlignment="Center" HorizontalAlignment="Center" />
-                <ComboBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="150" SelectedItem="{Binding TypeUser}">
-                    <ComboBoxItem IsSelected="True">Utilisateur</ComboBoxItem>
-                    <ComboBoxItem >Admin</ComboBoxItem>
-                </ComboBox>
+                <TextBox Grid.Column= "1" Grid.Row= "5" Text= "{Binding TypeUser,Mode=TwoWay}" Width= "200" />
             </StackPanel>
             <StackPanel  >
                 <Button Content="Crée" Command="{Binding Creation}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20"/>

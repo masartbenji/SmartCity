@@ -51,7 +51,6 @@ namespace SmartCity3.Controllers
             return Ok(user);
 
         }
-        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]NewUserDTO dto)
         {
@@ -59,28 +58,29 @@ namespace SmartCity3.Controllers
             {
                 UserName = dto.UserName,
                 Email = dto.Email,
-                PhoneNumber = dto.Phone
+                PhoneNumber = dto.Phone.ToString()
             };
-            bool adminRoleExists = await _roleManager.RoleExistsAsync("Admin");
+            bool RoleExists = await _roleManager.RoleExistsAsync(dto.RoleName);
+            Console.WriteLine(dto.RoleName);
             IdentityResult roleResult;
-            if (!adminRoleExists)
+            if (!RoleExists)
             {
-                roleResult = await _roleManager.CreateAsync(new IdentityRole("Admin"));
+                roleResult = await _roleManager.CreateAsync(new IdentityRole(dto.RoleName));
             }
             IdentityResult result = await _userManager.CreateAsync(newUser, dto.Password);
             if (result.Succeeded)
             {
                 ApplicationUser current = await _userManager.FindByNameAsync(dto.UserName);
-                result = await _userManager.AddToRoleAsync(current, "Admin");
+                result = await _userManager.AddToRoleAsync(current, dto.RoleName);
             }
-            roleResult = await _userManager.AddToRoleAsync(newUser, "Admin");
+            roleResult = await _userManager.AddToRoleAsync(newUser, dto.RoleName);
             // TODO: retourner un Created à la place du Ok;
             return (result.Succeeded ) ? Ok() : (IActionResult)BadRequest();
         }
         [HttpPost("Admin")]
         public IActionResult Admin([FromBody] NewUserDTO dto)
         {
-            if (IsInRole("Admin"))
+            if (!IsInRole("Admin"))
             {
                 return Unauthorized();
             }
@@ -89,8 +89,10 @@ namespace SmartCity3.Controllers
                 return Ok();
             }
         }
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUsers([FromRoute] String username)
+
+        [AllowAnonymous]
+        [HttpDelete("api/Account/{id}")]
+        public async Task<IActionResult> DeleteUsers([FromRoute] string username)
         {
             if (!ModelState.IsValid)
             {

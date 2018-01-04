@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace NavApp1.Model
 {
-    class Token
+    public abstract class Token
     {
-        private string id;
-        private DateTime expirationTime;
-
-        public string Id { get; set; }
-        public DateTime ExpirationTime { get; set; }
+        public static string Id { get; set; }
+        public static DateTime ExpirationTime { get; set; }
     }
 }

@@ -57,30 +57,30 @@ namespace NavApp1.ViewModel
         }
         public async Task Connection()
         {
-            Token token = new Token();
             var http = new HttpClient();
-            StringContent content = new StringContent(@"{Username: uLogin, password:password}", Encoding.UTF8, "application/json");
             var idUser = new IdUser() { UserName = ULogin, Password = Password };
             try
             {
-                var stringInput = await http.PostAsJsonAsync("http://smartcityanimal.azurewebsites.net/api/Jwt", idUser);
+                var stringInput = await http.PostAsJsonAsync("http://localhost:55945/api/Jwt", idUser);
                 if(stringInput.ReasonPhrase != "Unauthorized")
                 {
                     var content2 = await stringInput.Content.ReadAsStringAsync();
                     var tokenSplit = content2.Split('{', '}', ':', ',');
-                    token.Id = tokenSplit[2].TrimEnd('\"').TrimStart('\"');
-                    var d = Convert.ToInt16(tokenSplit[4]);
-                    token.ExpirationTime = new DateTime(d);
+                    Token.Id = tokenSplit[2].TrimEnd('\"').TrimStart('\"');
                 }
             }
             catch (HttpRequestException e)
             {
-                token.Id = null;
+                Token.Id = null;
             }
-            if (token.Id == null)
+            if (Token.Id == null)
             {
+                GoBackHome();
             }
-            navPage.NavigateTo("UserManagement", ULogin);
+            else
+            {
+                navPage.NavigateTo("UserManagement", ULogin);
+            }
         }
         public LoginViewModel(INavigationService lg)
         {

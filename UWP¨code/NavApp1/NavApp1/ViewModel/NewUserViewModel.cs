@@ -2,13 +2,17 @@
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Views;
 using NavApp1.Model;
+using NavApp1.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
 namespace NavApp1.ViewModel
@@ -26,9 +30,9 @@ namespace NavApp1.ViewModel
         private string email;
         private int tel; //Maybe need to change de type of the box to only allowed numbers
         private int codePostal;//same as tel
-        private object typeUser;
+        private string typeUser;
 
-        public object TypeUser
+        public string TypeUser
         {
             get
             {
@@ -126,7 +130,8 @@ namespace NavApp1.ViewModel
             }
 
         }
-        public ICommand Creation {
+        public ICommand Creation
+        {
             get
             {
                 if (creation == null)
@@ -138,21 +143,42 @@ namespace NavApp1.ViewModel
         }
         public async Task AjoutNouveau()
         {
-            //a verif sur le case obligatoire sont remplis
-            bool testOK = true;
-            if (login == null){testOK = false;}
-            if( password == null) { testOK = false;}
-            if(nom == null) { testOK = false; }
-            if(prenom == null) { testOK = false; }
 
-            if (!testOK)
+            //garnir le user et le type de user 
+            // envoie a la base de donnes
+
+            using (var http = new HttpClient())
             {
-                ApplicationUser newUser = new ApplicationUser();
-                //garnir le user et le type de user 
-                // envoie a la base de donnes
-
+                //a verif sur le case obligatoire sont remplis
+                bool testOK = true;
+                if (Login == null) { testOK = false; }
+                if (Password == null) { testOK = false; }
+                if (testOK)
+                {
+                    var newUser = new ApplicationUser()
+                    {
+                        UserName = Login,
+                        Password = Password,
+                        Email = Email,
+                        Phone = Tel,
+                        RoleName = TypeUser
+                    };
+                    http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
+                    var response = await http.PostAsJsonAsync("http://localhost:55945/api/Account", newUser);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        GoHomeBack();
+                    }
+                    else if (response.ReasonPhrase == "Unauthorized")
+                    {
+                        navPage.NavigateTo("Login");
+                    }
+                    else
+                    {
+                        navPage.NavigateTo("NewUser");
+                    }
+                }
             }
-
         }
         public ICommand Cancel
         {
@@ -173,8 +199,5 @@ namespace NavApp1.ViewModel
         {
             navPage = lg;
         }
-   
-
-
     }
 }

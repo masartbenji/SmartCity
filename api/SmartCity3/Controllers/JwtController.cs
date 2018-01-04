@@ -35,7 +35,13 @@ namespace SmartCity3.Controllers
         public async Task<IActionResult> Post([FromBody]  NewUserDTO loginInfo)
         {
             var user = await _userManager.FindByNameAsync(loginInfo.UserName);
+            
             if (user == null)
+            {
+                return Unauthorized();
+            }
+            bool isAdmin = await _userManager.IsInRoleAsync(user, "Admin");
+            if (!isAdmin)
             {
                 return Unauthorized();
             }
@@ -53,11 +59,12 @@ namespace SmartCity3.Controllers
             new Claim(JwtRegisteredClaimNames.Iat,
                     ToUnixEpochDate(_jwtOptions.IssuedAt).ToString(),
                     ClaimValueTypes.Integer64),
+            
         };
             IEnumerable<string> roles = await _userManager.GetRolesAsync(user);
             IEnumerable<Claim> allClaimsWithRoles = roles.Select(roleName => new Claim("Role", roleName))
             .Union(claims);
-
+            _jwtOptions.ValidFor=new TimeSpan(0,10,0);
             // Create the JWT security token and encode it.
             var jwt = new JwtSecurityToken(
                 issuer: _jwtOptions.Issuer,
@@ -65,15 +72,16 @@ namespace SmartCity3.Controllers
                 claims: allClaimsWithRoles,
                 notBefore: _jwtOptions.NotBefore,
                 expires: _jwtOptions.Expiration,
-                signingCredentials: _jwtOptions.SigningCredentials);
+                signingCredentials: _jwtOptions.SigningCredentials
+                );
 
             var encodedJwt = new JwtSecurityTokenHandler().WriteToken(jwt);
-            _jwtOptions.ValidFor=new TimeSpan(3000);
+
             // Serialize and return the response
             var response = new
             {
                 access_token = encodedJwt,
-                expires_in = (int)_jwtOptions.ValidFor.Ticks
+                expires_in = _jwtOptions.ValidFor.Ticks
             };
             return Ok(response);
         }
