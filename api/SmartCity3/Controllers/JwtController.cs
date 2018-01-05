@@ -40,11 +40,6 @@ namespace SmartCity3.Controllers
             {
                 return Unauthorized();
             }
-            bool isAdmin = await _userManager.IsInRoleAsync(user, "Admin");
-            if (!isAdmin)
-            {
-                return Unauthorized();
-            }
             Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(user, loginInfo.Password, true, false);
             if (!result.Succeeded)
             {

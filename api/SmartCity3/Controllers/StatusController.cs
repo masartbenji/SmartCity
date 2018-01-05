@@ -22,16 +22,14 @@ namespace SmartCity3.Controllers
         {
             this.ctx = ctx;
         }
-
-        //GET :api/Status
+        
         [HttpGet]
         [AllowAnonymous]
         public IEnumerable<Status> GetStatus()
         {
             return ctx.Status;
         }
-
-        //Get: api/Status/5
+        
         [HttpGet("{id}")]
         [AllowAnonymous]
         public async Task<IActionResult> GetStatus([FromRoute]int id)
@@ -42,8 +40,7 @@ namespace SmartCity3.Controllers
             if (status == null) return NotFound();
             return Ok(status);
         }
-
-        //PUT: api/Status/5
+        
         [HttpPut("{id}")]
         public async Task<IActionResult> PutStatus([FromRoute]int id, [FromBody] Status status)
         {
@@ -74,8 +71,7 @@ namespace SmartCity3.Controllers
             }
             return NoContent();
         }
-
-        //POST: api/Status
+        
         [HttpPost]
         public async Task<IActionResult> PostAnnouncement([FromBody]Status status)
         {
@@ -107,8 +103,7 @@ namespace SmartCity3.Controllers
 
             return CreatedAtAction("GetStatus", new { id = status.Id }, status);
         }
-
-        //DELETE: api/Status/5
+        
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAnnouncement([FromRoute]int id)
         {

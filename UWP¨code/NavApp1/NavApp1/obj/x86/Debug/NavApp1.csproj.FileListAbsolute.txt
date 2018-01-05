@@ -506,3 +506,7 @@ C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\Vie
 C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\NewUser.xbf
 C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\Login.xbf
 C:\Users\Ruben\Desktop\007\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\UserManagement.xbf
+C:\Users\Mon PC\Desktop\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\GestionAnnoce.g.i.cs
+C:\Users\Mon PC\Desktop\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\GestionAnnoce.g.cs
+C:\Users\Mon PC\Desktop\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\GestionAnnoce.xaml
+C:\Users\Mon PC\Desktop\SmartCity\UWP¨code\NavApp1\NavApp1\obj\x86\Debug\View\GestionAnnoce.xbf

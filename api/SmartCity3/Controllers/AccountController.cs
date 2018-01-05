@@ -32,7 +32,6 @@ namespace SmartCity3.Controllers
         {
             return _context.User.ToList();
         }
-        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetApplicationUser([FromRoute] string id)
         {
@@ -89,8 +88,7 @@ namespace SmartCity3.Controllers
                 return Ok();
             }
         }
-
-        [AllowAnonymous]
+        
         [HttpDelete("api/Account/{id}")]
         public async Task<IActionResult> DeleteUsers([FromRoute] string username)
         {
@@ -106,12 +104,46 @@ namespace SmartCity3.Controllers
             }
             var role = await _userManager.GetRolesAsync(uti);
             await _userManager.RemoveFromRolesAsync(uti,role);
+            foreach(Animal animal in uti.Animal)
+            {
+                _context.Animal.Remove(animal);
+            }
             _context.User.Remove(uti);
             await _context.SaveChangesAsync();
 
             return Ok(uti);
         }
-
+        [HttpPut]
+        public async Task<IActionResult> PutUser([FromBody]NewUserDTO user)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            var uti = await _context.User.SingleOrDefaultAsync(m => m.UserName == user.UserName);
+            if (uti == null) return NotFound();
+            _context.Entry(user).State = EntityState.Modified;
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                    throw;
+            }
+            return NoContent();
+        }
+        [HttpGet]
+        [Route("Admin")]
+        public async Task<IActionResult> GetUserRolesAsync()
+        {
+            IList<String> roles = await GetUserRoles();
+            if (roles.Contains("Admin"))
+            {
+                return Ok();
+            }
+            return Unauthorized();
+        }   
     }
 }
 

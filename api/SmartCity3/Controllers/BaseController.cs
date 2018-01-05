@@ -37,5 +37,10 @@ namespace SmartCity3.Controllers
             
             return roleClaim != null;
         }
+        public async Task<IList<String>> GetUserRoles()
+        {
+            ApplicationUser user = await GetCurrentUserAsync();
+            return await userManager.GetRolesAsync(user);
+        }
     }
 }

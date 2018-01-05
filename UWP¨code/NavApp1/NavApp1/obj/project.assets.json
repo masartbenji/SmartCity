@@ -26662,20 +26662,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ruben\\.nuget\\packages\\": {}
+    "C:\\Users\\Mon PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ruben\\Desktop\\007\\SmartCity\\UWP¨code\\NavApp1\\NavApp1\\NavApp1.csproj",
+      "projectUniqueName": "C:\\Users\\Mon PC\\Desktop\\SmartCity\\UWP¨code\\NavApp1\\NavApp1\\NavApp1.csproj",
       "projectName": "NavApp1",
-      "projectPath": "C:\\Users\\Ruben\\Desktop\\007\\SmartCity\\UWP¨code\\NavApp1\\NavApp1\\NavApp1.csproj",
-      "packagesPath": "C:\\Users\\Ruben\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ruben\\Desktop\\007\\SmartCity\\UWP¨code\\NavApp1\\NavApp1\\obj\\",
+      "projectPath": "C:\\Users\\Mon PC\\Desktop\\SmartCity\\UWP¨code\\NavApp1\\NavApp1\\NavApp1.csproj",
+      "packagesPath": "C:\\Users\\Mon PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mon PC\\Desktop\\SmartCity\\UWP¨code\\NavApp1\\NavApp1\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Ruben\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mon PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -26689,6 +26689,20 @@
         "uap10.0.10586": {
           "projectReferences": {}
         }
+      }
+    },
+    "dependencies": {
+      "Microsoft.AspNet.WebApi.Client": {
+        "target": "Package",
+        "version": "5.2.3"
+      },
+      "Microsoft.NETCore.UniversalWindowsPlatform": {
+        "target": "Package",
+        "version": "6.0.5"
+      },
+      "MvvmLight": {
+        "target": "Package",
+        "version": "5.3.0"
       }
     },
     "frameworks": {

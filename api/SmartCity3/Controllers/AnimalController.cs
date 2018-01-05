@@ -23,7 +23,6 @@ namespace SmartCity3.Controllers
         }
 
         //GET :api/ApplicationUser
-        [AllowAnonymous]
         [HttpGet]
         public IEnumerable<Animal> GetAnimal()
         {
