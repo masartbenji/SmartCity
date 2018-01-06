@@ -89,7 +89,7 @@ namespace SmartCity3.Controllers
             }
         }
         
-        [HttpDelete("api/Account/{id}")]
+        [HttpDelete("{username}")]
         public async Task<IActionResult> DeleteUsers([FromRoute] string username)
         {
             if (!ModelState.IsValid)
@@ -144,6 +144,18 @@ namespace SmartCity3.Controllers
             }
             return Unauthorized();
         }   
+        [HttpGet("{userName}")]
+        [Route("Role")]
+        public async Task<IActionResult> getRoleAsync([FromRoute]string userName)
+        {
+            var user = await _context.User.SingleOrDefaultAsync(m => m.UserName == userName);
+            if(user != null)
+            {
+                return Ok(_userManager.GetRolesAsync(user));
+            }
+            return BadRequest();
+            
+        }
     }
 }
 
