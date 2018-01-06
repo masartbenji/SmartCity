@@ -13,6 +13,7 @@ namespace AnimaLost2.Model
         public string Email { get; set; }
         public int Phone { get; set; }
         public string RoleName { get; set; }
+
         public static ApplicationUser Deserialize(string json)
         {
             var split = json.Split(',','"','{','}');
@@ -23,6 +24,6 @@ namespace AnimaLost2.Model
                 Email = split[22],
                 Phone = Convert.ToInt32(split[50])
             };
-        }
+        }   
     }
 }

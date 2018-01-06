@@ -36,7 +36,7 @@ namespace AnimaLost2.ViewModel
                 typeUser = value;
                 RaisePropertyChanged("TypeUser");
             }
-        }// pas sur de ca 
+        }
         public int Tel
         {
             get
@@ -101,10 +101,6 @@ namespace AnimaLost2.ViewModel
 
         public async Task AjoutNouveau()
         {
-
-            //garnir le user et le type de user 
-            // envoie a la base de donnes
-
             using (var http = new HttpClient())
             {
                 //a verif sur le case obligatoire sont remplis
@@ -135,6 +131,13 @@ namespace AnimaLost2.ViewModel
                     {
                         navPage.NavigateTo("NewUser");
                     }
+
+
+                }
+                else
+                {
+                    // SI PAS OK msg errorr
+
                 }
             }
         }

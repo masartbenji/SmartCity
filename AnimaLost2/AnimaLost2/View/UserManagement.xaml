@@ -47,17 +47,52 @@
                             <RowDefinition Height="1*"></RowDefinition>
 
                         </Grid.RowDefinitions>
-
                         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
-
-                            <SearchBox Width="250"
-                                       PlaceholderText="Recherche un user"
-                                       SearchHistoryEnabled="False"                                            
-                                       QuerySubmitted="Recherche"
-                                       />
+                            <TextBox  Text="{Binding Search}" Background="Azure" BorderThickness="2" BorderBrush="Black" Width="150"></TextBox>
+                            <Button Command="{Binding SearchBt}" Content="Recherche" Background="Azure" BorderThickness="2" BorderBrush="Black" />
                         </StackPanel>
+                        <ListView Grid.Row="1" ItemsSource="{Binding ApplicationUser,Mode=TwoWay}" SelectedItem="{Binding SelectUser,Mode=TwoWay}" SelectionMode="Single">
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                    
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*"/>
+                                            <RowDefinition Height="2*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*"/>
+                                            <ColumnDefinition Width="2*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Column="0"  >
+                                        <Run Text="Pseudo :"></Run>
+                                        <Run Text="{Binding UserName}"></Run>
+                                        </TextBlock>
+                                        <TextBlock Grid.Column="1"  Text="Mdp :">
+                                        <Run Text="Mdp :"></Run>
+                                        <Run Text="{Binding Password}"></Run>
+                                        </TextBlock>
+                                        <TextBlock Grid.Column="0" Grid.Row="1" Text="Email :">
+                                            <Run Text="Email :"></Run>
+                                            <Run Text="{Binding Email}"></Run>
+                                        </TextBlock>
+                                        <TextBlock Grid.Column="1" Grid.Row="1" Text="Telephone :">
+                                        <Run Text="Telephone :"></Run>
+                                        <Run Text="{Binding Phone}"></Run>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                            
+                        </ListView>
                         <Button Grid.Row="2" HorizontalAlignment="Center" FontSize="20" Command="{Binding Suppression}">Supprimer</Button>
-
+                    
+                        
                     </Grid>
 
 

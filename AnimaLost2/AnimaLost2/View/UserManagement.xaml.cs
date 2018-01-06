@@ -26,11 +26,6 @@ namespace AnimaLost2
         {
             this.InitializeComponent();
         }
-
-        private void Recherche(SearchBox sender,
-         SearchBoxQuerySubmittedEventArgs args)
-        {
-            this.Frame.Navigate(typeof(ModificationUser), args.QueryText);
-        }
+  
     }
 }

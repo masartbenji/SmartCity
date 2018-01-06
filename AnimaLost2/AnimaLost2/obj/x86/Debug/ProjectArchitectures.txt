@@ -1,1 +1,1 @@
-c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\AnimaLost2.csproj;x86
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\AnimaLost2.csproj;x86
