@@ -154,8 +154,48 @@ namespace SmartCity3.Controllers
                 return Ok(_userManager.GetRolesAsync(user));
             }
             return BadRequest();
-            
         }
+        [HttpGet("Announcement/{userName}")]
+        public async Task<IActionResult> GetAnnouncementForUser(string userName)
+        {
+            ApplicationUser user = await _context.User.SingleOrDefaultAsync(m => m.UserName == userName);
+            List<Animal> animals = new List<Animal>();
+            List<AnnouncementVisu> announcements = new List<AnnouncementVisu>();
+            if(user != null)
+            {
+                animals = _context.Animal.Where(a => a.IdUser == user.Id).ToList<Animal>();
+                foreach(Animal a in animals)
+                {
+                    Breed breedAnim = _context.Breed.SingleOrDefault( m => m.Name == a.IdBreed);
+                    
+                    foreach(Announcement announc in _context.Announcement.Where( annou => annou.IdAnimal == a.Id))
+                    {
+                        Status statusAnn = _context.Status.SingleOrDefault(m => m.Id == announc.IdStatus);
+                        announcements.Add(new AnnouncementVisu()
+                        {
+                            idAnnoun = announc.Id,
+                            DateAnnoun = announc.Date,
+                            NameAnimal = a.Name,
+                            Breed = breedAnim.Name,
+                            Species = breedAnim.IdSpecies,
+                            Description = announc.Description,
+                            Status = statusAnn.State
+                        });
+                    }
+                }
+            }
+            return Ok(announcements);
+        }
+    }
+    class AnnouncementVisu
+    {
+        public int idAnnoun { get; set; }
+        public DateTime DateAnnoun{get;set;}
+        public string NameAnimal { get; set; }
+        public string Breed { get; set; }
+        public string Species { get; set; }
+        public string Description { get; set; }
+        public string Status { get; set; }
     }
 }
 

@@ -4,6 +4,11 @@
     <RootPropertyPathName Name="Suppression" />
     <RootPropertyPathName Name="ApplicationUser" />
     <RootPropertyPathName Name="SelectUser" />
+    <RootPropertyPathName Name="NbAnnonceUser" />
+    <RootPropertyPathName Name="PhonneUser" />
+    <RootPropertyPathName Name="EmailUser" />
+    <RootPropertyPathName Name="UserID" />
+    <RootPropertyPathName Name="GoBackHome" />
     <RootPropertyPathName Name="Login" />
     <RootPropertyPathName Name="SingIn" />
     <RootPropertyPathName Name="Password" />
@@ -18,7 +23,9 @@
     <RootPropertyPathName Name="Creation" />
     <RootPropertyPathName Name="TypeUser" />
     <RootPropertyPathName Name="UserManagement" />
+    <RootPropertyPathName Name="Users" />
     <RootPropertyPathName Name="Phone" />
+    <RootPropertyPathName Name="RoleName" />
     <RootPropertyPathName Name="UserName" />
     <RootPropertyPathName Name="SearchBt" />
     <RootPropertyPathName Name="Search" />
@@ -110,17 +117,17 @@
       <RootProperty Name="Property" />
       <RootProperty Name="Value" />
     </RootType>
-    <RootType FullName="AnimaLost2.GestionAnnonce" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Text" />
       <RootProperty Name="Margin" />
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="Inlines" />
       <RootProperty Name="Name" />
     </RootType>
+    <RootType FullName="AnimaLost2.GestionAnnonce" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />

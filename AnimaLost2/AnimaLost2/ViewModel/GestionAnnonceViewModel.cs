@@ -67,8 +67,22 @@ namespace AnimaLost2.ViewModel
                 RaisePropertyChanged("EmailUser");
             }
         }
-
-
+        private ICommand refreshList;
+        public ICommand RefreshList
+        {
+            get
+            {
+                if (refreshList == null)
+                {
+                    refreshList = new RelayCommand(() => Refresh());
+                }
+                return refreshList;
+            }
+        }
+        public void Refresh()
+        {
+            // a voir si il faut pas clear du coup la liste dans l initialize
+        }
         public void Home()
         {
             navPage.NavigateTo("UserManagement");

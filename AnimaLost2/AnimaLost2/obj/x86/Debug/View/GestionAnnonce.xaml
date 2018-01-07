@@ -15,7 +15,7 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
              <StackPanel Grid.Row="0">
-                <Button x:ConnectionId='1' FontSize="25" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="User" Content="Gestion User" Background="LightBlue" />
+                <Button x:ConnectionId='1' Command="{Binding GoBackHome}" FontSize="25" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="User" Content="Gestion User" Background="LightBlue" />
             </StackPanel>
             <Grid Grid.Row="1">
                 <Grid>
@@ -32,12 +32,18 @@
                                 <Setter Property="FontSize" Value="20"/>
                             </Style>
                         </StackPanel.Resources>
-                        
+                        <TextBlock Text="{Binding UserID}"/>
+                        <TextBlock Text="{Binding EmailUser}"/>
+                        <TextBlock Text="{Binding PhonneUser}"/>
+                        <TextBlock Text="{Binding NbAnnonceUser}"/>
+                       
                     </StackPanel>
                     <Grid Grid.Column="1" >
-
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="7*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
                         <ListView Grid.Row="1" ItemsSource="{Binding ApplicationUser}" SelectedItem="{Binding SelectUser,Mode=TwoWay}" ItemTemplate="{StaticResource ListTemplate}"/>
-
                         <Button Grid.Row="2" HorizontalAlignment="Center" FontSize="20" Command="{Binding Suppression}">Supprimer</Button>
 
 

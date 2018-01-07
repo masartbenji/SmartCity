@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -79,7 +81,7 @@ namespace AnimaLost2.ViewModel
             {
                 if (suppression == null)
                 {
-                    suppression = new RelayCommand(() => SuppressionUser());
+                    suppression = new RelayCommand(async() => await SuppUser());
                 }
                 return suppression;
             }
@@ -90,7 +92,7 @@ namespace AnimaLost2.ViewModel
             {
                 if (searchBt == null)
                 {
-                    searchBt = new RelayCommand(() => Recherche());
+                    searchBt = new RelayCommand(async() => await Recherche());
                 }
                 return searchBt;
             }
@@ -114,65 +116,76 @@ namespace AnimaLost2.ViewModel
         }
         public void ModificationUser()
         {
-            if(SelectUser != null)
+            if (SelectUser != null)
             {
                 navPage.NavigateTo("ModificationUser", SelectUser);
             }
         }
         public void ManagementUser()
         {
-            navPage.NavigateTo("ManagementUser");// envoyer le user aussi 
+            navPage.NavigateTo("GestionAnnonce");// envoyer le user aussi 
         }
 
-        public void Recherche()
+        public async Task Recherche()
         {
             if (Search != null)
             {
-                
-                ApplicationUser.Clear();
-                try
+                Users.Clear();
+                using(HttpClient http = new HttpClient())
                 {
-
-                    //ApplicationUser.Add(ELEMENT RECHERHCE);
+                    http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
+                    var response = await http.GetAsync("http://smartcityanimal.azurewebsites.net/api/Account/" + Search);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string userJson = await response.Content.ReadAsStringAsync();
+                        ApplicationUser user = ApplicationUser.Deserialize(userJson);
+                        http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
+                        var roleResponse = await http.GetAsync("http://smartcityanimal.azurewebsites.net/api/Account/Role/" + user.UserName);
+                        string roleName = await roleResponse.Content.ReadAsStringAsync();
+                        user.RoleName = roleName.TrimStart('[').TrimEnd(']').TrimStart('"').TrimEnd('"');
+                        Users.Add(user);
+                    }
+                    navPage.NavigateTo("UserManagement");
                 }
-                catch
-                {
-
-                }
-                
-                
-                
             }
         }
 
-
-        public void SuppressionUser() {
-
-           if(SelectUser != null)
+        
+        private async Task SuppUser()
+        {
+            if(SelectUser != null)
             {
-                navPage.NavigateTo("GestionAnnonce", SelectUser);
+                using (HttpClient http = new HttpClient())
+                {
+                    http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
+                    var response = await http.DeleteAsync("http://smartcityanimal.azurewebsites.net/api/Account/" + SelectUser.UserName);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        navPage.NavigateTo("UserManagement");
+                    }
+                    else navPage.NavigateTo("ModificationUser");
 
+                }
             }
         }
         public UserManagementViewModel(INavigationService lg)
         {
             navPage = lg;
-            ApplicationUser = new ObservableCollection<ApplicationUser>();
             InitializeAsync();
         }
         // 2eme constructeur si on arrive d un autre page on perd le user pas grave a voir 
 
         public void OnNavigatedTo(NavigationEventArgs e)
-        {   
+        {
             accueil = "Bienvenue " + (string)e.Parameter + " !";
-            
+
         }
         public void OnNavigatedTo()
         {
             accueil = "Bienvenue";
         }
 
-        private ObservableCollection<ApplicationUser> applicationUser;
+        private ObservableCollection<ApplicationUser> user;
         private ApplicationUser selectUser;
 
         public ApplicationUser SelectUser
@@ -190,47 +203,48 @@ namespace AnimaLost2.ViewModel
                 }
             }
         }
-        public ObservableCollection<ApplicationUser> ApplicationUser
+        public ObservableCollection<ApplicationUser> Users
         {
             get
             {
-                return applicationUser;
+                return user;
             }
             set
             {
-                if (applicationUser != null)
-                {
-                    return;
-                }
-                applicationUser = value;
-                RaisePropertyChanged("ApplicationUser");
+                user = value;
+                RaisePropertyChanged("Users");
             }
         }
 
-        private void InitializeAsync()
+        private async void InitializeAsync()
         {
-            // initialiser la liste 
-            //CA MARCHE PAS PQ ?????µ$
-
-
-      
-            ApplicationUser.Add(new ApplicationUser
+            Users = await GetUsersAsync();
+        }
+        public async Task<ObservableCollection<ApplicationUser>> GetUsersAsync()
+        {
+            ObservableCollection<ApplicationUser> users = new ObservableCollection<ApplicationUser>();
+            using (HttpClient http = new HttpClient())
             {
-                UserName = "ruben",
-                Password = " retjb",
-                Email = "ezfo",
-                Phone = 123456,
-                RoleName = "Admin"
-            });
-            ApplicationUser.Add(new ApplicationUser
-            {
-                UserName = "ghjg",
-                Password = " tyjtyj",
-                Email = "tyjtyjtyj",
-                Phone = 123489756,
-                RoleName = "User"
-            });
+                http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
+                var response = await http.GetAsync("http://smartcityanimal.azurewebsites.net/api/Account/");
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseUser = await response.Content.ReadAsStringAsync();
+                    var listUser = responseUser.Split(new string[] { "},{" }, StringSplitOptions.RemoveEmptyEntries);
 
+
+                    foreach (string user in listUser)
+                    {
+                        ApplicationUser userApp = ApplicationUser.Deserialize(user);
+                        http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
+                        var roleResponse = await http.GetAsync("http://smartcityanimal.azurewebsites.net/api/Account/Role/" + userApp.UserName);
+                        string roleName = await roleResponse.Content.ReadAsStringAsync();
+                        userApp.RoleName = roleName.TrimStart('[').TrimEnd(']').TrimStart('"').TrimEnd('"');
+                        users.Add(userApp);
+                    }
+                }
+            }
+            return users;
         }
     }
 
