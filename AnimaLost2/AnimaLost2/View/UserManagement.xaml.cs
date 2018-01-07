@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AnimaLost2.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -26,6 +27,16 @@ namespace AnimaLost2
         {
             this.InitializeComponent();
         }
-  
+                protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            ((UserManagementViewModel)DataContext).OnNavigatedTo(e);
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            base.OnNavigatedFrom(e);
+        }
+
+
     }
 }

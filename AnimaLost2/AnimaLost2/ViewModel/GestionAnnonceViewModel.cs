@@ -23,22 +23,52 @@ namespace AnimaLost2.ViewModel
         private string emailUser;
         private int nbAnnonceUser;
         private int phoneUser;
-        private ObservableCollection<Announcement> announcement;
-        private Announcement selectAnnounce;
-
+        
+        private AnnouncementVisuel selectAnnounce;
+        private ObservableCollection<AnnouncementVisuel> announcementVisuel1;
+        public ObservableCollection<AnnouncementVisuel> AnnouncementVisuel1
+        {
+            get
+            {
+                return announcementVisuel1;
+            }
+            set
+            {
+                if (announcementVisuel1 != null)
+                {
+                    return;
+                }
+                announcementVisuel1 = value;
+                RaisePropertyChanged("AnnouncementVisuel1");
+            }
+        }
         public GestionAnnonceViewModel(INavigationService lg)
         {
             navPage = lg;
-            Announcement = new ObservableCollection<Announcement>();
-            InitializeAsync();
+            AnnouncementVisuel1 = new ObservableCollection<AnnouncementVisuel>();
+            init();          
         }
-        public void InitializeAsync()
+        public void init()
         {
-            //init
-
+            AnnouncementVisuel1.Add(new AnnouncementVisuel
+            {
+                Id = 789,
+                DateTime = new DateTime(2017, 12, 10),
+                AnimalName = "LuoLou",
+                Breed = "ezffze",
+                Species ="zarzar",
+                Description = "JE sais pas ",
+            });
+            AnnouncementVisuel1.Add(new AnnouncementVisuel
+            {
+                Id = 789,
+                DateTime = new DateTime(2017, 12, 10),
+                AnimalName = "LuoLou",
+                Breed = "ezffze",
+                Species = "zarzar",
+                Description = "JE sais pas ",
+            });
         }
-
-
         public void OnNavigatedTo(NavigationEventArgs e)
         {
             ApplicationUser user = (ApplicationUser)e.Parameter;
@@ -52,23 +82,8 @@ namespace AnimaLost2.ViewModel
            // REcherche le nb annonce;
             return 1;
         }
-        private ObservableCollection<Announcement> Announcement
-        {
-            get
-            {
-                return announcement;
-            }
-            set
-            {
-                if (announcement != null)
-                {
-                    return;
-                }
-                announcement = value;
-                RaisePropertyChanged("Announcement");
-            }
-        }
-        public Announcement SelectAnnounce
+
+        public AnnouncementVisuel SelectAnnounce
         {
             get
             {
@@ -163,7 +178,6 @@ namespace AnimaLost2.ViewModel
                 RaisePropertyChanged("PhoneUser");
             }
         }
-
         public void Home()
         {
             navPage.NavigateTo("UserManagement");

@@ -19,7 +19,7 @@
                 <TextBlock FontSize="28" Name="acceuil" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Accueil}"></TextBlock>
             </Grid>
             <StackPanel Grid.Row="1">
-                <Button FontSize="25" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="User" Content="Gestion User" Background="LightBlue" />
+                <Button Command="{Binding RefreshList}" FontSize="25" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="User" Content="Gestion User" Background="LightBlue" />
             </StackPanel>
             <Grid Grid.Row="2">
                 <Grid>

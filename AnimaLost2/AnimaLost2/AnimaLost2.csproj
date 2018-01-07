@@ -97,6 +97,7 @@
     </Compile>
     <Compile Include="Model\Animal.cs" />
     <Compile Include="Model\Announcement.cs" />
+    <Compile Include="Model\AnnouncementVisuel.cs" />
     <Compile Include="Model\ApplicationUser.cs" />
     <Compile Include="Model\Breed.cs" />
     <Compile Include="Model\Color.cs" />

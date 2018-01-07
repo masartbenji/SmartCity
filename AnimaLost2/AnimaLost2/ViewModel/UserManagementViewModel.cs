@@ -24,6 +24,7 @@ namespace AnimaLost2.ViewModel
         private ICommand searchBt;
         private ICommand suppression;
         private INavigationService navPage;
+
         private string accueil;
         private string search;
 
@@ -95,6 +96,23 @@ namespace AnimaLost2.ViewModel
                 return searchBt;
             }
         }
+        private ICommand refreshList;
+        public ICommand RefreshList
+        {
+            get
+            {
+                if (refreshList == null)
+                {
+                    refreshList = new RelayCommand(() => Refresh());
+                }
+                return refreshList;
+            }
+        }
+        public void Refresh()
+        {
+            InitializeAsync();// a voir si il faut pas clear du coup la liste dans l initialize
+        }
+
         public string Search
         {
             get
@@ -121,7 +139,10 @@ namespace AnimaLost2.ViewModel
         }
         public void ManagementUser()
         {
-            navPage.NavigateTo("ManagementUser");// envoyer le user aussi 
+            if (SelectUser != null)
+            {
+                navPage.NavigateTo("GestionAnnonce", SelectUser);
+            }
         }
 
         public void Recherche()
@@ -148,11 +169,6 @@ namespace AnimaLost2.ViewModel
 
         public void SuppressionUser() {
 
-           if(SelectUser != null)
-            {
-                navPage.NavigateTo("GestionAnnonce", SelectUser);
-
-            }
         }
         public UserManagementViewModel(INavigationService lg)
         {
@@ -163,7 +179,7 @@ namespace AnimaLost2.ViewModel
         // 2eme constructeur si on arrive d un autre page on perd le user pas grave a voir 
 
         public void OnNavigatedTo(NavigationEventArgs e)
-        {   
+        {
             accueil = "Bienvenue " + (string)e.Parameter + " !";
             
         }

@@ -1,18 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="GestionAnnonce" />
     <RootPropertyPathName Name="Suppression" />
-    <RootPropertyPathName Name="Announcement" />
+    <RootPropertyPathName Name="AnnouncementVisuel1" />
     <RootPropertyPathName Name="SelectAnnounce" />
-    <RootPropertyPathName Name="IdAnimal" />
-    <RootPropertyPathName Name="IdBreed" />
-    <RootPropertyPathName Name="Name" />
-    <RootPropertyPathName Name="IdStatus" />
-    <RootPropertyPathName Name="State" />
-    <RootPropertyPathName Name="CoordY" />
-    <RootPropertyPathName Name="CoordX" />
     <RootPropertyPathName Name="Description" />
-    <RootPropertyPathName Name="Date" />
+    <RootPropertyPathName Name="Species" />
+    <RootPropertyPathName Name="Breed" />
+    <RootPropertyPathName Name="AnimalName" />
+    <RootPropertyPathName Name="Status" />
+    <RootPropertyPathName Name="DateTime" />
     <RootPropertyPathName Name="Id" />
     <RootPropertyPathName Name="NbAnnonceUser" />
     <RootPropertyPathName Name="PhoneUser" />
@@ -39,9 +37,9 @@
     <RootPropertyPathName Name="UserName" />
     <RootPropertyPathName Name="SearchBt" />
     <RootPropertyPathName Name="Search" />
-    <RootPropertyPathName Name="GestionAnnonce" />
     <RootPropertyPathName Name="ModifUser" />
     <RootPropertyPathName Name="AjoutUser" />
+    <RootPropertyPathName Name="RefreshList" />
     <RootPropertyPathName Name="Accueil" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -51,9 +49,15 @@
     </RootType>
     <RootType FullName="AnimaLost2.ViewModelLocator" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
-      <RootProperty Name="Content" />
       <RootProperty Name="DataContext" />
+      <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootProperty Name="Margin" />
       <RootProperty Name="Content" />
@@ -93,8 +97,8 @@
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedItem" />
       <RootProperty Name="SelectionMode" />
-      <RootProperty Name="ItemTemplate" />
       <RootProperty Name="ItemContainerStyle" />
+      <RootProperty Name="ItemTemplate" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="HorizontalAlignment" />
@@ -110,10 +114,16 @@
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="BorderBrush" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Mode" />
-      <RootProperty Name="Source" />
-      <RootProperty Name="Path" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="FontSize" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
@@ -134,16 +144,7 @@
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Margin" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Control">
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="HorizontalContentAlignment" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Setter">
-      <RootProperty Name="Property" />
-      <RootProperty Name="Value" />
-    </RootType>
     <RootType FullName="AnimaLost2.GestionAnnonce" />
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
@@ -167,7 +168,6 @@
     <RootType FullName="AnimaLost2.Login" />
     <RootType FullName="AnimaLost2.ModificationUser" />
     <RootType FullName="AnimaLost2.NewUser" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
     <RootType FullName="AnimaLost2.UserManagement" />
   </Roots.RootTypes>
 </Roots>

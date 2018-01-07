@@ -19,7 +19,7 @@
                 <TextBlock x:ConnectionId='2' FontSize="28" Name="acceuil" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Accueil}"></TextBlock>
             </Grid>
             <StackPanel Grid.Row="1">
-                <Button x:ConnectionId='1' FontSize="25" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="User" Content="Gestion User" Background="LightBlue" />
+                <Button x:ConnectionId='1' Command="{Binding RefreshList}" FontSize="25" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="User" Content="Gestion User" Background="LightBlue" />
             </StackPanel>
             <Grid Grid.Row="2">
                 <Grid>
@@ -73,7 +73,7 @@
                                         <Run Text="Pseudo :"></Run>
                                         <Run Text="{Binding UserName}"></Run>
                                         </TextBlock>
-                                        <TextBlock Grid.Column="1"  Text="Mdp :">
+                                        <TextBlock Grid.Column="1">
                                         <Run Text="Mdp :"></Run>
                                         <Run Text="{Binding Password}"></Run>
                                         </TextBlock>

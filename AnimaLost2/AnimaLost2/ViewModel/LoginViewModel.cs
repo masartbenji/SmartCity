@@ -86,6 +86,7 @@ namespace AnimaLost2.ViewModel
                 if (!response.IsSuccessStatusCode) GoBackHome();
                 else
                 {
+
                     navPage.NavigateTo("UserManagement", ULogin);
                 }
 
