@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-07T15:34:18.865</Modified>
+      <Modified>2018-01-07T20:53:49.416</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.exe">
       <PackagePath>entrypoint\AnimaLost2.exe</PackagePath>
-      <Modified>2018-01-07T15:34:17.395</Modified>
+      <Modified>2018-01-07T20:53:46.632</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mon PC\.nuget\packages\CommonServiceLocator\1.3.0\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
@@ -587,7 +587,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.xr.xml">
       <PackagePath>AnimaLost2.xr.xml</PackagePath>
-      <Modified>2018-01-07T11:59:09.555</Modified>
+      <Modified>2018-01-07T20:52:49.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -596,11 +596,11 @@
     <AppxPackagedFile Include="C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-07T13:48:41.464</Modified>
+      <Modified>2018-01-07T20:53:48.344</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AnimaLost2.exe">
       <PackagePath>AnimaLost2.exe</PackagePath>
-      <Modified>2018-01-07T15:34:18.832</Modified>
+      <Modified>2018-01-07T20:53:49.397</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

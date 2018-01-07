@@ -1,0 +1,93 @@
+﻿<Page
+    x:Class="AnimaLost2.GestionAnnonce"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AnimaLost2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+     DataContext="{Binding Source={StaticResource Locator}, Path=GestionAnnonce}">
+    <Frame Margin="10,0,0,0">
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,10,0,-10" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Margin="0,50,0,0">
+                <Button x:ConnectionId='1' Command="{Binding GoBackHome}" FontSize="25" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="User" Content="Gestion User" Background="LightBlue" />
+            </StackPanel>
+            <Grid Grid.Row="1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Background="Beige" HorizontalAlignment="Stretch" Grid.Column="0" >
+                        <StackPanel.Resources>
+                            <Style TargetType="Button">
+                                <Setter Property="Margin" Value="0,50,0,0"/>
+                                <Setter Property="FontSize" Value="20"/>
+                            </Style>
+                        </StackPanel.Resources>
+                        <TextBlock Text="Information User"/>
+                        <TextBlock Text="{Binding UserID}"/>
+                        <TextBlock Text="{Binding EmailUser}"/>
+                        <TextBlock Text="{Binding PhoneUser}"/>
+                        <TextBlock Text="{Binding NbAnnonceUser}"/>
+                    </StackPanel>
+                    <Grid Grid.Column="1" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="7*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <ListView Grid.Row="0" ItemsSource="{Binding AnnouncementVisuel1,Mode=TwoWay}" SelectedItem="{Binding SelectAnnounce,Mode=TwoWay}" SelectionMode="Single" >
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                    <Setter Property="BorderBrush" Value="Black"/>
+                                    <Setter Property="BorderThickness" Value="2"/>
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <TextBlock>
+                                            <Run Text="ID : "></Run>
+                                            <Run Text="{Binding Id}"/>
+                                        </TextBlock>
+                                        <TextBlock>
+                                            <Run Text="Date : "></Run>
+                                            <Run Text="{Binding DateTime}"/>
+                                        </TextBlock>
+                                        <TextBlock>
+                                            <Run Text="Status : "></Run>
+                                            <Run Text="{Binding Status}"/>
+                                        </TextBlock>
+                                        <TextBlock>
+                                            <Run Text="Nom animal : "></Run>
+                                            <Run Text="{Binding AnimalName}"/>
+                                        </TextBlock>
+                                        <TextBlock>
+                                            <Run Text="Race : "></Run>
+                                            <Run Text="{Binding Breed}"/>
+                                        </TextBlock>
+                                        <TextBlock>
+                                            <Run Text="Espece : "></Run>
+                                            <Run Text="{Binding Species}"/>
+                                        </TextBlock>
+                                        <TextBlock>
+                                            <Run Text="Description : "></Run>
+                                            <Run Text="{Binding Description}"/>
+                                        </TextBlock>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        <Button Grid.Row="2" HorizontalAlignment="Center" FontSize="20" Command="{Binding Suppression}">Supprimer</Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Frame>
+</Page>
+
