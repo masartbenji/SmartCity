@@ -155,6 +155,7 @@ namespace SmartCity3.Controllers
             }
             return BadRequest();
         }
+        //pas important
         [HttpGet("Announcement/{userName}")]
         public async Task<IActionResult> GetAnnouncementForUser(string userName)
         {
