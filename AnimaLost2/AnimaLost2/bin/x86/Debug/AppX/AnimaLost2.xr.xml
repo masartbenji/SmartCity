@@ -2,8 +2,23 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Suppression" />
-    <RootPropertyPathName Name="ApplicationUser" />
-    <RootPropertyPathName Name="SelectUser" />
+    <RootPropertyPathName Name="Announcement" />
+    <RootPropertyPathName Name="SelectAnnounce" />
+    <RootPropertyPathName Name="IdAnimal" />
+    <RootPropertyPathName Name="IdBreed" />
+    <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="IdStatus" />
+    <RootPropertyPathName Name="State" />
+    <RootPropertyPathName Name="CoordY" />
+    <RootPropertyPathName Name="CoordX" />
+    <RootPropertyPathName Name="Description" />
+    <RootPropertyPathName Name="Date" />
+    <RootPropertyPathName Name="Id" />
+    <RootPropertyPathName Name="NbAnnonceUser" />
+    <RootPropertyPathName Name="PhoneUser" />
+    <RootPropertyPathName Name="EmailUser" />
+    <RootPropertyPathName Name="UserID" />
+    <RootPropertyPathName Name="GoBackHome" />
     <RootPropertyPathName Name="Login" />
     <RootPropertyPathName Name="SingIn" />
     <RootPropertyPathName Name="Password" />
@@ -18,6 +33,8 @@
     <RootPropertyPathName Name="Creation" />
     <RootPropertyPathName Name="TypeUser" />
     <RootPropertyPathName Name="UserManagement" />
+    <RootPropertyPathName Name="ApplicationUser" />
+    <RootPropertyPathName Name="SelectUser" />
     <RootPropertyPathName Name="Phone" />
     <RootPropertyPathName Name="UserName" />
     <RootPropertyPathName Name="SearchBt" />
@@ -61,11 +78,11 @@
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
       <RootProperty Name="Background" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Resources" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Orientation" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
@@ -75,8 +92,8 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedItem" />
-      <RootProperty Name="ItemTemplate" />
       <RootProperty Name="SelectionMode" />
+      <RootProperty Name="ItemTemplate" />
       <RootProperty Name="ItemContainerStyle" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
@@ -98,7 +115,22 @@
       <RootProperty Name="Source" />
       <RootProperty Name="Path" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Name" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Margin" />
     </RootType>
@@ -111,16 +143,7 @@
       <RootProperty Name="Value" />
     </RootType>
     <RootType FullName="AnimaLost2.GestionAnnonce" />
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Text" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="TextAlignment" />
-      <RootProperty Name="Inlines" />
-      <RootProperty Name="Name" />
-    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
@@ -145,12 +168,6 @@
     <RootType FullName="AnimaLost2.ModificationUser" />
     <RootType FullName="AnimaLost2.NewUser" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
-    <RootType FullName="Windows.UI.Xaml.DataTemplate">
-      <RootProperty Name="Template" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.Run">
-      <RootProperty Name="Text" />
-    </RootType>
     <RootType FullName="AnimaLost2.UserManagement" />
   </Roots.RootTypes>
 </Roots>

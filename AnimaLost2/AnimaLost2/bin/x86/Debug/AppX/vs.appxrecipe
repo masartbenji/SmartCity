@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-07T09:12:47.770</Modified>
+      <Modified>2018-01-07T11:38:53.875</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.exe">
       <PackagePath>entrypoint\AnimaLost2.exe</PackagePath>
-      <Modified>2018-01-07T09:12:45.825</Modified>
+      <Modified>2018-01-07T11:38:52.629</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ruben\.nuget\packages\commonservicelocator\1.3.0\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
@@ -587,7 +587,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.xr.xml">
       <PackagePath>AnimaLost2.xr.xml</PackagePath>
-      <Modified>2018-01-07T09:12:45.593</Modified>
+      <Modified>2018-01-07T11:38:52.384</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -596,11 +596,11 @@
     <AppxPackagedFile Include="C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-07T09:12:47.267</Modified>
+      <Modified>2018-01-07T11:38:53.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AnimaLost2.exe">
       <PackagePath>AnimaLost2.exe</PackagePath>
-      <Modified>2018-01-07T09:12:47.753</Modified>
+      <Modified>2018-01-07T11:38:53.865</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

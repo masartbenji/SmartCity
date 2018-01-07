@@ -1,8 +1,10 @@
-﻿using GalaSoft.MvvmLight;
+﻿using AnimaLost2.Model;
+using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Views;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -16,19 +18,89 @@ namespace AnimaLost2.ViewModel
     {
         private INavigationService navPage;
         private ICommand goBackHome;
+        private ICommand suppression;
         private string userID;
         private string emailUser;
-
-
+        private int nbAnnonceUser;
+        private int phoneUser;
+        private ObservableCollection<Announcement> announcement;
+        private Announcement selectAnnounce;
 
         public GestionAnnonceViewModel(INavigationService lg)
         {
             navPage = lg;
+            Announcement = new ObservableCollection<Announcement>();
+            InitializeAsync();
+        }
+        public void InitializeAsync()
+        {
+            //init
 
         }
+
+
         public void OnNavigatedTo(NavigationEventArgs e)
         {
+            ApplicationUser user = (ApplicationUser)e.Parameter;
+            UserID = user.UserName;
+            EmailUser = user.Email;
+            PhoneUser = user.Phone;
+            NbAnnonceUser = nbAnnonce(user);
+        }
+        public int nbAnnonce(ApplicationUser user)
+        {
+           // REcherche le nb annonce;
+            return 1;
+        }
+        private ObservableCollection<Announcement> Announcement
+        {
+            get
+            {
+                return announcement;
+            }
+            set
+            {
+                if (announcement != null)
+                {
+                    return;
+                }
+                announcement = value;
+                RaisePropertyChanged("Announcement");
+            }
+        }
+        public Announcement SelectAnnounce
+        {
+            get
+            {
+                return selectAnnounce;
+            }
+            set
+            {
+                selectAnnounce = value;
+                if (selectAnnounce != null)
+                {
+                    RaisePropertyChanged("SelectAnnounce");
+                }
+            }
+        }
 
+        public ICommand Suppression
+        {
+            get
+            {
+                if (suppression == null)
+                {
+                    suppression = new RelayCommand(() => DeleteAnnouncement(SelectAnnounce.Id));
+                }
+                return suppression;
+
+            }
+
+
+        }
+        public void DeleteAnnouncement(int id)
+        {
+            // effacer la liste et faire un refresh 
         }
 
         public ICommand GoBackHome
@@ -67,7 +139,30 @@ namespace AnimaLost2.ViewModel
                 RaisePropertyChanged("EmailUser");
             }
         }
-
+        public int NbAnnonceUser
+        {
+            get
+            {
+                return nbAnnonceUser;
+            }
+            set
+            {
+                nbAnnonceUser = value;
+                RaisePropertyChanged("NbAnnonceUser");
+            }
+        }
+        public int PhoneUser
+        {
+            get
+            {
+                return phoneUser;
+            }
+            set
+            {
+                phoneUser = value;
+                RaisePropertyChanged("PhoneUser");
+            }
+        }
 
         public void Home()
         {
