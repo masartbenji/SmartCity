@@ -51,7 +51,7 @@
                             <TextBox  Text="{Binding Search}" Background="Azure" BorderThickness="2" BorderBrush="Black" Width="150"></TextBox>
                             <Button Command="{Binding SearchBt}" Content="Recherche" Background="Azure" BorderThickness="2" BorderBrush="Black" />
                         </StackPanel>
-                        <ListView Grid.Row="1" ItemsSource="{Binding ApplicationUser,Mode=TwoWay}" SelectedItem="{Binding SelectUser,Mode=TwoWay}" >
+                        <ListView Grid.Row="1" ItemsSource="{Binding ApplicationUser,Mode=TwoWay}" SelectedItem="{Binding SelectUser,Mode=TwoWay}" SelectionMode="Single">
                             <ListView.ItemContainerStyle>
                                 <Style TargetType="ListViewItem">
                                     <Setter Property="HorizontalContentAlignment" Value="Stretch"/>

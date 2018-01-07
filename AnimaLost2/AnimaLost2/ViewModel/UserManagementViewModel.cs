@@ -114,7 +114,10 @@ namespace AnimaLost2.ViewModel
         }
         public void ModificationUser()
         {
-            navPage.NavigateTo("ModificationUser");//RAjouter le user de la liste comme objet 
+            if(SelectUser != null)
+            {
+                navPage.NavigateTo("ModificationUser", SelectUser);
+            }
         }
         public void ManagementUser()
         {
@@ -125,34 +128,48 @@ namespace AnimaLost2.ViewModel
         {
             if (Search != null)
             {
-                //REcherche et garnir la listview avec 
+                
+                ApplicationUser.Clear();
+                try
+                {
 
+                    //ApplicationUser.Add(ELEMENT RECHERHCE);
+                }
+                catch
+                {
 
-                // Effacer la liste 
-                //ApplicationUser.Clear();
-                //ApplicationUser.Add(ELEMENT RECHERHCE);
+                }
+                
+                
+                
             }
         }
 
 
         public void SuppressionUser() {
 
-           //    SelectUser
+           if(SelectUser != null)
+            {
+                navPage.NavigateTo("GestionAnnonce", SelectUser);
 
-
-
-
-
+            }
         }
         public UserManagementViewModel(INavigationService lg)
         {
             navPage = lg;
-        }
-        public void OnNavigatedTo(NavigationEventArgs e)
-        {
-            accueil = "Bienvenue " + (string)e.Parameter + " !";
             ApplicationUser = new ObservableCollection<ApplicationUser>();
             InitializeAsync();
+        }
+        // 2eme constructeur si on arrive d un autre page on perd le user pas grave a voir 
+
+        public void OnNavigatedTo(NavigationEventArgs e)
+        {   
+            accueil = "Bienvenue " + (string)e.Parameter + " !";
+            
+        }
+        public void OnNavigatedTo()
+        {
+            accueil = "Bienvenue";
         }
 
         private ObservableCollection<ApplicationUser> applicationUser;

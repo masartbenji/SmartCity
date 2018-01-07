@@ -511,3 +511,4 @@ C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2
 C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.en-us.resfiles.intermediate
 C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\GalaSoft.MvvmLight.Platform.pri.xml
 C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csprojResolveAssemblyReference.cache
