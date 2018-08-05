@@ -17,7 +17,10 @@ namespace AnimaLost2.Model
 
         public static ApplicationUser Deserialize(string json)
         {
+<<<<<<< HEAD
             
+=======
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
             if (json.StartsWith("[{") || json.EndsWith("}]"))
             {
                 var split = json.Split(',', '"', '{', '}', '[', ']');
@@ -62,11 +65,14 @@ namespace AnimaLost2.Model
             }
             
         }   
+<<<<<<< HEAD
         public static string GetRoleUser(string json)
         {
             var split = json.Split('[',']'); ;
             
             return split[1].TrimStart('"').TrimEnd('"');
         }
+=======
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
     }
 }

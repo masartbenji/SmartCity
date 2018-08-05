@@ -5,8 +5,12 @@
     xmlns:local="using:AnimaLost2"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+<<<<<<< HEAD
     mc:Ignorable="d"
     DataContext="{Binding Source={StaticResource Locator}, Path=GestionAnnonce}">
+=======
+    mc:Ignorable="d">
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
 
     <Frame Margin="10,0,0,0">
 
@@ -33,6 +37,7 @@
                                 <Setter Property="FontSize" Value="20"/>
                             </Style>
                         </StackPanel.Resources>
+<<<<<<< HEAD
                         <TextBlock Grid.Column="0"  >
                                         <Run Text="Pseudo :"></Run>
                                         <Run Text="{Binding UserID, Mode=TwoWay}"></Run>
@@ -50,6 +55,13 @@
                                         <Run Text="{Binding NbAnnonceUser,Mode=TwoWay}"></Run>
                         </TextBlock>
 
+=======
+                        <TextBlock Text="{Binding UserID}"/>
+                        <TextBlock Text="{Binding EmailUser}"/>
+                        <TextBlock Text="{Binding PhonneUser}"/>
+                        <TextBlock Text="{Binding NbAnnonceUser}"/>
+                       
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                     </StackPanel>
                     <Grid Grid.Column="1" >
                         <Grid.RowDefinitions>

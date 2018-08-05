@@ -26,5 +26,13 @@ namespace AnimaLost2
         {
             this.InitializeComponent();
         }
+<<<<<<< HEAD
+=======
+
+        private void mySearchBox_QueryChanged(SearchBox sender, SearchBoxQueryChangedEventArgs args)
+        {
+
+        }
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
     }
 }

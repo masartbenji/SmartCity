@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Collections.ObjectModel;
+=======
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +22,7 @@ namespace AnimaLost2.Model
 
         public Animal IdAnimalNavigation { get; set; }
         public Status IdStatusNavigation { get; set; }
+<<<<<<< HEAD
         public static ObservableCollection<Announcement> Deserialize(string json)
         {
             ObservableCollection<Announcement> announcements = new ObservableCollection<Announcement>();
@@ -39,5 +43,7 @@ namespace AnimaLost2.Model
             }
             return announcements;
         }
+=======
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
     }
 }

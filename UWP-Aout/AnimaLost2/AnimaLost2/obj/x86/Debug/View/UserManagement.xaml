@@ -16,7 +16,11 @@
                     <RowDefinition Height="9*"/>
                     <RowDefinition Height="1*" />
                 </Grid.RowDefinitions>
+<<<<<<< HEAD
                     <TextBlock x:ConnectionId='1' FontSize="22" Name="accueil" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Accueil}"></TextBlock>
+=======
+                    <TextBlock x:ConnectionId='1' FontSize="22" Name="acceuil" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Accueil}"></TextBlock>
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                     <Grid Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
@@ -44,9 +48,14 @@
                 </Grid.RowDefinitions>
                 <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
                         <Grid Background="{StaticResource   SystemControlChromeMediumAcrylicWindowMediumBrush}">
+<<<<<<< HEAD
                             <TextBlock Margin="20,2" Text="Recherche" Foreground="{StaticResource ButtonPointerOverForegroundThemeBrush}" Visibility="{Binding ElementName=txtUserEntry, Path=Text}" />
                             <TextBox x:ConnectionId='2' Name="txtUserEntry" Background="Transparent" BorderBrush="{StaticResource  ButtonPointerOverForegroundThemeBrush}" Text="{Binding SearchBox_QuerySubmitted, Mode=TwoWay}" />
                  
+=======
+                            <TextBlock Margin="20,2" Text="Research" Foreground="{StaticResource ButtonPointerOverForegroundThemeBrush}" Visibility="{Binding ElementName=txtUserEntry, Path=Text}" />
+                            <TextBox x:ConnectionId='2' Name="txtUserEntry" Background="Transparent" BorderBrush="{StaticResource  ButtonPointerOverForegroundThemeBrush}" Text="{Binding testResearch}" />
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                         </Grid>
                     
                     </StackPanel>
@@ -88,8 +97,12 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+<<<<<<< HEAD
                 <Button Grid.Row="2"  HorizontalAlignment="Center" FontSize="20" Command="{Binding Suppression}">Supprimer</Button>
                     <Button Grid.Row="2"  HorizontalAlignment="Left" Margin="20" FontSize="20" Command="{Binding RefreshList}">Rafraichir</Button>
+=======
+                <Button Grid.Row="2" HorizontalAlignment="Center" FontSize="20" Command="{Binding Suppression}">Supprimer</Button>
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
 
 
             </Grid>

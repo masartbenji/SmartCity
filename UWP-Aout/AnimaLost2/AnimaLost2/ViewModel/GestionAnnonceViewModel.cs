@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using AnimaLost2.Model;
 using AnimaLost2.Static;
 using GalaSoft.MvvmLight;
@@ -8,6 +9,12 @@ using System.ComponentModel;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+=======
+﻿using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Views;
+using System.ComponentModel;
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
 using System.Windows.Input;
 using Windows.UI.Xaml.Navigation;
 
@@ -19,6 +26,7 @@ namespace AnimaLost2.ViewModel
         private ICommand goBackHome;
         private string userID;
         private string emailUser;
+<<<<<<< HEAD
         private string phone;
         private int nbAnnouncement;
         private ObservableCollection<Announcement> announcements;
@@ -44,6 +52,13 @@ namespace AnimaLost2.ViewModel
         {
             Announcements = await GetAnnouncementsUser();
         }
+=======
+
+        public GestionAnnonceViewModel(INavigationService lg)
+        {
+            navPage = lg;
+        }
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
         public void OnNavigatedTo(NavigationEventArgs e)
         {
 
@@ -64,7 +79,10 @@ namespace AnimaLost2.ViewModel
         {
             get
             {
+<<<<<<< HEAD
                 userID = SelectedUser.User.UserName;
+=======
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                 return userID;
             }
             set
@@ -77,7 +95,10 @@ namespace AnimaLost2.ViewModel
         {
             get
             {
+<<<<<<< HEAD
                 emailUser = SelectedUser.User.Email;
+=======
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                 return emailUser;
             }
             set
@@ -86,6 +107,7 @@ namespace AnimaLost2.ViewModel
                 RaisePropertyChanged("EmailUser");
             }
         }
+<<<<<<< HEAD
         public string PhoneUser
         {
             get
@@ -111,6 +133,8 @@ namespace AnimaLost2.ViewModel
                 RaisePropertyChanged("NbAnnonceUser");
             }
         }
+=======
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
         private ICommand refreshList;
         public ICommand RefreshList
         {
@@ -131,6 +155,7 @@ namespace AnimaLost2.ViewModel
         {
             navPage.NavigateTo("UserManagement");
         }
+<<<<<<< HEAD
         public async Task<ObservableCollection<Announcement>> GetAnnouncementsUser()
         {
             ObservableCollection<Announcement> announcements = new ObservableCollection<Announcement>();
@@ -151,5 +176,7 @@ namespace AnimaLost2.ViewModel
             }
             return Announcements;
         }
+=======
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
     }
 }

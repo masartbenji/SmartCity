@@ -1,10 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+<<<<<<< HEAD
     <RootPropertyPathName Name="GestionAnnonce" />
     <RootPropertyPathName Name="Suppression" />
     <RootPropertyPathName Name="NbAnnonceUser" />
     <RootPropertyPathName Name="PhoneUser" />
+=======
+    <RootPropertyPathName Name="Suppression" />
+    <RootPropertyPathName Name="NbAnnonceUser" />
+    <RootPropertyPathName Name="PhonneUser" />
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
     <RootPropertyPathName Name="EmailUser" />
     <RootPropertyPathName Name="UserID" />
     <RootPropertyPathName Name="GoBackHome" />
@@ -15,6 +21,10 @@
     <RootPropertyPathName Name="ULogin" />
     <RootPropertyPathName Name="ModificationUser" />
     <RootPropertyPathName Name="Cancel" />
+<<<<<<< HEAD
+=======
+    <RootPropertyPathName Name="Supp" />
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
     <RootPropertyPathName Name="Modif" />
     <RootPropertyPathName Name="Tel" />
     <RootPropertyPathName Name="Email" />
@@ -23,17 +33,28 @@
     <RootPropertyPathName Name="TypeUser" />
     <RootPropertyPathName Name="UserManagement" />
     <RootPropertyPathName Name="IsPaneOpen" />
+<<<<<<< HEAD
+=======
+    <RootPropertyPathName Name="GestionAnnonce" />
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
     <RootPropertyPathName Name="ModifUser" />
     <RootPropertyPathName Name="AjoutUser" />
     <RootPropertyPathName Name="Buttton_hamburger" />
     <RootPropertyPathName Name="Accueil" />
+<<<<<<< HEAD
     <RootPropertyPathName Name="RefreshList" />
+=======
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
     <RootPropertyPathName Name="Users" />
     <RootPropertyPathName Name="SelectUser" />
     <RootPropertyPathName Name="Phone" />
     <RootPropertyPathName Name="RoleName" />
     <RootPropertyPathName Name="UserName" />
+<<<<<<< HEAD
     <RootPropertyPathName Name="SearchBox_QuerySubmitted" />
+=======
+    <RootPropertyPathName Name="testResearch" />
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
     <RootPropertyPathName Name="Text" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -43,6 +64,7 @@
     </RootType>
     <RootType FullName="AnimaLost2.ViewModelLocator" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
+<<<<<<< HEAD
       <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
     </RootType>
@@ -53,6 +75,11 @@
       <RootProperty Name="ElementName" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+=======
+      <RootProperty Name="Content" />
+      <RootProperty Name="DataContext" />
+    </RootType>
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootProperty Name="Margin" />
       <RootProperty Name="Content" />
@@ -103,6 +130,15 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
     </RootType>
+<<<<<<< HEAD
+=======
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="ElementName" />
+    </RootType>
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Margin" />
     </RootType>
@@ -115,6 +151,7 @@
       <RootProperty Name="Value" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+<<<<<<< HEAD
       <RootProperty Name="Inlines" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="VerticalAlignment" />
@@ -130,6 +167,21 @@
       <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="AnimaLost2.GestionAnnonce" />
+=======
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="AnimaLost2.GestionAnnonce" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
@@ -171,6 +223,12 @@
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
+<<<<<<< HEAD
+=======
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
+    </RootType>
+>>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
     <RootType FullName="AnimaLost2.UserManagement" />
   </Roots.RootTypes>
 </Roots>
