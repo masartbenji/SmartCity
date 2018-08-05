@@ -1,0 +1,1298 @@
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csprojResolveAssemblyReference.cache
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\App.g.i.cs
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\App.g.cs
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.g.i.cs
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.g.cs
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.g.i.cs
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.g.cs
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.g.i.cs
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.g.cs
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.g.i.cs
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.g.cs
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.g.i.cs
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.g.cs
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\XamlTypeInfo.g.cs
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.xaml
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.xaml
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.xaml
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.xaml
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\App.xaml
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.xaml
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.xbf
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.xbf
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.xbf
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.xbf
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\App.xbf
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.xbf
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\XamlSaveStateFile.xml
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\App.xbf
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\View\GestionAnnonce.xbf
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\View\Login.xbf
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\View\ModificationUser.xbf
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\View\NewUser.xbf
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\View\UserManagement.xbf
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.xr.xml
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.exe
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.pdb
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\resources.pri
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\AppxManifest.xml
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AnimaLost2.exe
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AppxManifest.xml
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.build.appxrecipe
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.Practices.ServiceLocation.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.Practices.ServiceLocation.pdb
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Formatting.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.CSharp.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Extensions.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Primitives.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.DataAnnotations.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Core.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Numerics.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Web.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Windows.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.Linq.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.Serialization.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.VisualBasic.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Extras.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Extras.pdb
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Platform.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Platform.pdb
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.pdb
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\Newtonsoft.Json.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Tools.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Tracing.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Globalization.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Globalization.Calendars.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Extensions.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Primitives.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Resources.ResourceManager.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Handles.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.InteropServices.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.Encoding.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.Encoding.Extensions.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Timer.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.Win32.Primitives.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Debug.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.FileSystem.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Primitives.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Sockets.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Extensions.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\clrjit.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\clrcompression.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Private.Uri.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.AppContext.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Buffers.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.Concurrent.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.Immutable.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.NonGeneric.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.Specialized.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.Annotations.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.EventBasedAsync.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Data.Common.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Contracts.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.DiagnosticSource.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.StackTrace.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Dynamic.Runtime.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Globalization.Extensions.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.Compression.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.Compression.ZipFile.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.FileSystem.Primitives.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.IsolatedStorage.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.UnmanagedMemoryStream.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.Expressions.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.Parallel.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.Queryable.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Rtc.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.NameResolution.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.NetworkInformation.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Requests.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.WebHeaderCollection.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.WebSockets.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.WebSockets.Client.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Numerics.Vectors.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Numerics.Vectors.WindowsRuntime.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ObjectModel.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Private.DataContractSerialization.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Private.ServiceModel.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Context.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.DispatchProxy.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Emit.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Emit.ILGeneration.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Emit.Lightweight.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Metadata.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.TypeExtensions.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.InteropServices.WindowsRuntime.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Numerics.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Json.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Primitives.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Xml.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.WindowsRuntime.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.WindowsRuntime.UI.Xaml.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Claims.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Algorithms.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Cng.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Encoding.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Primitives.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.X509Certificates.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Principal.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Duplex.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Http.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.NetTcp.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Primitives.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Security.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.Encoding.CodePages.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.RegularExpressions.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Overlapped.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.Dataflow.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.Extensions.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.Parallel.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.ReaderWriter.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XDocument.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XmlDocument.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XmlSerializer.dll
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csproj.CoreCompileInputs.cache
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.exe
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.pdb
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\ResourceHandlingTask.state
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.Microsoft.CSharp.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.Microsoft.VisualBasic.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.InteropServices.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Diagnostics.Debug.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.FileSystem.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Primitives.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Sockets.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Extensions.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Private.Uri.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Buffers.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.Concurrent.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.Immutable.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.NonGeneric.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.Specialized.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.Annotations.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.EventBasedAsync.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Data.Common.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Dynamic.Runtime.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Globalization.Extensions.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.Compression.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.Compression.ZipFile.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.IsolatedStorage.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.UnmanagedMemoryStream.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.Expressions.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.Parallel.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.Queryable.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Http.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.NameResolution.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.NetworkInformation.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Requests.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.WebHeaderCollection.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.WebSockets.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.WebSockets.Client.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Numerics.Vectors.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ObjectModel.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Private.DataContractSerialization.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Private.ServiceModel.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Reflection.DispatchProxy.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Reflection.Metadata.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Numerics.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Serialization.Primitives.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.WindowsRuntime.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.WindowsRuntime.UI.Xaml.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Claims.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Algorithms.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Cng.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Encoding.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Primitives.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.X509Certificates.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Text.Encoding.CodePages.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Text.RegularExpressions.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.Overlapped.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.Tasks.Dataflow.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.Tasks.Parallel.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.ReaderWriter.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.XDocument.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.XmlDocument.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.XmlSerializer.SR.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\Microsoft.Practices.ServiceLocation\en-US\Microsoft.Practices.ServiceLocation.Properties.Resources.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.CommonWebApiResources.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.Resources.resw
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csproj.GenerateResource.Cache
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\priconfig.xml
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\priconfig.xml.intermediate
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\layout.resfiles
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\layout.resfiles.intermediate
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.resfiles
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.resfiles.intermediate
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\pri.resfiles
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\pri.resfiles.intermediate
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\qualifiers.txt
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\qualifiers.txt.intermediate
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.en-us.resfiles
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.en-us.resfiles.intermediate
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\GalaSoft.MvvmLight.Platform.pri.xml
+c:\users\mon pc\source\repos\AnimaLost2\AnimaLost2\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\App.xbf
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\View\GestionAnnonce.xbf
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\View\Login.xbf
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\View\ModificationUser.xbf
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\View\NewUser.xbf
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\View\UserManagement.xbf
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.xr.xml
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.exe
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.pdb
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\resources.pri
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\AppxManifest.xml
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AnimaLost2.exe
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AppxManifest.xml
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.build.appxrecipe
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Formatting.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.CSharp.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Extensions.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Primitives.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Core.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Numerics.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Web.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Windows.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.Linq.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.Serialization.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.VisualBasic.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Tools.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Tracing.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Globalization.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Globalization.Calendars.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Extensions.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Primitives.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Resources.ResourceManager.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Handles.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.InteropServices.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.Encoding.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.Encoding.Extensions.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Timer.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Console.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Debug.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.FileSystem.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Primitives.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Sockets.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Extensions.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\clrjit.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\clrcompression.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Private.Uri.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.AppContext.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Buffers.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.Concurrent.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.Immutable.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.NonGeneric.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.Specialized.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.Primitives.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.TypeConverter.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Data.Common.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Contracts.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.StackTrace.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Dynamic.Runtime.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Globalization.Extensions.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.Compression.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.IsolatedStorage.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.UnmanagedMemoryStream.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.Expressions.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.Parallel.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.Queryable.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Rtc.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.NameResolution.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.NetworkInformation.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Requests.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.WebHeaderCollection.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.WebSockets.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.WebSockets.Client.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Numerics.Vectors.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Numerics.Vectors.WindowsRuntime.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ObjectModel.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Private.DataContractSerialization.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Private.ServiceModel.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Context.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.DispatchProxy.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Emit.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Emit.ILGeneration.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Emit.Lightweight.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Metadata.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.TypeExtensions.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.InteropServices.WindowsRuntime.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Numerics.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Formatters.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Json.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Xml.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.WindowsRuntime.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.WindowsRuntime.UI.Xaml.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Claims.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Cng.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Principal.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Duplex.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Http.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.NetTcp.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Primitives.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Security.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.RegularExpressions.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Overlapped.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.Parallel.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.ReaderWriter.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XDocument.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XmlDocument.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XmlSerializer.dll
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\App.g.i.cs
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\App.g.cs
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.g.i.cs
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.g.cs
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.g.i.cs
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.g.cs
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.g.i.cs
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.g.cs
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.g.i.cs
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.g.cs
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.g.i.cs
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.g.cs
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\App.xaml
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.xaml
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.xaml
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.xaml
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.xaml
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.xaml
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\App.xbf
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.xbf
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.xbf
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.xbf
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.xbf
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.xbf
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csproj.CoreCompileInputs.cache
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.exe
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.pdb
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\ResourceHandlingTask.state
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.Microsoft.CSharp.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.Microsoft.VisualBasic.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.InteropServices.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Console.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Diagnostics.Debug.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.FileSystem.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Primitives.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Sockets.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Extensions.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Private.Uri.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Buffers.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.Concurrent.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.Immutable.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.NonGeneric.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.Specialized.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.Annotations.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.EventBasedAsync.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.Primitives.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.TypeConverter.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Data.Common.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Dynamic.Runtime.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Globalization.Extensions.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.Compression.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.Compression.ZipFile.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.IsolatedStorage.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.UnmanagedMemoryStream.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.Expressions.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.Parallel.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.Queryable.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Http.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.NameResolution.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.NetworkInformation.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Requests.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.WebHeaderCollection.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.WebSockets.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.WebSockets.Client.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Numerics.Vectors.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ObjectModel.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Private.DataContractSerialization.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Private.ServiceModel.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Reflection.DispatchProxy.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Reflection.Metadata.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.InteropServices.RuntimeInformation.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Numerics.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Serialization.Formatters.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Serialization.Primitives.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.WindowsRuntime.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.WindowsRuntime.UI.Xaml.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Claims.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Algorithms.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Cng.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Encoding.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Primitives.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.X509Certificates.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Text.Encoding.CodePages.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Text.RegularExpressions.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.Overlapped.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.Tasks.Dataflow.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.Tasks.Parallel.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.ReaderWriter.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.XDocument.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.XmlDocument.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.XmlSerializer.SR.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\Microsoft.Practices.ServiceLocation\en-US\Microsoft.Practices.ServiceLocation.Properties.Resources.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.CommonWebApiResources.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.Resources.resw
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csproj.GenerateResource.Cache
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\priconfig.xml
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\priconfig.xml.intermediate
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\layout.resfiles
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\layout.resfiles.intermediate
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.resfiles
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.resfiles.intermediate
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\pri.resfiles
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\pri.resfiles.intermediate
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\qualifiers.txt
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\qualifiers.txt.intermediate
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.en-us.resfiles
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.en-us.resfiles.intermediate
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\GalaSoft.MvvmLight.Platform.pri.xml
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Ruben\Desktop\007\02 animal lost\SmartCity-master\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csprojResolveAssemblyReference.cache
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\App.xbf
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\View\GestionAnnonce.xbf
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\View\Login.xbf
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\View\ModificationUser.xbf
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\View\NewUser.xbf
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\View\UserManagement.xbf
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.xr.xml
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.exe
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.pdb
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\resources.pri
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\AppxManifest.xml
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AnimaLost2.exe
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AppxManifest.xml
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.build.appxrecipe
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Formatting.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.CSharp.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Extensions.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Primitives.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Core.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Numerics.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Web.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Windows.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.Linq.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.Serialization.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.VisualBasic.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Tools.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Tracing.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Globalization.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Globalization.Calendars.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Extensions.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Primitives.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Resources.ResourceManager.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Handles.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.InteropServices.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.Encoding.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.Encoding.Extensions.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Timer.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Console.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Debug.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.FileSystem.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Primitives.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Sockets.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Extensions.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\clrjit.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\clrcompression.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Private.Uri.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.AppContext.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Buffers.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.Concurrent.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.Immutable.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.NonGeneric.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.Specialized.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.Primitives.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.TypeConverter.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Data.Common.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Contracts.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.StackTrace.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Dynamic.Runtime.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Globalization.Extensions.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.Compression.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.IsolatedStorage.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.UnmanagedMemoryStream.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.Expressions.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.Parallel.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.Queryable.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Rtc.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.NameResolution.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.NetworkInformation.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Requests.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.WebHeaderCollection.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.WebSockets.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.WebSockets.Client.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Numerics.Vectors.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Numerics.Vectors.WindowsRuntime.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ObjectModel.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Private.DataContractSerialization.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Private.ServiceModel.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Context.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.DispatchProxy.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Emit.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Emit.ILGeneration.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Emit.Lightweight.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Metadata.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.TypeExtensions.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.InteropServices.WindowsRuntime.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Numerics.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Formatters.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Json.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Xml.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.WindowsRuntime.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.WindowsRuntime.UI.Xaml.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Claims.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Cng.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Principal.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Duplex.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Http.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.NetTcp.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Primitives.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Security.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.RegularExpressions.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Overlapped.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.Parallel.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.ReaderWriter.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XDocument.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XmlDocument.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XmlSerializer.dll
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csprojResolveAssemblyReference.cache
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\App.g.i.cs
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\App.g.cs
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.g.i.cs
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.g.cs
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.g.i.cs
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.g.cs
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.g.i.cs
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.g.cs
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.g.i.cs
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.g.cs
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.g.i.cs
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.g.cs
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\App.xaml
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.xaml
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.xaml
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.xaml
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.xaml
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.xaml
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\App.xbf
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.xbf
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.xbf
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.xbf
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.xbf
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.xbf
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csproj.CoreCompileInputs.cache
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.exe
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.pdb
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\ResourceHandlingTask.state
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.Microsoft.CSharp.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.Microsoft.VisualBasic.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.InteropServices.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Console.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Diagnostics.Debug.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.FileSystem.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Primitives.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Sockets.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Extensions.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Private.Uri.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Buffers.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.Concurrent.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.Immutable.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.NonGeneric.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.Specialized.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.Annotations.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.EventBasedAsync.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.Primitives.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.TypeConverter.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Data.Common.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Dynamic.Runtime.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Globalization.Extensions.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.Compression.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.Compression.ZipFile.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.IsolatedStorage.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.UnmanagedMemoryStream.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.Expressions.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.Parallel.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.Queryable.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Http.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.NameResolution.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.NetworkInformation.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Requests.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.WebHeaderCollection.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.WebSockets.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.WebSockets.Client.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Numerics.Vectors.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ObjectModel.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Private.DataContractSerialization.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Private.ServiceModel.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Reflection.DispatchProxy.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Reflection.Metadata.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.InteropServices.RuntimeInformation.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Numerics.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Serialization.Formatters.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Serialization.Primitives.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.WindowsRuntime.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.WindowsRuntime.UI.Xaml.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Claims.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Algorithms.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Cng.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Encoding.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Primitives.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.X509Certificates.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Text.Encoding.CodePages.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Text.RegularExpressions.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.Overlapped.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.Tasks.Dataflow.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.Tasks.Parallel.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.ReaderWriter.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.XDocument.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.XmlDocument.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.XmlSerializer.SR.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\Microsoft.Practices.ServiceLocation\en-US\Microsoft.Practices.ServiceLocation.Properties.Resources.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.CommonWebApiResources.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.Resources.resw
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csproj.GenerateResource.Cache
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\priconfig.xml
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\priconfig.xml.intermediate
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\layout.resfiles
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\layout.resfiles.intermediate
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.resfiles
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.resfiles.intermediate
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\pri.resfiles
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\pri.resfiles.intermediate
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\qualifiers.txt
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\qualifiers.txt.intermediate
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.en-us.resfiles
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.en-us.resfiles.intermediate
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\GalaSoft.MvvmLight.Platform.pri.xml
+C:\Users\Mon PC\Desktop\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csprojAssemblyReference.cache
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\App.g.i.cs
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\App.g.cs
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.g.i.cs
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.g.cs
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.g.i.cs
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.g.cs
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.g.i.cs
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.g.cs
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.g.i.cs
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.g.cs
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.g.i.cs
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.g.cs
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\App.xaml
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.xaml
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.xaml
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.xaml
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.xaml
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.xaml
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\App.xbf
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.xbf
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.xbf
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.xbf
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.xbf
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.xbf
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csproj.CoreCompileInputs.cache
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\App.xbf
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\View\GestionAnnonce.xbf
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\View\Login.xbf
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\View\ModificationUser.xbf
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\View\NewUser.xbf
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\View\UserManagement.xbf
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.xr.xml
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.exe
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.pdb
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\resources.pri
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\AppxManifest.xml
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AnimaLost2.exe
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AppxManifest.xml
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.build.appxrecipe
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Formatting.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.CSharp.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Extensions.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Primitives.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Core.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Numerics.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Web.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Windows.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.Linq.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.Serialization.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.VisualBasic.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Tools.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Tracing.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Globalization.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Globalization.Calendars.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Extensions.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Primitives.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Resources.ResourceManager.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Handles.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.InteropServices.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.Encoding.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.Encoding.Extensions.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Timer.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Console.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Debug.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.FileSystem.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Primitives.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Sockets.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Extensions.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\clrjit.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\clrcompression.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Private.Uri.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.AppContext.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Buffers.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.Concurrent.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.Immutable.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.NonGeneric.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.Specialized.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.Primitives.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.TypeConverter.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Data.Common.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Contracts.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.StackTrace.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Dynamic.Runtime.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Globalization.Extensions.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.Compression.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.IsolatedStorage.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.UnmanagedMemoryStream.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.Expressions.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.Parallel.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.Queryable.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Rtc.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.NameResolution.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.NetworkInformation.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Requests.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.WebHeaderCollection.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.WebSockets.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.WebSockets.Client.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Numerics.Vectors.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Numerics.Vectors.WindowsRuntime.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ObjectModel.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Private.DataContractSerialization.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Private.ServiceModel.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Context.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.DispatchProxy.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Emit.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Emit.ILGeneration.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Emit.Lightweight.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Metadata.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.TypeExtensions.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.InteropServices.WindowsRuntime.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Numerics.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Formatters.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Json.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Xml.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.WindowsRuntime.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.WindowsRuntime.UI.Xaml.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Claims.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Cng.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Principal.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Duplex.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Http.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.NetTcp.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Primitives.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Security.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.RegularExpressions.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Overlapped.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.Parallel.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.ReaderWriter.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XDocument.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XmlDocument.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XmlSerializer.dll
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csproj.CopyComplete
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.exe
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.pdb
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\ResourceHandlingTask.state
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.Microsoft.CSharp.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.Microsoft.VisualBasic.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.InteropServices.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Console.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Diagnostics.Debug.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.FileSystem.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Primitives.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Sockets.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Extensions.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Private.Uri.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Buffers.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.Concurrent.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.Immutable.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.NonGeneric.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.Specialized.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.Annotations.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.EventBasedAsync.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.Primitives.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.TypeConverter.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Data.Common.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Dynamic.Runtime.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Globalization.Extensions.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.Compression.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.Compression.ZipFile.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.IsolatedStorage.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.UnmanagedMemoryStream.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.Expressions.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.Parallel.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.Queryable.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Http.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.NameResolution.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.NetworkInformation.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Requests.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.WebHeaderCollection.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.WebSockets.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.WebSockets.Client.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Numerics.Vectors.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ObjectModel.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Private.DataContractSerialization.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Private.ServiceModel.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Reflection.DispatchProxy.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Reflection.Metadata.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.InteropServices.RuntimeInformation.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Numerics.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Serialization.Formatters.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Serialization.Primitives.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.WindowsRuntime.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.WindowsRuntime.UI.Xaml.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Claims.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Algorithms.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Cng.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Encoding.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Primitives.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.X509Certificates.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Text.Encoding.CodePages.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Text.RegularExpressions.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.Overlapped.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.Tasks.Dataflow.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.Tasks.Parallel.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.ReaderWriter.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.XDocument.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.XmlDocument.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.XmlSerializer.SR.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.CommonWebApiResources.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.Resources.resw
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csproj.GenerateResource.Cache
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\priconfig.xml
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\priconfig.xml.intermediate
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\layout.resfiles
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\layout.resfiles.intermediate
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.resfiles
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.resfiles.intermediate
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\pri.resfiles
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\pri.resfiles.intermediate
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\qualifiers.txt
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\qualifiers.txt.intermediate
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.en-us.resfiles
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.en-us.resfiles.intermediate
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\GalaSoft.MvvmLight.Platform.pri.xml
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\CommonServiceLocator.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\App.xbf
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\View\GestionAnnonce.xbf
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\View\Login.xbf
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\View\ModificationUser.xbf
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\View\NewUser.xbf
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\View\UserManagement.xbf
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.xr.xml
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.exe
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.pdb
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\resources.pri
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\AppxManifest.xml
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AnimaLost2.exe
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AppxManifest.xml
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.build.appxrecipe
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\CommonServiceLocator.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Formatting.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.CSharp.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Extensions.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Primitives.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.DataAnnotations.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Core.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Numerics.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Web.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Windows.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.Linq.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.Serialization.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.VisualBasic.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Extras.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Extras.pdb
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Platform.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.Platform.pdb
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\GalaSoft.MvvmLight.pdb
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Newtonsoft.Json.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Tools.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Tracing.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Globalization.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Globalization.Calendars.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Extensions.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Primitives.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Resources.ResourceManager.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Handles.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.InteropServices.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.Encoding.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.Encoding.Extensions.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Timer.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Microsoft.Win32.Primitives.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Console.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Debug.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.FileSystem.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Primitives.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Sockets.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Extensions.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\clrjit.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\clrcompression.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Private.Uri.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.AppContext.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Buffers.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.Concurrent.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.Immutable.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.NonGeneric.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Collections.Specialized.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.Annotations.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.EventBasedAsync.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.Primitives.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ComponentModel.TypeConverter.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Data.Common.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.Contracts.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.DiagnosticSource.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Diagnostics.StackTrace.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Dynamic.Runtime.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Globalization.Extensions.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.Compression.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.Compression.ZipFile.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.FileSystem.Primitives.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.IsolatedStorage.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.IO.UnmanagedMemoryStream.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.Expressions.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.Parallel.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Linq.Queryable.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Http.Rtc.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.NameResolution.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.NetworkInformation.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.Requests.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.WebHeaderCollection.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.WebSockets.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Net.WebSockets.Client.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Numerics.Vectors.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Numerics.Vectors.WindowsRuntime.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ObjectModel.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Private.DataContractSerialization.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Private.ServiceModel.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Context.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.DispatchProxy.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Emit.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Emit.ILGeneration.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Emit.Lightweight.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.Metadata.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Reflection.TypeExtensions.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.InteropServices.WindowsRuntime.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Numerics.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Formatters.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Json.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Primitives.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.Serialization.Xml.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.WindowsRuntime.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Runtime.WindowsRuntime.UI.Xaml.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Claims.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Algorithms.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Cng.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Encoding.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.Primitives.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Cryptography.X509Certificates.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Security.Principal.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Duplex.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Http.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.NetTcp.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Primitives.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.ServiceModel.Security.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.Encoding.CodePages.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Text.RegularExpressions.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Overlapped.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.Dataflow.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.Extensions.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Threading.Tasks.Parallel.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.ReaderWriter.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XDocument.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XmlDocument.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XmlSerializer.dll
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csprojAssemblyReference.cache
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\App.g.i.cs
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\App.g.cs
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.g.i.cs
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.g.cs
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.g.i.cs
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.g.cs
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.g.i.cs
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.g.cs
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.g.i.cs
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.g.cs
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.g.i.cs
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.g.cs
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\XamlTypeInfo.g.cs
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\App.xaml
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.xaml
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.xaml
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.xaml
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.xaml
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.xaml
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\App.xbf
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.xbf
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\Login.xbf
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\ModificationUser.xbf
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\NewUser.xbf
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\UserManagement.xbf
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\XamlSaveStateFile.xml
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csproj.CoreCompileInputs.cache
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csproj.CopyComplete
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.exe
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.pdb
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\ResourceHandlingTask.state
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.Microsoft.CSharp.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.Microsoft.VisualBasic.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.InteropServices.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Console.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Diagnostics.Debug.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.FileSystem.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Primitives.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Sockets.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Extensions.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Private.Uri.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Buffers.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.Concurrent.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.Immutable.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.NonGeneric.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Collections.Specialized.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.Annotations.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.EventBasedAsync.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.Primitives.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ComponentModel.TypeConverter.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Data.Common.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Dynamic.Runtime.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Globalization.Extensions.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.Compression.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.Compression.ZipFile.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.IsolatedStorage.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.IO.UnmanagedMemoryStream.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.Expressions.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.Parallel.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Linq.Queryable.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Http.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.NameResolution.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.NetworkInformation.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.Requests.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.WebHeaderCollection.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.WebSockets.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Net.WebSockets.Client.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Numerics.Vectors.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.ObjectModel.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Private.DataContractSerialization.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Private.ServiceModel.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Reflection.DispatchProxy.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Reflection.Metadata.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.InteropServices.RuntimeInformation.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Numerics.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Serialization.Formatters.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.Serialization.Primitives.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.WindowsRuntime.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Runtime.WindowsRuntime.UI.Xaml.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Claims.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Algorithms.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Cng.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Encoding.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.Primitives.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Security.Cryptography.X509Certificates.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Text.Encoding.CodePages.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Text.RegularExpressions.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.Overlapped.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.Tasks.Dataflow.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Threading.Tasks.Parallel.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.ReaderWriter.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.XDocument.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.XmlDocument.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\FxResources.System.Xml.XmlSerializer.SR.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.CommonWebApiResources.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.Resources.resw
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csproj.GenerateResource.Cache
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\priconfig.xml
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\priconfig.xml.intermediate
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\layout.resfiles
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\layout.resfiles.intermediate
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.resfiles
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.resfiles.intermediate
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\pri.resfiles
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\pri.resfiles.intermediate
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\qualifiers.txt
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\qualifiers.txt.intermediate
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.en-us.resfiles
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.en-us.resfiles.intermediate
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\GalaSoft.MvvmLight.Platform.pri.xml
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\ProjectArchitectures.txt

@@ -13118,26 +13118,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mon PC\\.nuget\\packages\\": {},
+    "C:\\Users\\Nicolas\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mon PC\\Desktop\\SmartCity\\api\\SmartCity3\\SmartCity3.csproj",
+      "projectUniqueName": "d:\\Users\\Nicolas\\Downloads\\SmartCity-master (1)\\SmartCity-master\\api\\SmartCity3\\SmartCity3.csproj",
       "projectName": "SmartCity3",
-      "projectPath": "C:\\Users\\Mon PC\\Desktop\\SmartCity\\api\\SmartCity3\\SmartCity3.csproj",
-      "packagesPath": "C:\\Users\\Mon PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mon PC\\Desktop\\SmartCity\\api\\SmartCity3\\obj\\",
+      "projectPath": "d:\\Users\\Nicolas\\Downloads\\SmartCity-master (1)\\SmartCity-master\\api\\SmartCity3\\SmartCity3.csproj",
+      "packagesPath": "C:\\Users\\Nicolas\\.nuget\\packages\\",
+      "outputPath": "d:\\Users\\Nicolas\\Downloads\\SmartCity-master (1)\\SmartCity-master\\api\\SmartCity3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Mon PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nicolas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13161,30 +13158,30 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.All": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
-            "version": "2.0.1"
-          },
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-            "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.1, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "target": "Package",
-            "version": "2.0.1"
-          },
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0.0",
-            "autoReferenced": true
+            "version": "[2.0.1, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
-            "version": "2.0.1"
+            "version": "[2.0.1, )"
           },
-          "Microsoft.AspNetCore.All": {
+          "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.0, )",
+            "autoReferenced": true
+          },
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           }
         },
         "imports": [

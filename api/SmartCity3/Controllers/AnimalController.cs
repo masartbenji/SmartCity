@@ -23,10 +23,11 @@ namespace SmartCity3.Controllers
         }
 
         //GET :api/ApplicationUser
+        [AllowAnonymous]
         [HttpGet]
         public IEnumerable<Animal> GetAnimal()
         {
-            return ctx.Animal;
+            return ctx.Animal.ToList();
         }
 
         //Get: api/ApplicationUser/5

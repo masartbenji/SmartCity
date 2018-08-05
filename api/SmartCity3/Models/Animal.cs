@@ -14,8 +14,7 @@ namespace SmartCity3
 
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Color { get; set; }
-        public string IdBreed { get; set; }
+        public int IdBreed { get; set; }
         public string IdColor { get; set; }
         public string IdUser { get; set; }
 

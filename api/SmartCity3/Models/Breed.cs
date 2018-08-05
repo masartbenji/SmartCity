@@ -9,7 +9,7 @@ namespace SmartCity3
         {
             Animal = new HashSet<Animal>();
         }
-        
+        public int id { get; set; }
         public string Name { get; set; }
         public string IdSpecies { get; set; }
 

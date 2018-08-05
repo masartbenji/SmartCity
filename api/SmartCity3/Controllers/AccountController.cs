@@ -88,7 +88,7 @@ namespace SmartCity3.Controllers
                 return Ok();
             }
         }
-        
+        [AllowAnonymous]
         [HttpDelete("{username}")]
         public async Task<IActionResult> DeleteUsers([FromRoute] string username)
         {
@@ -97,24 +97,33 @@ namespace SmartCity3.Controllers
                 return BadRequest(ModelState);
             }
 
-            var uti = await _context.User.SingleOrDefaultAsync(m => m.UserName == username);
+            ApplicationUser uti = await _context.User.SingleOrDefaultAsync(m => m.UserName == username);
             if (uti == null)
             {
                 return NotFound();
             }
-            var role = await _userManager.GetRolesAsync(uti);
-            await _userManager.RemoveFromRolesAsync(uti,role);
-            foreach(Animal animal in uti.Animal)
+            var role =  await _userManager.GetRolesAsync(uti);
+            var animalList = _context.Animal.Where(ani => ani.IdUser == uti.Id).ToList();
+            foreach(Animal animal in animalList)
             {
+                List<Announcement> announcements = await _context.Announcement.Where(anounc => anounc.IdAnimal == animal.Id).ToListAsync();
+                foreach (Announcement announc in announcements)
+                {
+                    _context.Announcement.Remove(announc);
+                    _context.SaveChanges();
+                }
                 _context.Animal.Remove(animal);
+                _context.SaveChanges();
             }
+            await _userManager.RemoveFromRolesAsync(uti, role);
             _context.User.Remove(uti);
             await _context.SaveChangesAsync();
 
-            return Ok(uti);
+            return Ok();
         }
-        [HttpPut]
-        public async Task<IActionResult> PutUser([FromBody]NewUserDTO user)
+        [AllowAnonymous]
+        [HttpPut("{userName}")]
+        public async Task<IActionResult> PutUser([FromRoute] string userName,[FromBody]NewUserDTO user)
         {
             if (!ModelState.IsValid)
             {
@@ -122,7 +131,12 @@ namespace SmartCity3.Controllers
             }
             var uti = await _context.User.SingleOrDefaultAsync(m => m.UserName == user.UserName);
             if (uti == null) return NotFound();
-            _context.Entry(user).State = EntityState.Modified;
+            uti.UserName = user.UserName;
+            uti.Email = user.Email;
+            uti.PhoneNumber = user.Phone.ToString();
+            await _userManager.RemovePasswordAsync(uti);
+            await _userManager.AddPasswordAsync(uti, user.Password);
+            _context.Entry(uti).State = EntityState.Modified;
             try
             {
                 await _context.SaveChangesAsync();
@@ -143,10 +157,10 @@ namespace SmartCity3.Controllers
                 return Ok();
             }
             return Unauthorized();
-        }   
-        [HttpGet("{userName}")]
-        [Route("Role")]
-        public async Task<IActionResult> getRoleAsync([FromRoute]string userName)
+        }
+        [HttpGet]
+        [Route("Role/{userName}")]
+        public async Task<IActionResult> GetRoleAsync([FromRoute]string userName)
         {
             var user = await _context.User.SingleOrDefaultAsync(m => m.UserName == userName);
             if(user != null)
@@ -156,36 +170,18 @@ namespace SmartCity3.Controllers
             return BadRequest();
         }
         //pas important
+        [AllowAnonymous]
         [HttpGet("Announcement/{userName}")]
-        public async Task<IActionResult> GetAnnouncementForUser(string userName)
+        public async Task<IEnumerable<Announcement>> GetAnnouncementForUser(string userName)
         {
+            List<Announcement> announcements = new List<Announcement>();
             ApplicationUser user = await _context.User.SingleOrDefaultAsync(m => m.UserName == userName);
-            List<Animal> animals = new List<Animal>();
-            List<AnnouncementVisu> announcements = new List<AnnouncementVisu>();
-            if(user != null)
+            var animalList = _context.Animal.Where(a => a.IdUser == user.Id).ToList();
+            foreach(Animal animal in animalList)
             {
-                animals = _context.Animal.Where(a => a.IdUser == user.Id).ToList<Animal>();
-                foreach(Animal a in animals)
-                {
-                    Breed breedAnim = _context.Breed.SingleOrDefault( m => m.Name == a.IdBreed);
-                    
-                    foreach(Announcement announc in _context.Announcement.Where( annou => annou.IdAnimal == a.Id))
-                    {
-                        Status statusAnn = _context.Status.SingleOrDefault(m => m.Id == announc.IdStatus);
-                        announcements.Add(new AnnouncementVisu()
-                        {
-                            idAnnoun = announc.Id,
-                            DateAnnoun = announc.Date,
-                            NameAnimal = a.Name,
-                            Breed = breedAnim.Name,
-                            Species = breedAnim.IdSpecies,
-                            Description = announc.Description,
-                            Status = statusAnn.State
-                        });
-                    }
-                }
+                announcements.AddRange(_context.Announcement.Where(announ => announ.IdAnimal == animal.Id).ToList());
             }
-            return Ok(announcements);
+            return announcements;
         }
     }
     class AnnouncementVisu
