@@ -30,35 +30,9 @@ namespace AnimaLost2.ViewModel
         private ICommand menuBare;
         private bool openPane;
         private IDialogService dialogService;
-
-        private ICommand searchBox;
+        
         private ICommand searchBt;
         private string search;
-
-        public ICommand SearchBox_QuerySubmitted
-        {
-            get { return searchBox; }
-            set
-            {
-                if (searchBox != null)
-                {
-                    new RelayCommand(async () => await Recherche());
-                }
-            }
-        }
-
-        //private SearchBoxQuerySubmittedEventArgs searchBoxQuerySubmitted;
-
-        //public SearchBoxQuerySubmittedEventArgs SearchBox_QuerySubmitted
-        //{
-        //    set
-        //    {
-        //        if (searchBoxQuerySubmitted != null)
-        //        {
-        //            new RelayCommand(async () => await Recherche());
-        //        }
-        //    }
-        //}
         
         public ICommand Buttton_hamburger
         {

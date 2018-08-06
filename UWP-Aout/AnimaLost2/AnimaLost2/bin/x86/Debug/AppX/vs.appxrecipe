@@ -31,13 +31,13 @@
     <AppXManifest Include="d:\Users\Nicolas\Downloads\SmartCity-master %281%29\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-08-06T12:27:20.226</Modified>
+      <Modified>2018-08-06T14:46:22.485</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="d:\Users\Nicolas\Downloads\SmartCity-master %281%29\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.exe">
       <PackagePath>entrypoint\AnimaLost2.exe</PackagePath>
-      <Modified>2018-08-06T12:27:19.286</Modified>
+      <Modified>2018-08-06T14:46:21.862</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nicolas\.nuget\packages\commonservicelocator\2.0.2\lib\netstandard1.0\CommonServiceLocator.dll">
       <PackagePath>CommonServiceLocator.dll</PackagePath>
@@ -587,7 +587,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="d:\Users\Nicolas\Downloads\SmartCity-master %281%29\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.xr.xml">
       <PackagePath>AnimaLost2.xr.xml</PackagePath>
-      <Modified>2018-08-06T12:27:19.051</Modified>
+      <Modified>2018-08-06T14:34:47.566</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="d:\Users\Nicolas\Downloads\SmartCity-master %281%29\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -595,7 +595,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="d:\Users\Nicolas\Downloads\SmartCity-master %281%29\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\View\GestionAnnonce.xbf">
       <PackagePath>View\GestionAnnonce.xbf</PackagePath>
-      <Modified>2018-08-06T12:27:19.082</Modified>
+      <Modified>2018-08-06T14:38:21.800</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="d:\Users\Nicolas\Downloads\SmartCity-master %281%29\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\View\Login.xbf">
       <PackagePath>View\Login.xbf</PackagePath>
@@ -624,7 +624,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="d:\Users\Nicolas\Downloads\SmartCity-master %281%29\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AnimaLost2.exe">
       <PackagePath>AnimaLost2.exe</PackagePath>
-      <Modified>2018-08-06T12:27:20.220</Modified>
+      <Modified>2018-08-06T14:46:22.482</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

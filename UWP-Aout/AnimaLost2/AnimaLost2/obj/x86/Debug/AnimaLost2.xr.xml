@@ -5,7 +5,7 @@
     <RootPropertyPathName Name="RefreshList" />
     <RootPropertyPathName Name="Suppression" />
     <RootPropertyPathName Name="Announcements" />
-    <RootPropertyPathName Name="SelectUser" />
+    <RootPropertyPathName Name="SelectAnnouncement" />
     <RootPropertyPathName Name="Description" />
     <RootPropertyPathName Name="Breed" />
     <RootPropertyPathName Name="Species" />
@@ -40,6 +40,7 @@
     <RootPropertyPathName Name="Buttton_hamburger" />
     <RootPropertyPathName Name="Accueil" />
     <RootPropertyPathName Name="Users" />
+    <RootPropertyPathName Name="SelectUser" />
     <RootPropertyPathName Name="Phone" />
     <RootPropertyPathName Name="RoleName" />
     <RootPropertyPathName Name="UserName" />

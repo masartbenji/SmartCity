@@ -22,6 +22,7 @@ namespace AnimaLost2.ViewModel
         private string emailUser;
         private string phone;
         private int nbAnnouncement;
+        private IDialogService dialogService;
         private ObservableCollection<AnnouncementVisu> announcements;
         public ObservableCollection<AnnouncementVisu> Announcements
         {
@@ -36,9 +37,10 @@ namespace AnimaLost2.ViewModel
             }
         }
 
-        public GestionAnnonceViewModel(INavigationService lg)
+        public GestionAnnonceViewModel(INavigationService lg,IDialogService service)
         {
             InitializeAsync();
+            dialogService = service;
             navPage = lg;
         }
         private async void InitializeAsync()
@@ -111,7 +113,22 @@ namespace AnimaLost2.ViewModel
         private ICommand refreshList;
         private ICommand searchBt;
         private string search;
-
+        private AnnouncementVisu selectAnnouncement;
+        public AnnouncementVisu SelectAnnouncement
+        {
+            get
+            {
+                return selectAnnouncement;
+            }
+            set
+            {
+                selectAnnouncement = value;
+                if (selectAnnouncement != null)
+                {
+                    RaisePropertyChanged("SelectUser");
+                }
+            }
+        }
         public ICommand RefreshList
         {
             get
@@ -132,6 +149,18 @@ namespace AnimaLost2.ViewModel
                     searchBt = new RelayCommand(async () => await Recherche());
                 }
                 return searchBt;
+            }
+        }
+        private ICommand suppression;
+        public ICommand Suppression
+        {
+            get
+            {
+                if (suppression == null)
+                {
+                    suppression = new RelayCommand(async () => await SuppressionAnnouncement());
+                }
+                return suppression;
             }
         }
         public string Search
@@ -188,6 +217,28 @@ namespace AnimaLost2.ViewModel
             }
             Announcements.Clear();
             Announcements.Add(anouncementTemp);
+        }
+        public async Task SuppressionAnnouncement()
+        {
+            try
+            {
+                if(SelectAnnouncement != null)
+                {
+                    SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
+                    var response = await SingleConnection.Client.DeleteAsync(SingleConnection.Client.BaseAddress + "Announcement/" + SelectAnnouncement.idAnnoun);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        await dialogService.ShowMessageBox("La suppression de l'annonce s'est bien déroulée", "Suppression");
+                        Announcements.Remove(SelectAnnouncement);
+                    }
+                    else await dialogService.ShowMessageBox("L'annonce que vous essayé de supprimé n'existe pas", "Non autorisé");
+                }
+                else await dialogService.ShowMessageBox("Vous n'avez pas selectionné d'annonce à supprimer", "Erreur");
+            }
+            catch (HttpRequestException)
+            {
+                await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
+            }
         }
     }
 }
