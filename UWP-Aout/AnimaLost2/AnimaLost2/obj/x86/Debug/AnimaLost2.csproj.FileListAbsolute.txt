@@ -1035,7 +1035,6 @@ C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost
 C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\GalaSoft.MvvmLight.Platform.pri.xml
 C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Ruben\Desktop\ezbilujaqbgeybsedfgbsiefgb\SmartCity\AnimaLost2\AnimaLost2\bin\x86\Debug\CommonServiceLocator.dll
-<<<<<<< HEAD
 d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\App.xbf
 d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\View\GestionAnnonce.xbf
 d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\View\Login.xbf
@@ -1297,5 +1296,3 @@ d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaL
 d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.en-us.resfiles.intermediate
 d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\GalaSoft.MvvmLight.Platform.pri.xml
 d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\ProjectArchitectures.txt
-=======
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc

@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-﻿using AnimaLost2.Static;
+﻿using AnimaLost2.Service;
 using AnimaLost2.Model;
-=======
-﻿using AnimaLost2.Model;
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Views;
@@ -24,15 +20,9 @@ namespace AnimaLost2.ViewModel
     public class ModificationUserViewModel : ViewModelBase, INotifyPropertyChanged
     {
         private INavigationService navPage;
-<<<<<<< HEAD
         private IDialogService dialogService;
         private ICommand cancel;
         private ICommand modif;
-=======
-        private ICommand cancel;
-        private ICommand modif;
-        private ICommand supp;
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
         private string login;
         private string password;
         private string email;
@@ -40,14 +30,10 @@ namespace AnimaLost2.ViewModel
 
         public string Login
         {
-<<<<<<< HEAD
             get {
                 if (SelectedUser.User != null && login == null) login = SelectedUser.User.UserName;
                 return login;
             }
-=======
-            get { return login; }
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
             set
             {
                 login = value;
@@ -65,14 +51,10 @@ namespace AnimaLost2.ViewModel
         }
         public string Email
         {
-<<<<<<< HEAD
             get {
                 if (SelectedUser.User != null && email == null) email = SelectedUser.User.Email;
                 return email;
             }
-=======
-            get { return email; }
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
             set
             {
                 email = value;
@@ -81,14 +63,10 @@ namespace AnimaLost2.ViewModel
         }
         public int Tel
         {
-<<<<<<< HEAD
             get {
                 if (SelectedUser.User != null && tel == 0) tel = SelectedUser.User.Phone;
                 return tel;
             }
-=======
-            get { return tel; }
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
             set
             {
                 tel = value;
@@ -118,7 +96,6 @@ namespace AnimaLost2.ViewModel
                 return modif;
             }
         }
-<<<<<<< HEAD
 
         private async Task ModifUser()
         {
@@ -126,31 +103,10 @@ namespace AnimaLost2.ViewModel
             {
                 SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
                 var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/" + Login);
-=======
-        public ICommand Supp
-        {
-            get
-            {
-                if(supp == null)
-                {
-                    supp = new RelayCommand(async () => await SuppUser());
-                }
-                return supp;
-            }
-        }
-
-        private async Task ModifUser()
-        {
-            using (var http = new HttpClient())
-            {
-                http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                var response = await http.GetAsync("http://smartcityanimal.azurewebsites.net/api/Account/" + Login);
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                 if (response.IsSuccessStatusCode)
                 {
                     var userJson = await response.Content.ReadAsStringAsync();
                     var user = ApplicationUser.Deserialize(userJson);
-<<<<<<< HEAD
                     if (Password == "") Password = user.Password;
                     if (Email == "") Email = user.Email;
                     if (Tel == 0) Tel = user.Phone;
@@ -194,73 +150,16 @@ namespace AnimaLost2.ViewModel
                 await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
             }
 
-=======
-                    if (user == null) navPage.NavigateTo("ModificationUser");
-                    else
-                    {
-                        if (Password == "") Password = user.Password;
-                        if (Email == "") Email = user.Email;
-                        if (Tel == 0) Tel = user.Phone;
-                        var roleResponse = await http.GetAsync("http://smartcityanimal.azurewebsites.net/api/Account/Role" + user.UserName);
-                        user.RoleName = await roleResponse.Content.ReadAsStringAsync();
-                        ApplicationUser userFinal = new ApplicationUser()
-                        {
-                            UserName = user.UserName,
-                            Password = Password,
-                            Phone = Tel,
-                            Email = Email,
-                            RoleName = user.RoleName
-                        };
-                        var responsePut = await http.PutAsJsonAsync("http://smartcityanimal.azurewebsites.net/api/Account", userFinal);
-                        if (responsePut.IsSuccessStatusCode)
-                        {
-                            GoHomeBack();
-                        }
-                        else
-                        {
-                            navPage.NavigateTo("ModificationUser");
-                        }
-                    }
-                }
-            }
-        }
-        private async Task SuppUser()
-        {
-            using(HttpClient http = new HttpClient())
-            {
-                if(Login != "")
-                {
-                    http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                    var response = await http.DeleteAsync("http://smartcityanimal.azurewebsites.net/api/Account" + Login);
-                    var envoi = response.RequestMessage;
-                    if (response.IsSuccessStatusCode)
-                    {
-                        GoHomeBack();
-                    }
-                    else navPage.NavigateTo("ModificationUser");
-                }
-            }
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
         }
 
         public void GoHomeBack()
         {
             navPage.NavigateTo("UserManagement");
         }
-<<<<<<< HEAD
         public ModificationUserViewModel(INavigationService lg, IDialogService service)
         {
             navPage = lg;
             dialogService = service;
-=======
-        public ModificationUserViewModel(INavigationService lg)
-        {
-            navPage = lg;
-        }
-        public void OnNavigatedTo(NavigationEventArgs e)
-        {
-            Login = e.Parameter.ToString(); 
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
         }
     }
 }

@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-﻿using AnimaLost2.Static;
+﻿using AnimaLost2.Service;
 using AnimaLost2.Model;
-=======
-﻿using AnimaLost2.Model;
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Views;
@@ -22,10 +18,7 @@ namespace AnimaLost2.ViewModel
     public class NewUserViewModel : ViewModelBase, INotifyPropertyChanged
     {
         private INavigationService navPage;
-<<<<<<< HEAD
         private IDialogService dialogService;
-=======
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
         private ICommand cancel;
         private ICommand creation;
         private string login;
@@ -110,18 +103,10 @@ namespace AnimaLost2.ViewModel
 
         public async Task AjoutNouveau()
         {
-<<<<<<< HEAD
             try
             {
                 bool testOK = true;
                 if (Login == null || Password == null || Email == null || Tel == 0 || TypeUser == null) { testOK = false; }
-=======
-            using (var http = new HttpClient())
-            {
-                //a verif sur le case obligatoire sont remplis
-                bool testOK = true;
-                if (Login == null) { testOK = false; }
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                 if (Password == null) { testOK = false; }
                 if (testOK)
                 {
@@ -133,7 +118,6 @@ namespace AnimaLost2.ViewModel
                         Phone = Tel,
                         RoleName = TypeUser
                     };
-<<<<<<< HEAD
                     SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
                     var response = await SingleConnection.Client.PostAsJsonAsync(SingleConnection.Client.BaseAddress + "Account", newUser);
                     if (response.IsSuccessStatusCode)
@@ -144,21 +128,10 @@ namespace AnimaLost2.ViewModel
                     else if (response.ReasonPhrase == "Unauthorized")
                     {
                         await dialogService.ShowMessageBox("Vous n'êtes pas autorisé à effectuer cette action", "Erreur");
-=======
-                    http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                    var response = await http.PostAsJsonAsync("http://smartcityanimal.azurewebsites.net/api/Account", newUser);
-                    if (response.IsSuccessStatusCode)
-                    {
-                        GoHomeBack();
-                    }
-                    else if (response.ReasonPhrase == "Unauthorized")
-                    {
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                         navPage.NavigateTo("Login");
                     }
                     else
                     {
-<<<<<<< HEAD
                         await dialogService.ShowMessageBox("L'utilisateur ne peut être créé", "Erreur");
                         navPage.NavigateTo("NewUser");
                     }
@@ -173,19 +146,6 @@ namespace AnimaLost2.ViewModel
             {
                 await dialogService.ShowMessageBox("la connection au serveur a été perdue", "Erreur");
             }
-=======
-                        navPage.NavigateTo("NewUser");
-                    }
-
-
-                }
-                else
-                {
-                    // SI PAS OK msg errorr
-
-                }
-            }
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
         }
         public ICommand Cancel
         {
@@ -202,16 +162,10 @@ namespace AnimaLost2.ViewModel
         {
             navPage.NavigateTo("UserManagement");
         }
-<<<<<<< HEAD
         public NewUserViewModel(INavigationService lg, IDialogService service)
         {
             navPage = lg;
             dialogService = service;
-=======
-        public NewUserViewModel(INavigationService lg)
-        {
-            navPage = lg;
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
         }
     }
 }

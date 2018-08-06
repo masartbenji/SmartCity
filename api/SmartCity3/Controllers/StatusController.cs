@@ -25,9 +25,9 @@ namespace SmartCity3.Controllers
         
         [HttpGet]
         [AllowAnonymous]
-        public IEnumerable<Status> GetStatus()
+        public IEnumerable<Statut> GetStatus()
         {
-            return ctx.Status;
+            return ctx.Statut;
         }
         
         [HttpGet("{id}")]
@@ -35,14 +35,14 @@ namespace SmartCity3.Controllers
         public async Task<IActionResult> GetStatus([FromRoute]int id)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
-            var status = await ctx.Status.SingleOrDefaultAsync(m => m.Id == id);
+            var status = await ctx.Statut.SingleOrDefaultAsync(m => m.Id == id);
 
             if (status == null) return NotFound();
             return Ok(status);
         }
         
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutStatus([FromRoute]int id, [FromBody] Status status)
+        public async Task<IActionResult> PutStatus([FromRoute]int id, [FromBody] Statut status)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
@@ -73,7 +73,7 @@ namespace SmartCity3.Controllers
         }
         
         [HttpPost]
-        public async Task<IActionResult> PostAnnouncement([FromBody]Status status)
+        public async Task<IActionResult> PostAnnouncement([FromBody]Statut status)
         {
             if (!ModelState.IsValid)
             {
@@ -84,7 +84,7 @@ namespace SmartCity3.Controllers
             var roleSearch = ctx.UserRoles.Where(e => e.UserId == user.Id && e.RoleId == "Admin");
             if (roleSearch == null) return Unauthorized();
 
-            ctx.Status.Add(status);
+            ctx.Statut.Add(status);
             try
             {
                 await ctx.SaveChangesAsync();
@@ -113,18 +113,18 @@ namespace SmartCity3.Controllers
             var roleSearch = ctx.UserRoles.Where(e => e.UserId == user.Id && e.RoleId == "Admin");
             if (roleSearch == null) return Unauthorized();
 
-            var status = await ctx.Status.SingleOrDefaultAsync(m => m.Id == id);
+            var status = await ctx.Statut.SingleOrDefaultAsync(m => m.Id == id);
 
             if (status == null) return NotFound();
 
-            ctx.Status.Remove(status);
+            ctx.Statut.Remove(status);
             await ctx.SaveChangesAsync();
             return Ok(status);
         }
 
         private bool StatusExists(int id)
         {
-            return ctx.Status.Any(e => e.Id == id);
+            return ctx.Statut.Any(e => e.Id == id);
         }
     }
 }

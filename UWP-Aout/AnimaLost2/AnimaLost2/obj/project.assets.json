@@ -30933,40 +30933,24 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\Nicolas\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\Ruben\\.nuget\\packages\\": {},
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "d:\\Users\\Nicolas\\Downloads\\SmartCity-master (1)\\SmartCity-master\\UWP-Aout\\AnimaLost2\\AnimaLost2\\AnimaLost2.csproj",
       "projectName": "AnimaLost2",
       "projectPath": "d:\\Users\\Nicolas\\Downloads\\SmartCity-master (1)\\SmartCity-master\\UWP-Aout\\AnimaLost2\\AnimaLost2\\AnimaLost2.csproj",
       "packagesPath": "C:\\Users\\Nicolas\\.nuget\\packages\\",
       "outputPath": "d:\\Users\\Nicolas\\Downloads\\SmartCity-master (1)\\SmartCity-master\\UWP-Aout\\AnimaLost2\\AnimaLost2\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\Ruben\\Desktop\\ezbilujaqbgeybsedfgbsiefgb\\SmartCity\\AnimaLost2\\AnimaLost2\\AnimaLost2.csproj",
-      "projectName": "AnimaLost2",
-      "projectPath": "C:\\Users\\Ruben\\Desktop\\ezbilujaqbgeybsedfgbsiefgb\\SmartCity\\AnimaLost2\\AnimaLost2\\AnimaLost2.csproj",
-      "packagesPath": "C:\\Users\\Ruben\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ruben\\Desktop\\ezbilujaqbgeybsedfgbsiefgb\\SmartCity\\AnimaLost2\\AnimaLost2\\obj\\",
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\Nicolas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\Ruben\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

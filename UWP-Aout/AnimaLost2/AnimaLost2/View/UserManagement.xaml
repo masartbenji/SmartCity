@@ -16,11 +16,7 @@
                     <RowDefinition Height="9*"/>
                     <RowDefinition Height="1*" />
                 </Grid.RowDefinitions>
-<<<<<<< HEAD
                     <TextBlock FontSize="22" Name="accueil" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Accueil}"></TextBlock>
-=======
-                    <TextBlock FontSize="22" Name="acceuil" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Accueil}"></TextBlock>
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                     <Grid Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
@@ -40,26 +36,21 @@
         </SplitView.Pane>
         <SplitView.Content>
             <Grid >
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="1*"></RowDefinition>
-                    <RowDefinition Height="10*"></RowDefinition>
-                    <RowDefinition Height="1*"></RowDefinition>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="10*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
 
-                </Grid.RowDefinitions>
-                <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
-                        <Grid Background="{StaticResource   SystemControlChromeMediumAcrylicWindowMediumBrush}">
-<<<<<<< HEAD
-                            <TextBlock Margin="20,2" Text="Recherche" Foreground="{StaticResource ButtonPointerOverForegroundThemeBrush}" Visibility="{Binding ElementName=txtUserEntry, Path=Text}" />
-                            <TextBox Name="txtUserEntry" Background="Transparent" BorderBrush="{StaticResource  ButtonPointerOverForegroundThemeBrush}" Text="{Binding SearchBox_QuerySubmitted, Mode=TwoWay}" />
-                 
-=======
-                            <TextBlock Margin="20,2" Text="Research" Foreground="{StaticResource ButtonPointerOverForegroundThemeBrush}" Visibility="{Binding ElementName=txtUserEntry, Path=Text}" />
-                            <TextBox Name="txtUserEntry" Background="Transparent" BorderBrush="{StaticResource  ButtonPointerOverForegroundThemeBrush}" Text="{Binding testResearch}" />
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
-                        </Grid>
-                    
-                    </StackPanel>
-                <ListView Grid.Row="1" ItemsSource="{Binding Users,Mode=TwoWay}" SelectedItem="{Binding SelectUser,Mode=TwoWay}" SelectionMode="Single">
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBox Grid.Column="1" Width="100" Height="2" Margin="20,0,0,0" HorizontalAlignment="Left" Text="{Binding Search, Mode=TwoWay}"></TextBox>
+                        <Button Grid.Column="0" HorizontalAlignment="Right" Command="{Binding SearchBt}">Recherche</Button>
+                    </Grid>
+                    <ListView Grid.Row="1" ItemsSource="{Binding Users,Mode=TwoWay}" SelectedItem="{Binding SelectUser,Mode=TwoWay}" SelectionMode="Single">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
                             <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -97,12 +88,8 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-<<<<<<< HEAD
                 <Button Grid.Row="2"  HorizontalAlignment="Center" FontSize="20" Command="{Binding Suppression}">Supprimer</Button>
                     <Button Grid.Row="2"  HorizontalAlignment="Left" Margin="20" FontSize="20" Command="{Binding RefreshList}">Rafraichir</Button>
-=======
-                <Button Grid.Row="2" HorizontalAlignment="Center" FontSize="20" Command="{Binding Suppression}">Supprimer</Button>
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
 
 
             </Grid>

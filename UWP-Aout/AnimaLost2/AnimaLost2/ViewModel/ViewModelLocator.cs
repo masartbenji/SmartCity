@@ -1,9 +1,5 @@
 ﻿using AnimaLost2.ViewModel;
-<<<<<<< HEAD
-using AnimaLost2.Static;
-=======
-using AnimaLost2.Connection;
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
+using AnimaLost2.Service;
 using CommonServiceLocator;
 using GalaSoft.MvvmLight.Ioc;
 using GalaSoft.MvvmLight.Views;

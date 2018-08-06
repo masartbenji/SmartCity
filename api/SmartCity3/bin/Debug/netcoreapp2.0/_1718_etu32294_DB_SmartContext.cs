@@ -14,7 +14,7 @@ namespace SmartCity3
         public virtual DbSet<Images> Images { get; set; }
         public virtual DbSet<ApplicationUser> User { get; set; }
         public virtual DbSet<Species> Species { get; set; }
-        public virtual DbSet<Status> Status { get; set; }
+        public virtual DbSet<Statut> Statut { get; set; }
 
         public _1718_etu32294_DB_SmartContext(DbContextOptions<_1718_etu32294_DB_SmartContext>options)
             : base(options)
@@ -83,7 +83,7 @@ namespace SmartCity3
 
                 entity.Property(e => e.IdAnimal).HasColumnName("idAnimal").IsRequired();
 
-                entity.Property(e => e.IdStatus).HasColumnName("idStatut").IsRequired();
+                entity.Property(e => e.IdStatut).HasColumnName("idStatut").IsRequired();
 
                 entity.HasOne(d => d.IdAnimalNavigation)
                     .WithMany(p => p.Announcement)
@@ -93,7 +93,7 @@ namespace SmartCity3
 
                 entity.HasOne(d => d.IdStatusNavigation)
                     .WithMany(p => p.Announcement)
-                    .HasForeignKey(d => d.IdStatus)
+                    .HasForeignKey(d => d.IdStatut)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Announcem__idSta__25869641");
             });
@@ -168,7 +168,7 @@ namespace SmartCity3
                     .HasMaxLength(25);
             });
 
-            modelBuilder.Entity<Status>(entity =>
+            modelBuilder.Entity<Statut>(entity =>
             {
                 entity.Property(e => e.Id).HasColumnName("id");
 

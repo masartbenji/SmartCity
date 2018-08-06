@@ -172,19 +172,34 @@ namespace SmartCity3.Controllers
         //pas important
         [AllowAnonymous]
         [HttpGet("Announcement/{userName}")]
-        public async Task<IEnumerable<Announcement>> GetAnnouncementForUser(string userName)
+        public async Task<IEnumerable<AnnouncementVisu>> GetAnnouncementForUser(string userName)
         {
-            List<Announcement> announcements = new List<Announcement>();
+            List<AnnouncementVisu> announcements = new List<AnnouncementVisu>();
             ApplicationUser user = await _context.User.SingleOrDefaultAsync(m => m.UserName == userName);
             var animalList = _context.Animal.Where(a => a.IdUser == user.Id).ToList();
             foreach(Animal animal in animalList)
             {
-                announcements.AddRange(_context.Announcement.Where(announ => announ.IdAnimal == animal.Id).ToList());
+                var announcementList = _context.Announcement.Where(announ => announ.IdAnimal == animal.Id).ToList();
+                foreach(Announcement announc in announcementList)
+                {
+                    AnnouncementVisu announcementVisu = new AnnouncementVisu()
+                    {
+                        idAnnoun = announc.Id,
+                        DateAnnoun = announc.Date,
+                        NameAnimal = animal.Name,
+                        Breed = _context.Breed.Where(e => e.id == animal.IdBreed).Select(e => e.Name).First(),
+                        Species = _context.Breed.Where(e => e.id == animal.IdBreed).Select(e => e.IdSpecies).First(),
+                        Description = announc.Description,
+                        Status = _context.Statut.Where(e => e.Id == announc.IdStatut).Select(e => e.State).First()
+                };
+                    
+                    announcements.Add(announcementVisu);
+                }
             }
             return announcements;
         }
     }
-    class AnnouncementVisu
+    public class AnnouncementVisu
     {
         public int idAnnoun { get; set; }
         public DateTime DateAnnoun{get;set;}

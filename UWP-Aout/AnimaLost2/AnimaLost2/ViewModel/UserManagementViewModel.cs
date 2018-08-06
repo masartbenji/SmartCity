@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-﻿using AnimaLost2.Static;
+﻿using AnimaLost2.Service;
 using AnimaLost2.Model;
-=======
-﻿using AnimaLost2.Model;
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Views;
@@ -33,37 +29,23 @@ namespace AnimaLost2.ViewModel
         private string accueil;
         private ICommand menuBare;
         private bool openPane;
-<<<<<<< HEAD
         private IDialogService dialogService;
 
         private ICommand searchBox;
-=======
-
-        //private ICommand searchBox;
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
         private ICommand searchBt;
         private string search;
 
-        //public ICommand SearchBox_QuerySubmitted
-        //{
-<<<<<<< HEAD
-        //    set
-        //    {
-        //        if (searchBox != null)
-        //        {
-        //            new RelayCommand(async () => await Recherche());
-        //        }
-=======
-        //    get
-        //    {
-        //        if(searchBox != null)
-        //        {
-        //            new RelayCommand(async () => await Recherche());
-        //        }
-        //        return searchBox;
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
-        //    }
-        //}
+        public ICommand SearchBox_QuerySubmitted
+        {
+            get { return searchBox; }
+            set
+            {
+                if (searchBox != null)
+                {
+                    new RelayCommand(async () => await Recherche());
+                }
+            }
+        }
 
         //private SearchBoxQuerySubmittedEventArgs searchBoxQuerySubmitted;
 
@@ -71,26 +53,13 @@ namespace AnimaLost2.ViewModel
         //{
         //    set
         //    {
-<<<<<<< HEAD
         //        if (searchBoxQuerySubmitted != null)
         //        {
         //            new RelayCommand(async () => await Recherche());
-=======
-        //        if(searchBoxQuerySubmitted != null)
-        //        {
-        //           new RelayCommand(async () => await Recherche());
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
         //        }
         //    }
         //}
-
-<<<<<<< HEAD
-        public void SearchBox_QuerySubmitted()
-        {
-
-        }
-=======
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
+        
         public ICommand Buttton_hamburger
         {
             get
@@ -114,10 +83,6 @@ namespace AnimaLost2.ViewModel
                 RaisePropertyChanged("IsPaneOpen");
             }
         }
-<<<<<<< HEAD
-=======
-
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
         public string Accueil
         {
             get
@@ -147,11 +112,7 @@ namespace AnimaLost2.ViewModel
             {
                 if (gestionAnnonce == null)
                 {
-<<<<<<< HEAD
                     gestionAnnonce = new RelayCommand(async() => await ManagementUser());
-=======
-                    gestionAnnonce = new RelayCommand(() => ManagementUser());
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                 }
                 return gestionAnnonce;
             }
@@ -173,16 +134,11 @@ namespace AnimaLost2.ViewModel
             {
                 if (suppression == null)
                 {
-<<<<<<< HEAD
                     suppression = new RelayCommand(async () => await SuppUser());
-=======
-                    suppression = new RelayCommand(async() => await SuppUser());
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                 }
                 return suppression;
             }
         }
-<<<<<<< HEAD
         private ICommand refreshList;
         public ICommand RefreshList
         {
@@ -225,8 +181,6 @@ namespace AnimaLost2.ViewModel
                 RaisePropertyChanged("Users");
             }
         }
-=======
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
 
         public ICommand SearchBt
         {
@@ -234,11 +188,7 @@ namespace AnimaLost2.ViewModel
             {
                 if (searchBt == null)
                 {
-<<<<<<< HEAD
                     searchBt = new RelayCommand(async () => await Recherche());
-=======
-                    searchBt = new RelayCommand(async() => await Recherche());
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                 }
                 return searchBt;
             }
@@ -255,10 +205,6 @@ namespace AnimaLost2.ViewModel
                 RaisePropertyChanged("Search");
             }
         }
-<<<<<<< HEAD
-=======
-
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
         public void menuHamburger()
         {
             IsPaneOpen = !IsPaneOpen;
@@ -269,7 +215,6 @@ namespace AnimaLost2.ViewModel
         }
         public void ModificationUser()
         {
-<<<<<<< HEAD
             navPage.NavigateTo("ModificationUser");
         }
         public async Task ManagementUser()
@@ -290,109 +235,16 @@ namespace AnimaLost2.ViewModel
         {
             navPage = lg;
             dialogService = service;
-=======
-            if (SelectUser != null)
-            {
-                navPage.NavigateTo("ModificationUser", SelectUser);
-            }
-        }
-        public void ManagementUser()
-        {
-            navPage.NavigateTo("GestionAnnonce");// envoyer le user aussi 
-        }
-
-        public async Task Recherche()
-        {
-            if (Search != null)
-            {
-                Users.Clear();
-                using(HttpClient http = new HttpClient())
-                {
-                    http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                    var response = await http.GetAsync("http://smartcityanimal.azurewebsites.net/api/Account/" + Search);
-                    if (response.IsSuccessStatusCode)
-                    {
-                        string userJson = await response.Content.ReadAsStringAsync();
-                        ApplicationUser user = ApplicationUser.Deserialize(userJson);
-                        http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                        var roleResponse = await http.GetAsync("http://smartcityanimal.azurewebsites.net/api/Account/Role/" + user.UserName);
-                        string roleName = await roleResponse.Content.ReadAsStringAsync();
-                        user.RoleName = roleName.TrimStart('[').TrimEnd(']').TrimStart('"').TrimEnd('"');
-                        Users.Add(user);
-                    }
-                    navPage.NavigateTo("UserManagement");
-                }
-            }
-        }
-        private async Task SuppUser()
-        {
-            if(SelectUser != null)
-            {
-                using (HttpClient http = new HttpClient())
-                {
-                    http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                    var response = await http.DeleteAsync("http://smartcityanimal.azurewebsites.net/api/Account/" + SelectUser.UserName);
-                    if (response.IsSuccessStatusCode)
-                    {
-                        navPage.NavigateTo("UserManagement");
-                    }
-                    else navPage.NavigateTo("ModificationUser");
-
-                }
-
-            }  
-        }
-        public UserManagementViewModel(INavigationService lg)
-        {
-            navPage = lg;
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
             InitializeAsync();
         }
         public void OnNavigatedTo(NavigationEventArgs e)
         {
             accueil = "Bienvenue " + (string)e.Parameter + " !";
-<<<<<<< HEAD
-=======
-
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
         }
         public void OnNavigatedTo()
         {
             accueil = "Bienvenue";
         }
-<<<<<<< HEAD
-=======
-        private ObservableCollection<ApplicationUser> user;
-        private ApplicationUser selectUser;
-
-        public ApplicationUser SelectUser
-        {
-            get
-            {
-                return selectUser;
-            }
-            set
-            {
-                selectUser = value;
-                if (selectUser != null)
-                {
-                    RaisePropertyChanged("SelectUser");
-                }
-            }
-        }
-        public ObservableCollection<ApplicationUser> Users
-        {
-            get
-            {
-                return user;
-            }
-            set
-            {
-                user = value;
-                RaisePropertyChanged("Users");
-            }
-        }
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
 
         private async void InitializeAsync()
         {
@@ -401,17 +253,10 @@ namespace AnimaLost2.ViewModel
         public async Task<ObservableCollection<ApplicationUser>> GetUsersAsync()
         {
             ObservableCollection<ApplicationUser> users = new ObservableCollection<ApplicationUser>();
-<<<<<<< HEAD
             try
             {
                 SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
                 var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account");
-=======
-            using (HttpClient http = new HttpClient())
-            {
-                http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                var response = await http.GetAsync("http://smartcityanimal.azurewebsites.net/api/Account/");
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                 if (response.IsSuccessStatusCode)
                 {
                     var responseUser = await response.Content.ReadAsStringAsync();
@@ -419,22 +264,14 @@ namespace AnimaLost2.ViewModel
                     foreach (string user in listUser)
                     {
                         ApplicationUser userApp = ApplicationUser.Deserialize(user);
-<<<<<<< HEAD
                         SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
                         var roleResponse = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Role/" + userApp.UserName);
                         string roleName = await roleResponse.Content.ReadAsStringAsync();
                         userApp.RoleName = ApplicationUser.GetRoleUser(roleName);
-=======
-                        http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                        var roleResponse = await http.GetAsync("http://smartcityanimal.azurewebsites.net/api/Account/Role/" + userApp.UserName);
-                        string roleName = await roleResponse.Content.ReadAsStringAsync();
-                        userApp.RoleName = roleName.TrimStart('[').TrimEnd(']').TrimStart('"').TrimEnd('"');
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                         users.Add(userApp);
                     }
                 }
             }
-<<<<<<< HEAD
             catch (HttpRequestException)
             {
                 await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
@@ -446,23 +283,20 @@ namespace AnimaLost2.ViewModel
             if (Search != null)
             {
                 Users.Clear();
-                using (HttpClient http = new HttpClient())
-                {
-                    http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                    var response = await http.GetAsync("http://smartcityanimal.azurewebsites.net/api/Account/" + Search);
+                    SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
+                    var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/" + Search);
                     if (response.IsSuccessStatusCode)
                     {
                         string userJson = await response.Content.ReadAsStringAsync();
                         ApplicationUser user = ApplicationUser.Deserialize(userJson);
-                        http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                        var roleResponse = await http.GetAsync("http://smartcityanimal.azurewebsites.net/api/Account/Role/" + user.UserName);
+                    SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
+                        var roleResponse = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Role/" + user.UserName);
                         string roleName = await roleResponse.Content.ReadAsStringAsync();
-                        user.RoleName = roleName.TrimStart('[').TrimEnd(']').TrimStart('"').TrimEnd('"');
-                        Users.Add(user);
+                        user.RoleName = ApplicationUser.GetRoleUser(roleName);
+                    Users.Add(user);
                     }
                     navPage.NavigateTo("UserManagement");
                 }
-            }
         }
         public async Task SuppUser()
         {
@@ -493,11 +327,3 @@ namespace AnimaLost2.ViewModel
 
     }
 }
-=======
-            return users;
-        }
-    }
-
-
-}
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc

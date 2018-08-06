@@ -5,12 +5,8 @@
     xmlns:local="using:AnimaLost2"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-<<<<<<< HEAD
     mc:Ignorable="d"
     DataContext="{Binding Source={StaticResource Locator}, Path=GestionAnnonce}">
-=======
-    mc:Ignorable="d">
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
 
     <Frame Margin="10,0,0,0">
 
@@ -26,7 +22,7 @@
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="7*"/>
                     </Grid.ColumnDefinitions>
 
 
@@ -37,7 +33,6 @@
                                 <Setter Property="FontSize" Value="20"/>
                             </Style>
                         </StackPanel.Resources>
-<<<<<<< HEAD
                         <TextBlock Grid.Column="0"  >
                                         <Run Text="Pseudo :"></Run>
                                         <Run Text="{Binding UserID, Mode=TwoWay}"></Run>
@@ -55,21 +50,77 @@
                                         <Run Text="{Binding NbAnnonceUser,Mode=TwoWay}"></Run>
                         </TextBlock>
 
-=======
-                        <TextBlock Text="{Binding UserID}"/>
-                        <TextBlock Text="{Binding EmailUser}"/>
-                        <TextBlock Text="{Binding PhonneUser}"/>
-                        <TextBlock Text="{Binding NbAnnonceUser}"/>
-                       
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                     </StackPanel>
                     <Grid Grid.Column="1" >
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="7*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="10*"/>
                             <RowDefinition Height="1*"/>
                         </Grid.RowDefinitions>
-                       <Button Grid.Row="2" HorizontalAlignment="Center" FontSize="20" Command="{Binding Suppression}">Supprimer</Button>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBox Grid.Column="1" Width="100" Height="2" Margin="20,0,0,0" HorizontalAlignment="Left" Text="{Binding Search, Mode=TwoWay}"></TextBox>
+                            <Button Grid.Column="0" HorizontalAlignment="Right" Command="{Binding SearchBt}">Recherche</Button>
+                        </Grid>
 
+                        <ListView Grid.Row="1" ItemsSource="{Binding Announcements,Mode=TwoWay}" SelectedItem="{Binding SelectUser,Mode=TwoWay}" SelectionMode="Single">
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*"/>
+                                            <RowDefinition Height="1*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*"/>
+                                            <ColumnDefinition Width="1*"/>
+                                            <ColumnDefinition Width="1*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Column="0"  >
+                                        <Run Text="Id Annonce :"></Run>
+                                        <Run Text="{Binding idAnnoun}"></Run>
+                                        </TextBlock>
+                                        <TextBlock Grid.Column="1">
+                                        <Run Text="Nom animal :"></Run>
+                                        <Run Text="{Binding NameAnimal}"></Run>
+                                        </TextBlock>
+                                        <TextBlock Grid.Column="2">
+                                            <Run Text="Statut annonce :"></Run>
+                                            <Run Text="{Binding Status}"></Run>
+                                        </TextBlock>
+                                        <TextBlock Grid.Column="0" Grid.Row="1">
+                                        <Run Text="Date annonce :"></Run>
+                                        <Run Text="{Binding DateAnnoun}"></Run>
+                                        </TextBlock>
+                                        <TextBlock Grid.Column="1" Grid.Row="1">
+                                        <Run Text="Espèce :"></Run>
+                                        <Run Text="{Binding Species}"></Run>
+                                        </TextBlock>
+                                        <TextBlock Grid.Column="2" Grid.Row="1">
+                                        <Run Text="Race :"></Run>
+                                        <Run Text="{Binding Breed}"></Run>
+                                        </TextBlock>
+                                        <TextBlock Grid.Row="2">
+                                        <Run Text="Description :"></Run>
+                                        <Run Text="{Binding Description}"></Run>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+
+                        <Button Grid.Row="2"  HorizontalAlignment="Center" FontSize="20" Command="{Binding Suppression}">Supprimer</Button>
+                        <Button Grid.Row="2"  HorizontalAlignment="Left" Margin="20" FontSize="20" Command="{Binding RefreshList}">Rafraichir</Button>
 
                     </Grid>
 

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace SmartCity3
 {
-    public partial class Status
+    public partial class Statut
     {
-        public Status()
+        public Statut()
         {
             Announcement = new HashSet<Announcement>();
         }

@@ -1,20 +1,14 @@
-<<<<<<< HEAD
 ﻿using AnimaLost2.Model;
-using AnimaLost2.Static;
+using AnimaLost2.Service;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Views;
+using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-=======
-﻿using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Command;
-using GalaSoft.MvvmLight.Views;
-using System.ComponentModel;
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
 using System.Windows.Input;
 using Windows.UI.Xaml.Navigation;
 
@@ -26,11 +20,10 @@ namespace AnimaLost2.ViewModel
         private ICommand goBackHome;
         private string userID;
         private string emailUser;
-<<<<<<< HEAD
         private string phone;
         private int nbAnnouncement;
-        private ObservableCollection<Announcement> announcements;
-        public ObservableCollection<Announcement> Announcements
+        private ObservableCollection<AnnouncementVisu> announcements;
+        public ObservableCollection<AnnouncementVisu> Announcements
         {
             get
             {
@@ -52,17 +45,6 @@ namespace AnimaLost2.ViewModel
         {
             Announcements = await GetAnnouncementsUser();
         }
-=======
-
-        public GestionAnnonceViewModel(INavigationService lg)
-        {
-            navPage = lg;
-        }
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
-        public void OnNavigatedTo(NavigationEventArgs e)
-        {
-
-        }
         public ICommand GoBackHome
         {
             get
@@ -79,10 +61,7 @@ namespace AnimaLost2.ViewModel
         {
             get
             {
-<<<<<<< HEAD
                 userID = SelectedUser.User.UserName;
-=======
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                 return userID;
             }
             set
@@ -95,10 +74,7 @@ namespace AnimaLost2.ViewModel
         {
             get
             {
-<<<<<<< HEAD
                 emailUser = SelectedUser.User.Email;
-=======
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
                 return emailUser;
             }
             set
@@ -107,7 +83,6 @@ namespace AnimaLost2.ViewModel
                 RaisePropertyChanged("EmailUser");
             }
         }
-<<<<<<< HEAD
         public string PhoneUser
         {
             get
@@ -133,32 +108,51 @@ namespace AnimaLost2.ViewModel
                 RaisePropertyChanged("NbAnnonceUser");
             }
         }
-=======
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
         private ICommand refreshList;
+        private ICommand searchBt;
+        private string search;
+
         public ICommand RefreshList
         {
             get
             {
                 if (refreshList == null)
                 {
-                    refreshList = new RelayCommand(() => Refresh());
+                    refreshList = new RelayCommand(async () => Announcements = await GetAnnouncementsUser());
                 }
                 return refreshList;
             }
         }
-        public void Refresh()
+        public ICommand SearchBt
         {
-            // a voir si il faut pas clear du coup la liste dans l initialize
+            get
+            {
+                if (searchBt == null)
+                {
+                    searchBt = new RelayCommand(async () => await Recherche());
+                }
+                return searchBt;
+            }
+        }
+        public string Search
+        {
+            get
+            {
+                return search;
+            }
+            set
+            {
+                search = value;
+                RaisePropertyChanged("Search");
+            }
         }
         public void Home()
         {
             navPage.NavigateTo("UserManagement");
         }
-<<<<<<< HEAD
-        public async Task<ObservableCollection<Announcement>> GetAnnouncementsUser()
+        public async Task<ObservableCollection<AnnouncementVisu>> GetAnnouncementsUser()
         {
-            ObservableCollection<Announcement> announcements = new ObservableCollection<Announcement>();
+            ObservableCollection<AnnouncementVisu> announcements = new ObservableCollection<AnnouncementVisu>();
             try
             {
                 SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
@@ -166,17 +160,34 @@ namespace AnimaLost2.ViewModel
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonAnnouncement = response.Content.ReadAsStringAsync().Result;
-                    Announcements = Announcement.Deserialize(jsonAnnouncement);
-
+                    Announcements = AnnouncementVisu.Deserialize(jsonAnnouncement);
+                    
                 }
             }
             catch (HttpRequestException)
             {
 
             }
+            NbAnnonceUser = Announcements.Count;
             return Announcements;
         }
-=======
->>>>>>> 552da27e22a235f78e9c502f064d704a16429fbc
+        public async Task Recherche()
+        {
+            
+            bool trouvé = false;
+            var AnnouncementsTemp = await GetAnnouncementsUser();
+            AnnouncementVisu anouncementTemp = new AnnouncementVisu();
+            foreach(AnnouncementVisu announc in AnnouncementsTemp)
+            {
+                if (trouvé) break;
+                if(announc.idAnnoun == Int32.Parse(Search))
+                {
+                    trouvé = true;
+                    anouncementTemp = announc;
+                }
+            }
+            Announcements.Clear();
+            Announcements.Add(anouncementTemp);
+        }
     }
 }

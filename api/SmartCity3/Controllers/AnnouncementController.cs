@@ -61,10 +61,10 @@ namespace SmartCity3.Controllers
         [HttpGet("Status")]
         public IActionResult GetAnnouncementOfStatus([FromRoute]string statusName)
         {
-            var status = ctx.Status;
+            var status = ctx.Statut;
             if (!ModelState.IsValid) return BadRequest(ModelState);
             //var announcement = await ctx.User.SingleOrDefaultAsync(u => u.UserName == pseudo);
-            var announcement = ctx.Announcement.Join(status, a => a.IdStatus, s => s.Id, (a, s) => new { idAnnouncement = a.Id, nameStatus = s.State })
+            var announcement = ctx.Announcement.Join(status, a => a.IdStatut, s => s.Id, (a, s) => new { idAnnouncement = a.Id, nameStatus = s.State })
                 .Where(a => a.nameStatus == statusName);
             if (announcement == null) return NotFound();
             return Ok(announcement);
