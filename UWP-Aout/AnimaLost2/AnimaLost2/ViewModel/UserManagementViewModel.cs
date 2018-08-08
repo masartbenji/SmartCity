@@ -30,10 +30,20 @@ namespace AnimaLost2.ViewModel
         private ICommand menuBare;
         private bool openPane;
         private IDialogService dialogService;
-        
-        private ICommand searchBt;
-        private string search;
-        
+        private ICommand recherche;
+
+        public ICommand rechercheBox
+        {
+            get
+            {
+                if(recherche == null)
+                {
+                    recherche = new RelayCommand(async ()=> await Recherche());
+                }
+                return recherche;
+            }
+        }
+
         public ICommand Buttton_hamburger
         {
             get
@@ -156,29 +166,7 @@ namespace AnimaLost2.ViewModel
             }
         }
 
-        public ICommand SearchBt
-        {
-            get
-            {
-                if (searchBt == null)
-                {
-                    searchBt = new RelayCommand(async () => await Recherche());
-                }
-                return searchBt;
-            }
-        }
-        public string Search
-        {
-            get
-            {
-                return search;
-            }
-            set
-            {
-                search = value;
-                RaisePropertyChanged("Search");
-            }
-        }
+
         public void menuHamburger()
         {
             IsPaneOpen = !IsPaneOpen;
@@ -249,28 +237,43 @@ namespace AnimaLost2.ViewModel
             catch (HttpRequestException)
             {
                 await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
+                navPage.NavigateTo("Login");
             }
             return users;
         }
         public async Task Recherche()
         {
-            if (Search != null)
+            if (recherche != null)
             {
-                Users.Clear();
+                try
+                {
+                    Users.Clear();
                     SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                    var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/" + Search);
+                    var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/" + recherche);
                     if (response.IsSuccessStatusCode)
                     {
-                        string userJson = await response.Content.ReadAsStringAsync();
-                        ApplicationUser user = ApplicationUser.Deserialize(userJson);
-                    SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                        var roleResponse = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Role/" + user.UserName);
-                        string roleName = await roleResponse.Content.ReadAsStringAsync();
-                        user.RoleName = ApplicationUser.GetRoleUser(roleName);
-                    Users.Add(user);
+                        try
+                        {
+                            string userJson = await response.Content.ReadAsStringAsync();
+                            ApplicationUser user = ApplicationUser.Deserialize(userJson);
+                            SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
+                            var roleResponse = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Role/" + user.UserName);
+                            string roleName = await roleResponse.Content.ReadAsStringAsync();
+                            user.RoleName = ApplicationUser.GetRoleUser(roleName);
+                            Users.Add(user);
+                        }
+                        catch
+                        {
+                            await dialogService.ShowMessageBox("Impossible de retrouve la liste des users, veuillez réessayer", "Error");
+                        }                     
                     }
-                    navPage.NavigateTo("UserManagement");
                 }
+                catch
+                {
+                    await dialogService.ShowMessageBox("Impossible de se connecter au serveur", "Error");
+                    navPage.NavigateTo("Login");
+                }
+            }
         }
         public async Task SuppUser()
         {
@@ -281,19 +284,20 @@ namespace AnimaLost2.ViewModel
                         SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
                         var response = await SingleConnection.Client.DeleteAsync(SingleConnection.Client.BaseAddress + "Account/" + SelectedUser.User.UserName);
                         if (response.IsSuccessStatusCode)
-                        {
-                            await dialogService.ShowMessageBox("La suppression de l'utilisateur s'est bien déroulée", "Suppression");
+                        {    
                             Users.Remove(SelectedUser.User);
+                            await dialogService.ShowMessageBox("La suppression de l'utilisateur s'est bien déroulée", "Suppression");
                         }
                         else await dialogService.ShowMessageBox("L'utilisateur que vous essayé de supprimé n'existe pas", "Non autorisé");
 
-                        navPage.NavigateTo("UserManagement");
+                        navPage.NavigateTo("UserManagement"); //faire un refresh a la place 
                 }
                 else await dialogService.ShowMessageBox("Vous n'avez pas selectionné d'utilisateur à supprimer", "Erreur");
             }
             catch (HttpRequestException)
             {
                 await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
+                navPage.NavigateTo("Login");
             }
 
         }

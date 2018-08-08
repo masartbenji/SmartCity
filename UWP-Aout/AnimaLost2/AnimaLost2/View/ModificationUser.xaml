@@ -9,7 +9,7 @@
     DataContext="{Binding Source={StaticResource Locator}, Path=ModificationUser}">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel Background="Beige" >
+        <StackPanel Background="Silver" >
             <TextBlock Text="Modification utilisateur"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,50,0,0" FontSize="30"/>
             <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,150,0,0">
                 <Grid.ColumnDefinitions>

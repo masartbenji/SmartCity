@@ -24,18 +24,18 @@ namespace AnimaLost2.ViewModel
         private string login;
         private string password;
         private string email;
-        private int tel; //Maybe need to change de type of the box to only allowed numbers
-        private string typeUser;
+        private int tel; 
+        private string userType;
 
-        public string TypeUser
+        public string UserType
         {
             get
             {
-                return typeUser;
+                return userType;
             }
             set
             {
-                typeUser = value;
+                userType = value;
                 RaisePropertyChanged("TypeUser");
             }
         }
@@ -106,7 +106,7 @@ namespace AnimaLost2.ViewModel
             try
             {
                 bool testOK = true;
-                if (Login == null || Password == null || Email == null || Tel == 0 || TypeUser == null) { testOK = false; }
+                if (Login == null || Password == null || Email == null || Tel == 0 || UserType == null) { testOK = false; }
                 if (Password == null) { testOK = false; }
                 if (testOK)
                 {
@@ -116,7 +116,7 @@ namespace AnimaLost2.ViewModel
                         Password = Password,
                         Email = Email,
                         Phone = Tel,
-                        RoleName = TypeUser
+                        RoleName = UserType
                     };
                     SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
                     var response = await SingleConnection.Client.PostAsJsonAsync(SingleConnection.Client.BaseAddress + "Account", newUser);
@@ -128,7 +128,7 @@ namespace AnimaLost2.ViewModel
                     else if (response.ReasonPhrase == "Unauthorized")
                     {
                         await dialogService.ShowMessageBox("Vous n'êtes pas autorisé à effectuer cette action", "Erreur");
-                        navPage.NavigateTo("Login");
+                        navPage.NavigateTo("Login"); //why ?
                     }
                     else
                     {
@@ -144,7 +144,8 @@ namespace AnimaLost2.ViewModel
             }
             catch (HttpRequestException)
             {
-                await dialogService.ShowMessageBox("la connection au serveur a été perdue", "Erreur");
+                await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
+
             }
         }
         public ICommand Cancel
