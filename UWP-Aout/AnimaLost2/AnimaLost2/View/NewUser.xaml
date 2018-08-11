@@ -10,8 +10,13 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel Background="Silver" >
-            <TextBlock Text="Nouveau utilisateur"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,50,0,0" FontSize="30"/>
-            <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,150,0,0">
+            <StackPanel Margin="0,150,0,0">
+                <TextBlock Text="Nouveau utilisateur"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,50,0,0" FontSize="30"/>
+                <TextBlock Text="* Champs obligatoires" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </StackPanel>
+            
+            
+            <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,50,0,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
@@ -25,35 +30,26 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock FontSize = "19" Grid.Column="0" Grid.Row="0" Text="Login :  " TextAlignment="Center" />
-                <TextBox Grid.Column="1" Grid.Row= "0" Text= "{Binding Login ,Mode=TwoWay}" Width= "200" />
-                <TextBlock FontSize= "19" Grid.Column= "0" Grid.Row= "1" Text= "Mot de passe :" TextAlignment= "Center" />
-                <TextBox Grid.Column= "1" Grid.Row= "1" Text= "{Binding Password,Mode=TwoWay}" Width= "200" />
+                <TextBlock Grid.Column="0" Grid.Row="0"    FontSize = "19" Text="*Login :  " TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox Grid.Column="1" Grid.Row= "0" Text= "{Binding Login ,Mode=TwoWay}" Width= "200"  />
+                <TextBlock FontSize= "19" Grid.Column= "0" Grid.Row= "1" Text= "*Mot de passe :" TextAlignment="Center" />
+                <PasswordBox Grid.Column= "1" Grid.Row= "1" Width="200" Password="{Binding Password,Mode=TwoWay}" PasswordChar="*" ToolTipService.ToolTip="Le mot de passe doit etre de minimum 8 caractere et doit contenir : une MAJUSCULE, un nombre et un caractere special " ></PasswordBox>
                 <TextBlock FontSize= "19" Grid.Column= "0" Grid.Row= "4" Text= "Email :  " TextAlignment= "Center" />
                 <TextBox Grid.Column= "1" Grid.Row= "4" Text= "{Binding Email,Mode=TwoWay}" Width= "200" />
-                <TextBlock FontSize= "19" Grid.Column= "0" Grid.Row= "5" Text= "Telephone :  " TextAlignment= "Center" />
-                <TextBox Grid.Column= "1" Grid.Row= "5" Text= "{Binding Tel,Mode=TwoWay}" Width= "200" />
-
+                <TextBlock FontSize= "19" Grid.Column= "0" Grid.Row= "5" Text= "*Telephone :  " TextAlignment= "Center" />
+                <TextBox Grid.Column= "1" Grid.Row= "5"   Text="{Binding Tel,Mode=TwoWay}" Width= "200"  />
             </Grid>
-            <StackPanel Margin="50" >
-                <TextBlock Text="Type d'utilisateur" VerticalAlignment="Center" HorizontalAlignment="Center" />
-
-                <ComboBox Margin="10,10,0,13" Name="ComboBox1" HorizontalAlignment="Center"   
-                        Width="194" Height="30" SelectionChanged="ComboBox1_SelectionChanged" >
-                    <ComboBox.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="{Binding UserType}" />
-                            </StackPanel>
-                        </DataTemplate>
-                    </ComboBox.ItemTemplate>
-                    <ComboBoxItem IsSelected="True" Content="Utilisateur" ></ComboBoxItem>
-                    <ComboBoxItem Content="Admin"></ComboBoxItem>
+            <StackPanel Margin="50" > 
+                <TextBlock Text="*Type d'utilisateur" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                <ComboBox HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" ItemsSource="{Binding TypeUserList}" SelectedItem="{Binding TypeUserSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                 </ComboBox>
+
+
             </StackPanel>
             <StackPanel  >
                 <Button Content="Crée" Command="{Binding Creation}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20"/>
                 <Button Content="Annuler" Command="{Binding Cancel}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
             </StackPanel>
         </StackPanel>
     </Grid>

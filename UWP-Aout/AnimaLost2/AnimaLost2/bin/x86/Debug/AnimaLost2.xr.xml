@@ -21,7 +21,6 @@
     <RootPropertyPathName Name="UserID" />
     <RootPropertyPathName Name="GoBackHome" />
     <RootPropertyPathName Name="Login" />
-    <RootPropertyPathName Name="Exception" />
     <RootPropertyPathName Name="SingIn" />
     <RootPropertyPathName Name="Password" />
     <RootPropertyPathName Name="ULogin" />
@@ -32,17 +31,20 @@
     <RootPropertyPathName Name="Email" />
     <RootPropertyPathName Name="NewUser" />
     <RootPropertyPathName Name="Creation" />
-    <RootPropertyPathName Name="TypeUser" />
+    <RootPropertyPathName Name="TypeUserList" />
+    <RootPropertyPathName Name="TypeUserSelected" />
     <RootPropertyPathName Name="UserManagement" />
     <RootPropertyPathName Name="IsPaneOpen" />
+    <RootPropertyPathName Name="Deconnexion" />
     <RootPropertyPathName Name="ModifUser" />
     <RootPropertyPathName Name="AjoutUser" />
     <RootPropertyPathName Name="Buttton_hamburger" />
-    <RootPropertyPathName Name="Accueil" />
     <RootPropertyPathName Name="Users" />
     <RootPropertyPathName Name="Phone" />
     <RootPropertyPathName Name="RoleName" />
     <RootPropertyPathName Name="UserName" />
+    <RootPropertyPathName Name="rechercheBox" />
+    <RootPropertyPathName Name="ResearchLabel" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -58,6 +60,7 @@
       <RootProperty Name="Source" />
       <RootProperty Name="Path" />
       <RootProperty Name="Mode" />
+      <RootProperty Name="UpdateSourceTrigger" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
@@ -88,7 +91,11 @@
       <RootProperty Name="Background" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Resources" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
@@ -111,6 +118,7 @@
       <RootProperty Name="Background" />
       <RootProperty Name="UseLayoutRounding" />
       <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
@@ -133,9 +141,9 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Text" />
-      <RootProperty Name="Margin" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="TextAlignment" />
-      <RootProperty Name="Name" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
@@ -146,6 +154,8 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Text" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Margin" />
@@ -164,6 +174,17 @@
     </RootType>
     <RootType FullName="AnimaLost2.Login" />
     <RootType FullName="AnimaLost2.ModificationUser" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedItem" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
+      <RootMethod Name="GetToolTip" />
+      <RootMethod Name="SetToolTip" />
+    </RootType>
     <RootType FullName="AnimaLost2.NewUser" />
     <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
       <RootProperty Name="DisplayMode" />

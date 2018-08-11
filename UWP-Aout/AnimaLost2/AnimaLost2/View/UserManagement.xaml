@@ -16,7 +16,7 @@
                         <RowDefinition Height="9*"/>
                         <RowDefinition Height="1*" />
                     </Grid.RowDefinitions>
-                    <TextBlock FontSize="22" Name="accueil" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Accueil}"></TextBlock>
+
                     <Grid Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>
@@ -30,9 +30,11 @@
                         <Button Grid.Row="3" Content="Modification" HorizontalAlignment="Left" Background="Transparent" Command="{Binding ModifUser}"/>
                         <Button Grid.Row="4" Content="Gestion Annonce" HorizontalAlignment="Left" Background="Transparent" Command="{Binding GestionAnnonce}"/>
                     </Grid>
+                    <StackPanel Grid.Row="2" HorizontalAlignment="Stretch">
+                        <Button  Content="Déconnexion" HorizontalAlignment="Left"  Foreground="DarkGreen" Background="Transparent" Command="{Binding Deconnexion}"/>
+                    </StackPanel>
+
                 </Grid>
-
-
             </SplitView.Pane>
             <SplitView.Content>
                 <Grid >
@@ -40,23 +42,18 @@
                         <RowDefinition Height="1*"></RowDefinition>
                         <RowDefinition Height="10*"></RowDefinition>
                         <RowDefinition Height="1*"></RowDefinition>
-
                     </Grid.RowDefinitions>
-
                     <StackPanel Grid.Row="0" VerticalAlignment="Bottom" Width="300" BorderThickness="2" BorderBrush="Black">
                         <Grid >
-                            <TextBlock Margin="20,2" Text="Recherche par login" Foreground="{StaticResource ButtonPointerOverForegroundThemeBrush}" Visibility="{Binding ElementName=txtUserEntry, Path=Text}" />
-                            <TextBox Name="txtUserEntry" Background="Transparent" BorderBrush="{StaticResource  ButtonPointerOverForegroundThemeBrush}" Text="{Binding research}" />
-                            <Button Width="95" Height="33" HorizontalAlignment="Right" Content="Recherche" Command="{Binding rechercheBox}"/>
+
+                            <TextBox  Background="Transparent" BorderBrush="{StaticResource ButtonPointerOverForegroundThemeBrush}" Text="{Binding ResearchLabel,Mode=TwoWay}" />
+                            <Button Width="95" Height="33" HorizontalAlignment="Right"  Content="Recherche" Command="{Binding rechercheBox}"/>
                         </Grid>
                     </StackPanel>
-
-
                     <ListView Grid.Row="1" ItemsSource="{Binding Users,Mode=TwoWay}" SelectedItem="{Binding SelectUser,Mode=TwoWay}" SelectionMode="Single">
                         <ListView.ItemContainerStyle>
                             <Style TargetType="ListViewItem">
                                 <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-
                             </Style>
                         </ListView.ItemContainerStyle>
                         <ListView.ItemTemplate>
@@ -91,13 +88,9 @@
                         </ListView.ItemTemplate>
                     </ListView>
                     <Button Grid.Row="2"  HorizontalAlignment="Center" FontSize="20" Command="{Binding Suppression}">Supprimer</Button>
-                    <Button Grid.Row="2"  HorizontalAlignment="Left" Margin="20" FontSize="20" Command="{Binding RefreshList}">Rafraichir</Button>
-
-
+                    <Button Grid.Row="2"  HorizontalAlignment="Left" Margin="20,0,0,0" FontSize="20" Command="{Binding RefreshList}">Rafraichir</Button>
                 </Grid>
-
             </SplitView.Content>
-
         </SplitView>
     </Grid>
 </Page>

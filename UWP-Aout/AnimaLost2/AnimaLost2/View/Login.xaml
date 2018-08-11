@@ -7,11 +7,21 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     DataContext="{Binding Source={StaticResource Locator}, Path=Login}">
-
-    <Grid Background="Silver" >
-
-        <Grid HorizontalAlignment="Center" VerticalAlignment="Center" >
+    <Grid Background="Silver">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*" ></RowDefinition>
+            <RowDefinition Height="8*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel VerticalAlignment="Bottom">
+            <TextBlock FontSize="35"  Foreground="Green" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Animal Lost">
+                
+            </TextBlock>
+        </StackPanel>
+    <Grid Grid.Row="1"  >
+        
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,150,0,0" >
             <Grid.ColumnDefinitions>
+                
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
@@ -19,24 +29,25 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
 
             </Grid.RowDefinitions>
-
-            <TextBlock FontSize="20"  VerticalAlignment="Center" HorizontalAlignment="Right" Text="Login :" Grid.Column="0" Grid.Row="0"></TextBlock>
-            <TextBox  HorizontalAlignment="Center"  x:Name="login" Grid.Column="1" Grid.Row="0" Margin="4,0,-76,0" Width="143" Text="{Binding ULogin,Mode=TwoWay}"/>
-            <TextBlock FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Mot de passe :" Grid.Column="0" Grid.Row="1"></TextBlock>
-            <PasswordBox HorizontalAlignment="Center"  PasswordChar="*" x:Name="password" Grid.Column="1" Grid.Row="1" Margin="4,0,-76,0" Width="143" Password="{Binding Password,Mode=TwoWay}"/>
-            <Button Content="Connexion" 
+   
+            <TextBlock FontSize="20"  VerticalAlignment="Center" HorizontalAlignment="Right" Text="Login :" Grid.Column="0" Grid.Row="1"></TextBlock>
+            <TextBox  HorizontalAlignment="Center"  x:Name="login" Grid.Column="1" Grid.Row="1" Margin="4,0,-76,0" Width="143" Text="{Binding ULogin,Mode=TwoWay}"/>
+            <TextBlock FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Mot de passe :" Grid.Column="0" Grid.Row="2"></TextBlock>
+            <PasswordBox HorizontalAlignment="Center"  PasswordChar="*" x:Name="password" Grid.Column="1" Grid.Row="2" Margin="4,0,-76,0" Width="143" Password="{Binding Password,Mode=TwoWay}"/>
+                <Button Content="Connexion" 
                      Command="{Binding SingIn}"
                      HorizontalAlignment="Center"  d:LayoutRounding="Auto"
-                      Grid.ColumnSpan="2" Grid.Row="2" Margin="58,6,19,-6" UseLayoutRounding="False">
-                <Button.RenderTransform>
-                    <CompositeTransform SkewY="0.677" TranslateY="1.488"/>
-                </Button.RenderTransform>
-            </Button>
-            <TextBlock FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Text="{Binding Exception,Mode=TwoWay}"  Grid.Column="1" Grid.Row="3"></TextBlock>
+                      Grid.ColumnSpan="2" Grid.Row="3" Margin="58,6,19,-6" UseLayoutRounding="False">
+                    <Button.RenderTransform>
+                        <CompositeTransform SkewY="0.677" TranslateY="1.488"/>
+                    </Button.RenderTransform>
+                </Button>
 
-        </Grid>
+            </Grid>
 
+    </Grid>
     </Grid>
 </Page>

@@ -18,7 +18,6 @@ namespace AnimaLost2.ViewModel
         private string password;
         private ICommand singIn;
         private INavigationService navPage;
-        private string exception;
         private IDialogService dialogService;
 
         public LoginViewModel(INavigationService lg, IDialogService dialogService)
@@ -26,19 +25,6 @@ namespace AnimaLost2.ViewModel
             navPage = lg;
             this.dialogService = dialogService;
 
-        }
-
-        public string Exception
-        {
-            get
-            {
-                return exception;
-            }
-            set
-            {
-                exception = value;
-                RaisePropertyChanged("Exception");
-            }
         }
         public string ULogin
         {
@@ -91,6 +77,7 @@ namespace AnimaLost2.ViewModel
                     if (Token.Id == null)
                     {
                         navPage.NavigateTo("Login");
+                        //A TERMINER
                     }
                     else
                     {
@@ -103,25 +90,21 @@ namespace AnimaLost2.ViewModel
                         }
                         else
                         {
-                            navPage.NavigateTo("UserManagement", ULogin);
+                            navPage.NavigateTo("UserManagement");
                         }    
                     }                 
                 }
                 else
                 {
-                    if ((int)stringInput.StatusCode == 400)
+                    if ((int)stringInput.StatusCode == 400 || (int)stringInput.StatusCode == 401 )
                     {
-                        await dialogService.ShowMessageBox("Le mot de passe est incorrect", "Error 400");
-                    }
-                    if ((int)stringInput.StatusCode == 401)
-                    {
-                        await dialogService.ShowMessageBox("Identifiant invalide", "Error 401");
+                        await dialogService.ShowMessageBox("Le compte ou le mot de passe est incorrecte", "Erreur authentification");
                     }
                 }
             }
             catch(HttpRequestException e)
             {
-                await dialogService.ShowMessageBox("Impossible de se connecter au serveur","Error");
+                await dialogService.ShowMessageBox("Impossible de se connecter au serveur","Error connection");
             }
         }
     }

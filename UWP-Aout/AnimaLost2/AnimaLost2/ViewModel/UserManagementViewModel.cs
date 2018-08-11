@@ -26,12 +26,25 @@ namespace AnimaLost2.ViewModel
         private ICommand gestionAnnonce;
         private ICommand suppression;
         private INavigationService navPage;
-        private string accueil;
         private ICommand menuBare;
         private bool openPane;
         private IDialogService dialogService;
         private ICommand recherche;
+        private string researchLabel;
+        private ICommand refreshList;
 
+        public string ResearchLabel
+        {
+            get
+            {
+                return researchLabel;
+            }
+            set
+            {
+                researchLabel = value;
+                RaisePropertyChanged("ResearchLabel");
+            }
+        }
         public ICommand rechercheBox
         {
             get
@@ -43,7 +56,6 @@ namespace AnimaLost2.ViewModel
                 return recherche;
             }
         }
-
         public ICommand Buttton_hamburger
         {
             get
@@ -65,18 +77,6 @@ namespace AnimaLost2.ViewModel
             {
                 openPane = value;
                 RaisePropertyChanged("IsPaneOpen");
-            }
-        }
-        public string Accueil
-        {
-            get
-            {
-                return accueil;
-            }
-            set
-            {
-                accueil = value;
-                RaisePropertyChanged("Accueil");
             }
         }
         public ICommand ModifUser
@@ -123,7 +123,6 @@ namespace AnimaLost2.ViewModel
                 return suppression;
             }
         }
-        private ICommand refreshList;
         public ICommand RefreshList
         {
             get
@@ -199,14 +198,8 @@ namespace AnimaLost2.ViewModel
             dialogService = service;
             InitializeAsync();
         }
-        public void OnNavigatedTo(NavigationEventArgs e)
-        {
-            accueil = "Bienvenue " + (string)e.Parameter + " !";
-        }
-        public void OnNavigatedTo()
-        {
-            accueil = "Bienvenue";
-        }
+
+
 
         private async void InitializeAsync()
         {
@@ -233,23 +226,24 @@ namespace AnimaLost2.ViewModel
                         users.Add(userApp);
                     }
                 }
+                else await dialogService.ShowMessageBox("La requete a rencontre une erreur, veuillez réessayer", "Erreur");// a verifier
             }
             catch (HttpRequestException)
             {
-                await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
+                await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur connection");
                 navPage.NavigateTo("Login");
             }
             return users;
         }
         public async Task Recherche()
         {
-            if (recherche != null)
+            if (researchLabel != null)
             {
                 try
                 {
                     Users.Clear();
                     SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                    var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/" + recherche);
+                    var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/" + researchLabel);
                     if (response.IsSuccessStatusCode)
                     {
                         try
@@ -265,8 +259,9 @@ namespace AnimaLost2.ViewModel
                         catch
                         {
                             await dialogService.ShowMessageBox("Impossible de retrouve la liste des users, veuillez réessayer", "Error");
-                        }                     
+                        }
                     }
+                    // A TERMINER ? 
                 }
                 catch
                 {
@@ -288,10 +283,9 @@ namespace AnimaLost2.ViewModel
                             Users.Remove(SelectedUser.User);
                             await dialogService.ShowMessageBox("La suppression de l'utilisateur s'est bien déroulée", "Suppression");
                         }
-                        else await dialogService.ShowMessageBox("L'utilisateur que vous essayé de supprimé n'existe pas", "Non autorisé");
-
-                        navPage.NavigateTo("UserManagement"); //faire un refresh a la place 
-                }
+                        else await dialogService.ShowMessageBox("L'utilisateur que vous essayé de supprimé n'existe pas", "Non autorisé");  
+                        await GetUsersAsync();               
+                 }
                 else await dialogService.ShowMessageBox("Vous n'avez pas selectionné d'utilisateur à supprimer", "Erreur");
             }
             catch (HttpRequestException)

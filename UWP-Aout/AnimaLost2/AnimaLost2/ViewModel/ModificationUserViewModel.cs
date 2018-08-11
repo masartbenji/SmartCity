@@ -147,7 +147,8 @@ namespace AnimaLost2.ViewModel
             }
             catch (HttpRequestException)
             {
-                await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
+                await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur connection");
+                navPage.NavigateTo("Login");
             }
 
         }

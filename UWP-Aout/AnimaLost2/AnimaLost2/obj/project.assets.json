@@ -30945,11 +30945,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ruben\\Desktop\\SmartCity-master\\UWP-Aout\\AnimaLost2\\AnimaLost2\\AnimaLost2.csproj",
+      "projectUniqueName": "C:\\Users\\Ruben\\Documents\\GitHub\\SmartCity\\UWP-Aout\\AnimaLost2\\AnimaLost2\\AnimaLost2.csproj",
       "projectName": "AnimaLost2",
-      "projectPath": "C:\\Users\\Ruben\\Desktop\\SmartCity-master\\UWP-Aout\\AnimaLost2\\AnimaLost2\\AnimaLost2.csproj",
+      "projectPath": "C:\\Users\\Ruben\\Documents\\GitHub\\SmartCity\\UWP-Aout\\AnimaLost2\\AnimaLost2\\AnimaLost2.csproj",
       "packagesPath": "C:\\Users\\Ruben\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ruben\\Desktop\\SmartCity-master\\UWP-Aout\\AnimaLost2\\AnimaLost2\\obj\\",
+      "outputPath": "C:\\Users\\Ruben\\Documents\\GitHub\\SmartCity\\UWP-Aout\\AnimaLost2\\AnimaLost2\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
