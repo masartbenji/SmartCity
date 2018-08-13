@@ -18,7 +18,8 @@ namespace AnimaLost2.ViewModel
     {
         private INavigationService navPage;
         private ICommand goBackHome;
-        private string userID;
+        private ApplicationUser user;
+        private string userName;
         private string emailUser;
         private string phone;
         private int nbAnnouncement;
@@ -36,10 +37,11 @@ namespace AnimaLost2.ViewModel
             }
         }
 
-        public GestionAnnonceViewModel(INavigationService lg)
+        public GestionAnnonceViewModel(INavigationService lg,ApplicationUser user)
         {
             InitializeAsync();
             navPage = lg;
+            this.user = user;
         }
         private async void InitializeAsync()
         {
@@ -57,24 +59,24 @@ namespace AnimaLost2.ViewModel
             }
 
         }
-        public string UserID
+        public string UserName
         {
             get
             {
-                userID = SelectedUser.User.UserName;
-                return userID;
+                userName = user.UserName;
+                return userName;
             }
             set
             {
-                userID = value;
-                RaisePropertyChanged("UserID");
+                userName = value;
+                RaisePropertyChanged("UserName");
             }
         }
         public string EmailUser
         {
             get
             {
-                emailUser = SelectedUser.User.Email;
+                emailUser = user.Email;
                 return emailUser;
             }
             set
@@ -87,7 +89,7 @@ namespace AnimaLost2.ViewModel
         {
             get
             {
-                phone = "0" + SelectedUser.User.Phone.ToString() ;
+                phone = "0" + user.Phone.ToString() ;
                 return phone;
             }
             set
@@ -110,7 +112,7 @@ namespace AnimaLost2.ViewModel
         }
         private ICommand refreshList;
         private ICommand searchBt;
-        private string search;
+        private string researchLabel;
 
         public ICommand RefreshList
         {
@@ -134,16 +136,16 @@ namespace AnimaLost2.ViewModel
                 return searchBt;
             }
         }
-        public string Search
+        public string ResearchLabel
         {
             get
             {
-                return search;
+                return researchLabel;
             }
             set
             {
-                search = value;
-                RaisePropertyChanged("Search");
+                researchLabel = value;
+                RaisePropertyChanged("ResearchLabel");
             }
         }
         public void Home()
@@ -173,14 +175,13 @@ namespace AnimaLost2.ViewModel
         }
         public async Task Recherche()
         {
-            
             bool trouvé = false;
             var AnnouncementsTemp = await GetAnnouncementsUser();
             AnnouncementVisu anouncementTemp = new AnnouncementVisu();
             foreach(AnnouncementVisu announc in AnnouncementsTemp)
             {
                 if (trouvé) break;
-                if(announc.idAnnoun == Int32.Parse(Search))
+                if(announc.idAnnoun == Int32.Parse(ResearchLabel))
                 {
                     trouvé = true;
                     anouncementTemp = announc;

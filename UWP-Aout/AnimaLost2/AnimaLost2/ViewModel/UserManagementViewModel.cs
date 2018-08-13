@@ -174,20 +174,27 @@ namespace AnimaLost2.ViewModel
         {
             navPage.NavigateTo("NewUser");
         }
-        public void ModificationUser()
+        public async Task ModificationUser()
         {
-            navPage.NavigateTo("ModificationUser");
-        }
-        public async Task ManagementUser()
-        {
-            if(SelectUser != null)
+            if (SelectUser != null)
             {
-                navPage.NavigateTo("GestionAnnonce");
+
+                navPage.NavigateTo("ModificationUser", SelectUser);
             }
             else
             {
                 await dialogService.ShowMessageBox("Veuillez d'abord selectionner un utilisateur", "Erreur");
-                navPage.NavigateTo("UserManagement");
+            }
+        }
+        public async Task ManagementUser()
+        {
+            if(SelectUser != null)
+            { 
+                navPage.NavigateTo("GestionAnnonce",SelectUser);
+            }
+            else
+            {
+                await dialogService.ShowMessageBox("Veuillez d'abord selectionner un utilisateur", "Erreur");
             }
         }
 

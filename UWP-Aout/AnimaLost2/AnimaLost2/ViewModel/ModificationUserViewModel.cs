@@ -14,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Windows.UI.Xaml.Navigation;
+using System.Collections.ObjectModel;
 
 namespace AnimaLost2.ViewModel
 {
@@ -23,15 +24,31 @@ namespace AnimaLost2.ViewModel
         private IDialogService dialogService;
         private ICommand cancel;
         private ICommand modif;
+        private ApplicationUser user;
         private string login;
         private string password;
         private string email;
         private int tel;
+        private string userType;
+
+        public string UserType
+        {
+            get
+            {
+                if (user != null && login == null) userType = user.RoleName;
+                return userType;
+            }
+            set
+            {
+                userType = value;
+                RaisePropertyChanged("UserType");
+            }
+        }
 
         public string Login
         {
             get {
-                if (SelectedUser.User != null && login == null) login = SelectedUser.User.UserName;
+                if (user != null && login == null) login = user.UserName;
                 return login;
             }
             set
@@ -42,17 +59,20 @@ namespace AnimaLost2.ViewModel
         }
         public string Password
         {
-            get { return password; }
+            get {
+                if (user != null && password == null) password = user.Password;
+                return password;
+            }
             set
             {
                 password = value;
-                RaisePropertyChanged("password");
+                RaisePropertyChanged("Password");
             }
         }
         public string Email
         {
             get {
-                if (SelectedUser.User != null && email == null) email = SelectedUser.User.Email;
+                if (user != null && email == null) email = user.Email;
                 return email;
             }
             set
@@ -64,7 +84,7 @@ namespace AnimaLost2.ViewModel
         public int Tel
         {
             get {
-                if (SelectedUser.User != null && tel == 0) tel = SelectedUser.User.Phone;
+                if (user != null && tel == 0) tel = user.Phone;
                 return tel;
             }
             set
@@ -107,9 +127,13 @@ namespace AnimaLost2.ViewModel
                 {
                     var userJson = await response.Content.ReadAsStringAsync();
                     var user = ApplicationUser.Deserialize(userJson);
+                    // a quoi servent ces if ? 
+
                     if (Password == "") Password = user.Password;
                     if (Email == "") Email = user.Email;
                     if (Tel == 0) Tel = user.Phone;
+
+
                     var roleResponse = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Role/" + user.UserName);
                     var jsonRoleName = await roleResponse.Content.ReadAsStringAsync();
                     user.RoleName = ApplicationUser.GetRoleUser(jsonRoleName);
@@ -157,10 +181,20 @@ namespace AnimaLost2.ViewModel
         {
             navPage.NavigateTo("UserManagement");
         }
-        public ModificationUserViewModel(INavigationService lg, IDialogService service)
+        public ModificationUserViewModel(INavigationService lg, IDialogService service,ApplicationUser user)
         {
             navPage = lg;
             dialogService = service;
+            this.user=user;
+           
+        }
+
+        public void initTypeUser()
+        {
+            _typeUserList = new ObservableCollection<string>();
+            _typeUserList.Add(user.RoleName);
+            if (user.RoleName == "Admin") _typeUserList.Add("Utilisateur");
+            else _typeUserList.Add("Admin");
         }
     }
 }

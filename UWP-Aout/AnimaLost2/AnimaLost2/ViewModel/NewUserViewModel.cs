@@ -74,7 +74,7 @@ namespace AnimaLost2.ViewModel
                 tel = value;
                 if (!Regex.IsMatch(value, @"^[0-9]*$"))
                 {
-                   
+                    //tel = ""; a voir 
                 }
             }
         }
@@ -141,7 +141,6 @@ namespace AnimaLost2.ViewModel
                     {
                         await dialogService.ShowMessageBox("Email invalide", "Email");
                     }
-
                 }
                 if (TypeUserSelected == "Admin") typeUserBD = "Admin"; else typeUserBD = "User";
                 if (testOK)
