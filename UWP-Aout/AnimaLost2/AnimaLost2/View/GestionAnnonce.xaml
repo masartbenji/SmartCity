@@ -8,8 +8,8 @@
     mc:Ignorable="d"
     DataContext="{Binding Source={StaticResource Locator}, Path=GestionAnnonce}">
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <SplitView DisplayMode="CompactInline" IsPaneOpen="{Binding IsPaneOpen,Mode=TwoWay}"  PaneBackground="White" >
-            <SplitView.Pane>
+        <SplitView DisplayMode="CompactInline" IsPaneOpen="{Binding IsPaneOpen,Mode=TwoWay}" PaneBackground="White" OpenPaneLength="200" >
+            <SplitView.Pane >
                 <Grid Background="SandyBrown">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*"/>
@@ -25,10 +25,10 @@
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
-                        <Button  FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Width="50" Height="50" Background="Transparent"  Command="{Binding Buttton_hamburger}"/>
+                        <Button Width="50" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Height="50" Background="Transparent"  Command="{Binding Buttton_hamburger}" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center"/>
                         <TextBlock Grid.Row="1"  FontSize="20" HorizontalAlignment="Left"  Text="{Binding UserName}"/>
                         <TextBlock Grid.Row="2" HorizontalAlignment="Left" Text="{Binding UserRole}"/>
-                        <TextBlock Grid.Row="3" HorizontalAlignment="Left"  Text="{Binding Tel}"/>
+                        <TextBlock Grid.Row="3" HorizontalAlignment="Left"  Text="{Binding PhoneUser}"/>
                         <TextBlock  Grid.Row="4" HorizontalAlignment="Left" Text="{Binding EmailUser}"/>
                         <StackPanel Grid.Row="5" >
                             <Grid>
@@ -60,7 +60,7 @@
                             <Button Width="95" Height="33" HorizontalAlignment="Right"  Content="Recherche" Command="{Binding SearchBt}"/>
                         </Grid>
                     </StackPanel>
-                    <ListView Grid.Row="1" ItemsSource="{Binding Users,Mode=TwoWay}" SelectedItem="{Binding SelectUser,Mode=TwoWay}" SelectionMode="Single">
+                    <ListView Grid.Row="1" ItemsSource="{Binding Announcements,Mode=TwoWay}" SelectedItem="{Binding selectedAnnonce,Mode=TwoWay}" SelectionMode="Single">
                         <ListView.ItemContainerStyle>
                             <Style TargetType="ListViewItem">
                                 <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -117,7 +117,7 @@
             </SplitView.Content>
 
         </SplitView>
-       
+
     </Grid>
 
 </Page>

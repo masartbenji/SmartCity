@@ -77,7 +77,7 @@ namespace AnimaLost2.ViewModel
                     if (Token.Id == null)
                     {
                         navPage.NavigateTo("Login");
-                        //A TERMINER
+                        await dialogService.ShowMessageBox("Acces non autorisé aux utilisateurs", "zadfrazdadazdaé");
                     }
                     else
                     {
@@ -100,6 +100,7 @@ namespace AnimaLost2.ViewModel
                     {
                         await dialogService.ShowMessageBox("Le compte ou le mot de passe est incorrecte", "Erreur authentification");
                     }
+                    await dialogService.ShowMessageBox("Impossible de se connecter au serveur", stringInput.StatusCode.ToString());
                 }
             }
             catch(HttpRequestException e)

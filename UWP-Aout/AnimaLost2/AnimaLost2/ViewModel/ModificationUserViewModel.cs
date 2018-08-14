@@ -189,12 +189,5 @@ namespace AnimaLost2.ViewModel
            
         }
 
-        public void initTypeUser()
-        {
-            _typeUserList = new ObservableCollection<string>();
-            _typeUserList.Add(user.RoleName);
-            if (user.RoleName == "Admin") _typeUserList.Add("Utilisateur");
-            else _typeUserList.Add("Admin");
-        }
     }
 }

@@ -18,11 +18,39 @@ namespace AnimaLost2.ViewModel
     {
         private INavigationService navPage;
         private ICommand goBackHome;
+        private DialogService dialogService;
         private ApplicationUser user;
         private string userName;
         private string emailUser;
         private string phone;
         private int nbAnnouncement;
+        private string userRole;
+        public string UserRole
+        {
+            get
+            {
+                userRole = user.RoleName;
+                return userName;
+            }
+            set
+            {
+                userRole = value;
+                RaisePropertyChanged("UserRole");
+            }
+        }
+        private AnnouncementVisu selectedAnnonce;
+        public AnnouncementVisu SelectedAnnonce
+        {
+            get
+            {
+                return selectedAnnonce;
+            }
+            set
+            {
+                selectedAnnonce = value;
+                RaisePropertyChanged("SelectedAnnonce");
+            }
+        }
         private ObservableCollection<AnnouncementVisu> announcements;
         public ObservableCollection<AnnouncementVisu> Announcements
         {
@@ -36,12 +64,32 @@ namespace AnimaLost2.ViewModel
                 RaisePropertyChanged("Announcements");
             }
         }
+        private ICommand suppression;
+        public ICommand Suppression
+        {
+            get
+            {
+                if (suppression == null)
+                {
+                    suppression = new RelayCommand(() => SuppressionAnnonce(SelectedAnnonce));
+                }
+                return suppression;
+            }
 
-        public GestionAnnonceViewModel(INavigationService lg,ApplicationUser user)
+        }
+        public async Task SuppressionAnnonce(AnnouncementVisu selectedAnnonce)
+        {
+            // supression d une annnonce selectioner ok ? ou on fair pluseirs ? 
+
+        }
+
+
+        public GestionAnnonceViewModel(INavigationService lg,DialogService dialogService, ApplicationUser user)
         {
             InitializeAsync();
             navPage = lg;
             this.user = user;
+            this.dialogService = dialogService;
         }
         private async void InitializeAsync()
         {
@@ -113,7 +161,6 @@ namespace AnimaLost2.ViewModel
         private ICommand refreshList;
         private ICommand searchBt;
         private string researchLabel;
-
         public ICommand RefreshList
         {
             get
@@ -158,7 +205,7 @@ namespace AnimaLost2.ViewModel
             try
             {
                 SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Announcement/" + SelectedUser.User.UserName);
+                var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Announcement/" + user.UserName);
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonAnnouncement = response.Content.ReadAsStringAsync().Result;
@@ -168,7 +215,8 @@ namespace AnimaLost2.ViewModel
             }
             catch (HttpRequestException)
             {
-
+                await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur connection");
+                navPage.NavigateTo("Login");
             }
             NbAnnonceUser = Announcements.Count;
             return Announcements;
@@ -189,6 +237,35 @@ namespace AnimaLost2.ViewModel
             }
             Announcements.Clear();
             Announcements.Add(anouncementTemp);
+        }
+        private bool openPane;
+        public bool IsPaneOpen
+        {
+            get
+            {
+                return openPane;
+            }
+            set
+            {
+                openPane = value;
+                RaisePropertyChanged("IsPaneOpen");
+            }
+        }
+        public void menuHamburger()
+        {
+            IsPaneOpen = !IsPaneOpen;
+        }
+        private ICommand menuBare;
+        public ICommand Buttton_hamburger
+        {
+            get
+            {
+                if (menuBare == null)
+                {
+                    menuBare = new RelayCommand(() => menuHamburger());
+                }
+                return menuBare;
+            }
         }
     }
 }
