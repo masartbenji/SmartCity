@@ -72,10 +72,7 @@ namespace AnimaLost2.ViewModel
             set
             {
                 tel = value;
-                if (!Regex.IsMatch(value, @"^[0-9]*$"))
-                {
-                    //tel = ""; a voir 
-                }
+                RaisePropertyChanged("Tel");
             }
         }
         public string Email
@@ -136,12 +133,21 @@ namespace AnimaLost2.ViewModel
                 if (Login == null || Password == null || int.Parse(Tel) == 0 || TypeUserSelected == null) { testOK = false; }
                 if (testOK)
                 {
+                    testOK = IsPhoneAllowed(Tel);
+                    if (!testOK)
+                    {
+                        await dialogService.ShowMessageBox("Numéro de téléphone invalide", "Téléphone");
+                    }
+                }
+                if (testOK)
+                {
                     testOK = IsEmailAllowed(Email);
                     if (!testOK)
                     {
                         await dialogService.ShowMessageBox("Email invalide", "Email");
                     }
                 }
+
                 if (TypeUserSelected == "Admin") typeUserBD = "Admin"; else typeUserBD = "User";
                 if (testOK)
                 {
@@ -160,11 +166,11 @@ namespace AnimaLost2.ViewModel
                         await dialogService.ShowMessageBox("L'utilisateur a bien été créé", "Création");
                         navPage.NavigateTo("UserManagement");
                     }
-                    else if (response.ReasonPhrase == "Unauthorized")
-                    {
-                        await dialogService.ShowMessageBox("Vous n'êtes pas autorisé à effectuer cette action", "Erreur");
-                        navPage.NavigateTo("Login");
-                    }
+                    //else if (response.ReasonPhrase == "Unauthorized")  PAS DE SENS ? 
+                    //{
+                    //    await dialogService.ShowMessageBox("Vous n'êtes pas autorisé à effectuer cette action", "Erreur");
+                    //    navPage.NavigateTo("Login");
+                    //}
                     else
                     {
                         await dialogService.ShowMessageBox("L'utilisateur ne peut être créé", "Erreur");
@@ -203,7 +209,6 @@ namespace AnimaLost2.ViewModel
             dialogService = service;
             initListTypeUser();
         }
-
         public bool IsEmailAllowed(string text)
         {
             bool blnValidEmail = false;
@@ -214,6 +219,17 @@ namespace AnimaLost2.ViewModel
             }
 
             return blnValidEmail;
+        }
+        public bool IsPhoneAllowed(string text)
+        {
+            bool blnValidPhone = false;
+            Regex regEMail = new Regex(@"^[0-9]*$");
+            if (text.Length > 0)
+            {
+                blnValidPhone = regEMail.IsMatch(text);
+            }
+
+            return blnValidPhone;
         }
         public void initListTypeUser()
         {

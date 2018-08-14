@@ -197,16 +197,12 @@ namespace AnimaLost2.ViewModel
                 await dialogService.ShowMessageBox("Veuillez d'abord selectionner un utilisateur", "Erreur");
             }
         }
-
-
         public UserManagementViewModel(INavigationService lg, IDialogService service)
         {
             navPage = lg;
             dialogService = service;
             InitializeAsync();
         }
-
-
 
         private async void InitializeAsync()
         {
@@ -233,7 +229,7 @@ namespace AnimaLost2.ViewModel
                         users.Add(userApp);
                     }
                 }
-                else await dialogService.ShowMessageBox("La requete a rencontre une erreur, veuillez réessayer", "Erreur");// a verifier
+                else await dialogService.ShowMessageBox("La requete a rencontre une erreur, veuillez réessayer", "Erreur");
             }
             catch (HttpRequestException)
             {
@@ -250,6 +246,8 @@ namespace AnimaLost2.ViewModel
                 {
                     Users.Clear();
                     SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
+                    // faut il un verif de token saission ?? 
+
                     var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/" + researchLabel);
                     if (response.IsSuccessStatusCode)
                     {
@@ -258,17 +256,27 @@ namespace AnimaLost2.ViewModel
                             string userJson = await response.Content.ReadAsStringAsync();
                             ApplicationUser user = ApplicationUser.Deserialize(userJson);
                             SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                            var roleResponse = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Role/" + user.UserName);
-                            string roleName = await roleResponse.Content.ReadAsStringAsync();
-                            user.RoleName = ApplicationUser.GetRoleUser(roleName);
-                            Users.Add(user);
+                            // pas de sens de le verifire si on le fait plus haut non ?
+
+                            if (Token.Id == null)
+                            {
+                                navPage.NavigateTo("Login");
+                                await dialogService.ShowMessageBox("Acces non autorisé aux utilisateurs", "Session expire");
+                            }
+                            else
+                            {
+                                var roleResponse = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Role/" + user.UserName);
+                                string roleName = await roleResponse.Content.ReadAsStringAsync();
+                                user.RoleName = ApplicationUser.GetRoleUser(roleName);
+                                Users.Add(user);
+                            }
                         }
                         catch
                         {
                             await dialogService.ShowMessageBox("Impossible de retrouve la liste des users, veuillez réessayer", "Error");
                         }
-                    }
-                    // A TERMINER ? 
+                    }else await dialogService.ShowMessageBox("Une erreur est intervenu veuillez réessayer", "Error");
+
                 }
                 catch
                 {
@@ -284,14 +292,22 @@ namespace AnimaLost2.ViewModel
                 if (SelectUser != null)
                 {
                         SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                        var response = await SingleConnection.Client.DeleteAsync(SingleConnection.Client.BaseAddress + "Account/" + SelectedUser.User.UserName);
-                        if (response.IsSuccessStatusCode)
-                        {    
-                            Users.Remove(SelectedUser.User);
-                            await dialogService.ShowMessageBox("La suppression de l'utilisateur s'est bien déroulée", "Suppression");
+                        if (Token.Id == null)
+                        {
+                            navPage.NavigateTo("Login");
+                            await dialogService.ShowMessageBox("Acces non autorisé aux utilisateurs", "Session expire");
                         }
-                        else await dialogService.ShowMessageBox("L'utilisateur que vous essayé de supprimé n'existe pas", "Non autorisé");  
-                        await GetUsersAsync();               
+                        else
+                        {
+                            var response = await SingleConnection.Client.DeleteAsync(SingleConnection.Client.BaseAddress + "Account/" + SelectedUser.User.UserName);
+                            if (response.IsSuccessStatusCode)
+                            {
+                                Users.Remove(SelectedUser.User);
+                                await dialogService.ShowMessageBox("La suppression de l'utilisateur s'est bien déroulée", "Suppression");
+                            }
+                            else await dialogService.ShowMessageBox("L'utilisateur que vous essayé de supprimé n'existe pas", "Utilisateur inconnu");
+                            await GetUsersAsync();
+                        }         
                  }
                 else await dialogService.ShowMessageBox("Vous n'avez pas selectionné d'utilisateur à supprimer", "Erreur");
             }

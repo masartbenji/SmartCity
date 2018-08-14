@@ -122,52 +122,61 @@ namespace AnimaLost2.ViewModel
             try
             {
                 SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/" + Login);
-                if (response.IsSuccessStatusCode)
+                if (Token.Id == null)
                 {
-                    var userJson = await response.Content.ReadAsStringAsync();
-                    var user = ApplicationUser.Deserialize(userJson);
-                    // a quoi servent ces if ? 
-
-                    if (Password == "") Password = user.Password;
-                    if (Email == "") Email = user.Email;
-                    if (Tel == 0) Tel = user.Phone;
-
-
-                    var roleResponse = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Role/" + user.UserName);
-                    var jsonRoleName = await roleResponse.Content.ReadAsStringAsync();
-                    user.RoleName = ApplicationUser.GetRoleUser(jsonRoleName);
-                    var userFinal = new ApplicationUser()
-                    {
-                        UserName = user.UserName,
-                        Password = Password,
-                        Email = Email,
-                        Phone = Tel,
-                        RoleName = user.RoleName
-                    };
-                    var responsePut = await SingleConnection.Client.PutAsJsonAsync(SingleConnection.Client.BaseAddress + "Account/" + user.UserName, userFinal);
-                    if (responsePut.IsSuccessStatusCode)
-                    {
-                        GoHomeBack();
-                    }
-                    else
-                    {
-                        await dialogService.ShowMessageBox("Il s'est produit une erreur lors de la modification", "Erreur");
-                        navPage.NavigateTo("ModificationUser");
-                    }
+                    navPage.NavigateTo("Login");
+                    await dialogService.ShowMessageBox("Acces non autorisé aux utilisateurs", "Session expire");
                 }
                 else
                 {
-                    if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                    var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/" + Login);
+                    if (response.IsSuccessStatusCode)
                     {
-                        await dialogService.ShowMessageBox("L'utilisateur que vous essayé de modifier n'existe pas", "Erreur");
+                        var userJson = await response.Content.ReadAsStringAsync();
+                        var user = ApplicationUser.Deserialize(userJson);
+                        // a quoi servent ces if ? 
+
+                        if (Password == "") Password = user.Password;
+                        if (Email == "") Email = user.Email;
+                        if (Tel == 0) Tel = user.Phone;
+
+
+                        var roleResponse = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Role/" + user.UserName);
+                        var jsonRoleName = await roleResponse.Content.ReadAsStringAsync();
+                        user.RoleName = ApplicationUser.GetRoleUser(jsonRoleName);
+                        var userFinal = new ApplicationUser()
+                        {
+                            UserName = user.UserName,
+                            Password = Password,
+                            Email = Email,
+                            Phone = Tel,
+                            RoleName = user.RoleName
+                        };
+                        var responsePut = await SingleConnection.Client.PutAsJsonAsync(SingleConnection.Client.BaseAddress + "Account/" + user.UserName, userFinal);
+                        if (responsePut.IsSuccessStatusCode)
+                        {
+                            GoHomeBack();
+                        }
+                        else
+                        {
+                            await dialogService.ShowMessageBox("Il s'est produit une erreur lors de la modification", "Erreur");
+                            navPage.NavigateTo("ModificationUser");
+                        }
                     }
-                    else if(response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
+                    else
                     {
-                        await dialogService.ShowMessageBox("Une erreur du serveur est survenue, il se peut que vous ayez été déconnecté", "Erreur");
+                        if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                        {
+                            await dialogService.ShowMessageBox("L'utilisateur que vous essayé de modifier n'existe pas", "Erreur");
+                        }
+                        else if (response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
+                        {
+                            await dialogService.ShowMessageBox("Une erreur du serveur est survenue, il se peut que vous ayez été déconnecté", "Erreur");
+                        }
+                        navPage.NavigateTo("ModificationUser");
                     }
-                    navPage.NavigateTo("ModificationUser");
                 }
+
             }
             catch (HttpRequestException)
             {

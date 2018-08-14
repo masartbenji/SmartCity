@@ -71,17 +71,17 @@ namespace AnimaLost2.ViewModel
             {
                 if (suppression == null)
                 {
-                    suppression = new RelayCommand(() => SuppressionAnnonce(SelectedAnnonce));
+                    //suppression = new RelayCommand(() => SuppressionAnnonce(SelectedAnnonce));
                 }
                 return suppression;
             }
 
         }
-        public async Task SuppressionAnnonce(AnnouncementVisu selectedAnnonce)
-        {
-            // supression d une annnonce selectioner ok ? ou on fair pluseirs ? 
+        //public async Task SuppressionAnnonce(AnnouncementVisu selectedAnnonce)
+        //{
+        //    // supression d une annnonce selectioner ok ? ou on fair pluseirs ? 
 
-        }
+        //}
 
 
         public GestionAnnonceViewModel(INavigationService lg,DialogService dialogService, ApplicationUser user)
@@ -205,13 +205,24 @@ namespace AnimaLost2.ViewModel
             try
             {
                 SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Announcement/" + user.UserName);
-                if (response.IsSuccessStatusCode)
+                if (Token.Id == null)
                 {
-                    var jsonAnnouncement = response.Content.ReadAsStringAsync().Result;
-                    Announcements = AnnouncementVisu.Deserialize(jsonAnnouncement);
-                    
+                    navPage.NavigateTo("Login");
+                    await dialogService.ShowMessageBox("Acces non autorisé aux utilisateurs", "Session expire");
+                }else
+                {
+                    var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Announcement/" + user.UserName);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var jsonAnnouncement = response.Content.ReadAsStringAsync().Result;
+                        Announcements = AnnouncementVisu.Deserialize(jsonAnnouncement);
+                    }
+                    else
+                    {
+                        await dialogService.ShowMessageBox("Impossible de retrouve la liste des annonces, veuillez réessayer", "Error");
+                    }
                 }
+
             }
             catch (HttpRequestException)
             {

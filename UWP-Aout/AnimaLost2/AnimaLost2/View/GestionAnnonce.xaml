@@ -58,9 +58,10 @@
                         <Grid >
                             <TextBox  Background="Transparent" BorderBrush="{StaticResource ButtonPointerOverForegroundThemeBrush}" Text="{Binding ResearchLabel,Mode=TwoWay}" />
                             <Button Width="95" Height="33" HorizontalAlignment="Right"  Content="Recherche" Command="{Binding SearchBt}"/>
+                            
                         </Grid>
                     </StackPanel>
-                    <ListView Grid.Row="1" ItemsSource="{Binding Announcements,Mode=TwoWay}" SelectedItem="{Binding selectedAnnonce,Mode=TwoWay}" SelectionMode="Single">
+                    <ListView Grid.Row="1" ItemsSource="{Binding Announcements,Mode=TwoWay}" SelectedItem="{Binding SelectedAnnonce,Mode=TwoWay}" SelectionMode="Single">
                         <ListView.ItemContainerStyle>
                             <Style TargetType="ListViewItem">
                                 <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
