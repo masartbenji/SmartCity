@@ -29,20 +29,76 @@ namespace SmartCity3.Controllers
         {
             return ctx.Announcement;
         }
+        [AllowAnonymous]
+        [HttpGet("MaxId")]
+        public int GetMaxId()
+        {
+            return ctx.Announcement.Count();
+        }
+        [AllowAnonymous]
+        [HttpGet("android/{nameStatus}")]
+        public IEnumerable<AnnouncementAndroid> GetAnnouncementsAndroid(String nameStatus)
+        {
+            List<AnnouncementAndroid> announcements = new List<AnnouncementAndroid>();
+            int id = ctx.Statut.Where(s => s.State == nameStatus).Select(s => s.Id).Single();
+
+            foreach (Announcement announc in ctx.Announcement.Where(a => a.IdStatut == id))
+            {
+                Animal animal = ctx.Animal.Where(a => a.Id == announc.IdAnimal).First();
+                Breed breed = ctx.Breed.Where(b => b.id == animal.IdBreed).First();
+                var announcement = new AnnouncementAndroid()
+                {
+                    Id = announc.Id,
+                    Name = animal.Name,
+                    Species = breed.IdSpecies,
+                    Breed = breed.Name,
+                    Color = animal.IdColor,
+                    Date = announc.Date,
+                    Description = announc.Description,
+                    IdStatut = announc.IdStatut,
+                    IdAnimal = announc.IdAnimal
+                };
+                announcements.Add(announcement);
+            }
+            return announcements;
+        } 
 
         //Get: api/Announcement/5
         [AllowAnonymous]
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetAnnouncement([FromRoute]int id)
+        public async Task<IEnumerable<Announcement>> GetAnnouncement([FromRoute]int id)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
-            var announcement = await ctx.Announcement.SingleOrDefaultAsync(m => m.Id == id);
-
-            if (announcement == null) return NotFound();
-            return Ok(announcement);
+            List<Announcement> announcement = new List<Announcement>();
+            announcement.Add(await ctx.Announcement.SingleOrDefaultAsync(m => m.Id == id));
+            return announcement;
         }
 
-        
+        [AllowAnonymous]
+        [HttpGet("android/id/{id}")]
+        public IEnumerable<AnnouncementAndroid> GetAnnouncementAndroid([FromRoute] int id)
+        {
+            List<AnnouncementAndroid> announcements = new List<AnnouncementAndroid>();
+            var announcement = ctx.Announcement.SingleOrDefault(m => m.Id == id);
+            if (announcement != null)
+            {
+                Animal animal = ctx.Animal.Where(a => a.Id == announcement.IdAnimal).First();
+                Breed breed = ctx.Breed.Where(b => b.id == animal.IdBreed).First();
+                var announcementAndroid = new AnnouncementAndroid()
+                {
+                    Id = announcement.Id,
+                    Name = animal.Name,
+                    Species = breed.IdSpecies,
+                    Breed = breed.Name,
+                    Color = animal.IdColor,
+                    Date = announcement.Date,
+                    Description = announcement.Description,
+                    IdStatut = announcement.IdStatut,
+                    IdAnimal = announcement.IdAnimal
+                };
+                announcements.Add(announcementAndroid);
+            }
+            return announcements;
+        }
         [HttpGet("Person")]
         public async Task<IActionResult> GetAnnouncementOfPerson()
         {
@@ -63,7 +119,6 @@ namespace SmartCity3.Controllers
         {
             var status = ctx.Statut;
             if (!ModelState.IsValid) return BadRequest(ModelState);
-            //var announcement = await ctx.User.SingleOrDefaultAsync(u => u.UserName == pseudo);
             var announcement = ctx.Announcement.Join(status, a => a.IdStatut, s => s.Id, (a, s) => new { idAnnouncement = a.Id, nameStatus = s.State })
                 .Where(a => a.nameStatus == statusName);
             if (announcement == null) return NotFound();
@@ -80,25 +135,28 @@ namespace SmartCity3.Controllers
             if (searchRole == null) return Unauthorized();
 
             if (id != announcement.Id) return BadRequest();
-
-            ctx.Entry(announcement).State = EntityState.Modified;
-
-            try
+            using(var transaction = ctx.Database.BeginTransaction())
             {
-                await ctx.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!AnnouncementExists(id))
+                ctx.Entry(announcement).State = EntityState.Modified;
+
+                try
                 {
-                    return NotFound();
+                    await ctx.SaveChangesAsync();
                 }
-                else
+                catch (DbUpdateConcurrencyException)
                 {
-                    throw;
+                    if (!AnnouncementExists(id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
                 }
+                return NoContent();
             }
-            return NoContent();
+            return Unauthorized();
         }
 
         //POST: api/Announcement
@@ -157,5 +215,18 @@ namespace SmartCity3.Controllers
         {
             return ctx.Announcement.Any(e => e.Id == id);
         }
+        public class AnnouncementAndroid
+        {
+            public int Id { get; set; }
+            public String Name { get; set; }
+            public String Species { get; set; }
+            public String Breed { get; set; }
+            public String Color { get; set; }
+            public DateTime Date { get; set; }
+            public String Description { get; set; }
+            public int IdStatut { get; set; }
+            public int IdAnimal { get; set; }
+        }
     }
+    
 }

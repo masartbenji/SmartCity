@@ -35,13 +35,25 @@ namespace SmartCity3.Controllers
         //Get: api/Breed/5
         [HttpGet("{id}")]
         [AllowAnonymous]
-        public async Task<IActionResult> GetBreed([FromRoute]string id)
+        public async Task<IActionResult> GetBreed([FromRoute]int id)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
-            var breed = await ctx.Breed.SingleOrDefaultAsync(m => m.Name == id);
+            var breed = await ctx.Breed.SingleOrDefaultAsync(m => m.id == id);
 
             if (breed == null) return NotFound();
             return Ok(breed);
+        }
+        [HttpGet("Android/{id}")]
+        [AllowAnonymous]
+        public BreedAndroid GetBreedWithId([FromRoute] int id)
+        {
+            Breed breed = ctx.Breed.Single(m => m.id == id);
+            return new BreedAndroid()
+            {
+                Id = breed.id,
+                IdSpecies = breed.IdSpecies,
+                Name = breed.Name
+            };
         }
 
         //PUT: api/Breed/5
@@ -128,6 +140,13 @@ namespace SmartCity3.Controllers
             return ctx.Breed.Any(e => e.Name == id);
         }
 
+    }
+
+    public class BreedAndroid
+    {
+        public int Id { get; set; }
+        public String Name { get; set; }
+        public String IdSpecies { get; set; }
     }
 }
 

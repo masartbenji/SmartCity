@@ -205,18 +205,19 @@ namespace AnimaLost2.ViewModel
             
             bool trouvé = false;
             var AnnouncementsTemp = await GetAnnouncementsUser();
-            AnnouncementVisu anouncementTemp = new AnnouncementVisu();
-            foreach(AnnouncementVisu announc in AnnouncementsTemp)
+            Announcements.Clear();
+            foreach (AnnouncementVisu announc in AnnouncementsTemp)
             {
+                AnnouncementVisu anouncementTemp = new AnnouncementVisu();
                 if (trouvé) break;
                 if(announc.idAnnoun == Int32.Parse(Search))
                 {
                     trouvé = true;
                     anouncementTemp = announc;
                 }
+                Announcements.Add(anouncementTemp);
             }
-            Announcements.Clear();
-            Announcements.Add(anouncementTemp);
+            
         }
         public async Task SuppressionAnnouncement()
         {

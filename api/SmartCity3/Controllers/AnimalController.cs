@@ -41,6 +41,27 @@ namespace SmartCity3.Controllers
             if (animal == null) return NotFound();
             return Ok(animal);
         }
+        [AllowAnonymous]
+        [HttpGet("Person/{login}")]
+        public IEnumerable<AnimalAndroid> GetAnimalsOfPerson([FromRoute] String login)
+        {
+
+            String idUser = ctx.User.First(u => u.UserName == login).Id;
+            IEnumerable<Animal> animal = ctx.Animal.Where(a => a.IdUser == idUser);
+            List<AnimalAndroid> animalAndroid = new List<AnimalAndroid>();
+            foreach(Animal ani in animal)
+            {
+                animalAndroid.Add(new AnimalAndroid()
+                {
+                    Id = ani.Id,
+                    IdBreed = ani.IdBreed,
+                    IdColor = ani.IdColor,
+                    IdPerson = ani.IdUser,
+                    Name = ani.Name
+                });
+            }
+            return animalAndroid;
+        }
 
         //PUT: api/ApplicationUser/5
         [HttpPut("{id}")]
@@ -130,6 +151,14 @@ namespace SmartCity3.Controllers
         private bool AnimalExists(int id)
         {
             return ctx.Animal.Any(e => e.Id == id);
+        }
+        public class AnimalAndroid
+        {
+            public int Id { get; set; }
+            public String Name { get; set; }
+            public String IdColor { get; set; }
+            public int IdBreed { get; set; }
+            public String IdPerson { get; set; }
         }
     }
 }

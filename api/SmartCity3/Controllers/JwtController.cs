@@ -59,8 +59,8 @@ namespace SmartCity3.Controllers
             IEnumerable<string> roles = await _userManager.GetRolesAsync(user);
             IEnumerable<Claim> allClaimsWithRoles = roles.Select(roleName => new Claim("Role", roleName))
             .Union(claims);
-            _jwtOptions.ValidFor=new TimeSpan(0,10,0);
             // Create the JWT security token and encode it.
+            _jwtOptions.ValidFor = new TimeSpan(0, 5, 0);
             var jwt = new JwtSecurityToken(
                 issuer: _jwtOptions.Issuer,
                 audience: _jwtOptions.Audience,

@@ -29,6 +29,20 @@ namespace SmartCity3.Controllers
         {
             return ctx.Statut;
         }
+        [HttpGet("Android")]
+        public IEnumerable<StatutAndroid> GetStatutAndroids()
+        {
+            List<StatutAndroid> statuts = new List<StatutAndroid>();
+            foreach(Statut statut in ctx.Statut)
+            {
+                statuts.Add(new StatutAndroid()
+                {
+                    Id = statut.Id,
+                    State = statut.State
+                });
+            }
+            return statuts;
+        }
         
         [HttpGet("{id}")]
         [AllowAnonymous]
@@ -125,6 +139,11 @@ namespace SmartCity3.Controllers
         private bool StatusExists(int id)
         {
             return ctx.Statut.Any(e => e.Id == id);
+        }
+        public class StatutAndroid
+        {
+            public int Id { get; set; }
+            public String State { get; set; }
         }
     }
 }

@@ -31,13 +31,13 @@
     <AppXManifest Include="d:\Users\Nicolas\Downloads\SmartCity-master %281%29\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-08-06T14:46:22.485</Modified>
+      <Modified>2018-08-10T12:02:02.674</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="d:\Users\Nicolas\Downloads\SmartCity-master %281%29\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.exe">
       <PackagePath>entrypoint\AnimaLost2.exe</PackagePath>
-      <Modified>2018-08-06T14:46:21.862</Modified>
+      <Modified>2018-08-10T12:02:00.983</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nicolas\.nuget\packages\commonservicelocator\2.0.2\lib\netstandard1.0\CommonServiceLocator.dll">
       <PackagePath>CommonServiceLocator.dll</PackagePath>
@@ -624,7 +624,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="d:\Users\Nicolas\Downloads\SmartCity-master %281%29\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AnimaLost2.exe">
       <PackagePath>AnimaLost2.exe</PackagePath>
-      <Modified>2018-08-06T14:46:22.482</Modified>
+      <Modified>2018-08-10T12:02:02.656</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

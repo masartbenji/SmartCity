@@ -5,12 +5,7 @@ namespace SmartCity3
 {
     public partial class Animal
     {
-
-        public Animal()
-        {
-            Announcement = new HashSet<Announcement>();
-            Images = new HashSet<Images>();
-        }
+        
 
         public int Id { get; set; }
         public string Name { get; set; }
@@ -20,9 +15,8 @@ namespace SmartCity3
 
         public Breed IdBreedNavigation { get; set; }
         public Color IdColorNavigation { get; set; }
-        
         public ApplicationUser User { get; set; }
-        public ICollection<Announcement> Announcement { get; set; }
-        public ICollection<Images> Images { get; set; }
+        public IEnumerable<Announcement> Announcement { get; internal set; }
+        public IEnumerable<Images> Images { get; internal set; }
     }
 }

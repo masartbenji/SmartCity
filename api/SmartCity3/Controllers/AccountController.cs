@@ -50,6 +50,7 @@ namespace SmartCity3.Controllers
             return Ok(user);
 
         }
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]NewUserDTO dto)
         {
@@ -88,7 +89,6 @@ namespace SmartCity3.Controllers
                 return Ok();
             }
         }
-        [AllowAnonymous]
         [HttpDelete("{username}")]
         public async Task<IActionResult> DeleteUsers([FromRoute] string username)
         {
