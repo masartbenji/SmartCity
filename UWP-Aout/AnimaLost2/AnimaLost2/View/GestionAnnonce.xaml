@@ -37,7 +37,7 @@
                                     <ColumnDefinition Width="auto"></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
                                 <Image Grid.Column="0" />
-                                <Button Grid.Column="1"  Command="{Binding Return}" Content="Back" Background="Transparent" FontSize="19"/>
+                                <Button Grid.Column="1"  Command="{Binding GoBackHome}" Content="Back" Background="Transparent" FontSize="19"/>
                             </Grid>
                         </StackPanel>
                     </Grid>

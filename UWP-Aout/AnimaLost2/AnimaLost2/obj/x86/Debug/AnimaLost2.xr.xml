@@ -4,7 +4,7 @@
     <RootPropertyPathName Name="GestionAnnonce" />
     <RootPropertyPathName Name="IsPaneOpen" />
     <RootPropertyPathName Name="Deconnexion" />
-    <RootPropertyPathName Name="Return" />
+    <RootPropertyPathName Name="GoBackHome" />
     <RootPropertyPathName Name="EmailUser" />
     <RootPropertyPathName Name="PhoneUser" />
     <RootPropertyPathName Name="UserRole" />

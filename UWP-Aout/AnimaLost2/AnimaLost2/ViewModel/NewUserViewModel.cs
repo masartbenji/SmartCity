@@ -130,7 +130,7 @@ namespace AnimaLost2.ViewModel
             {
                 string typeUserBD;
                 bool testOK = true;
-                if (Login == null || Password == null || int.Parse(Tel) == 0 || TypeUserSelected == null) { testOK = false; }
+                if (Login == null || Password == null || int.Parse(Tel) == 0 || TypeUserSelected == null || Email == null) { testOK = false; }
                 if (testOK)
                 {
                     testOK = IsPhoneAllowed(Tel);
@@ -138,9 +138,6 @@ namespace AnimaLost2.ViewModel
                     {
                         await dialogService.ShowMessageBox("Numéro de téléphone invalide", "Téléphone");
                     }
-                }
-                if (testOK)
-                {
                     testOK = IsEmailAllowed(Email);
                     if (!testOK)
                     {

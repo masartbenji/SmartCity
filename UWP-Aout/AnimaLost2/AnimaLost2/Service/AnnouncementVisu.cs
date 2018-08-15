@@ -25,18 +25,18 @@ namespace AnimaLost2.Service
                 var split = json.Split(new string[] { "},{" }, StringSplitOptions.RemoveEmptyEntries);
                 foreach (var announ in split)
                 {
-                    var splitAnnouncement = announ.Split(new char[] { ',', '"', '{', '}', '[', ']', ':', '-', 'T' }, StringSplitOptions.RemoveEmptyEntries);
-                    AnnouncementVisu announcement = new AnnouncementVisu()
-                    {
-                        idAnnoun = Int32.Parse(splitAnnouncement[1]),
-                        Breed = splitAnnouncement[12],
-                        Species = splitAnnouncement[14],
-                        Description = splitAnnouncement[16],
-                        NameAnimal = splitAnnouncement[10],
-                        Status = splitAnnouncement[18],
-                        DateAnnoun = new DateTime(Int32.Parse(splitAnnouncement[3]), Int32.Parse(splitAnnouncement[4]), Int32.Parse(splitAnnouncement[5]))
-                    };
-                    announcements.Add(announcement);
+                        var splitAnnouncement = announ.Split(new char[] {'"', '{', '}', '[', ']', ':', '-' }, StringSplitOptions.RemoveEmptyEntries);
+                        AnnouncementVisu announcement = new AnnouncementVisu()
+                        {
+                            idAnnoun = Int32.Parse(splitAnnouncement[1].Substring(0,1)),
+                            Breed = splitAnnouncement[13],
+                            Species = splitAnnouncement[16],
+                            Description = splitAnnouncement[19],
+                            NameAnimal = splitAnnouncement[10],
+                            Status = splitAnnouncement[22],
+                            DateAnnoun = new DateTime(Int32.Parse(splitAnnouncement[3]), Int32.Parse(splitAnnouncement[4]), Int32.Parse(splitAnnouncement[5].Substring(0, 2)))
+                        };
+                        announcements.Add(announcement);
                 }
             }
             return announcements;

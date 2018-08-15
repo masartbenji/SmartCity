@@ -13118,23 +13118,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ruben\\.nuget\\packages\\": {},
+    "C:\\Users\\Nicolas\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ruben\\Documents\\GitHub\\SmartCity\\api\\SmartCity3\\SmartCity3.csproj",
+      "projectUniqueName": "d:\\Users\\Nicolas\\Documents\\GitHub\\SmartCity\\api\\SmartCity3\\SmartCity3.csproj",
       "projectName": "SmartCity3",
-      "projectPath": "C:\\Users\\Ruben\\Documents\\GitHub\\SmartCity\\api\\SmartCity3\\SmartCity3.csproj",
-      "packagesPath": "C:\\Users\\Ruben\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ruben\\Documents\\GitHub\\SmartCity\\api\\SmartCity3\\obj\\",
+      "projectPath": "d:\\Users\\Nicolas\\Documents\\GitHub\\SmartCity\\api\\SmartCity3\\SmartCity3.csproj",
+      "packagesPath": "C:\\Users\\Nicolas\\.nuget\\packages\\",
+      "outputPath": "d:\\Users\\Nicolas\\Documents\\GitHub\\SmartCity\\api\\SmartCity3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ruben\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nicolas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

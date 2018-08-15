@@ -35,7 +35,7 @@ namespace AnimaLost2.ViewModel
         {
             get
             {
-                if (user != null && login == null) userType = user.RoleName;
+                if (user != null && login == null) userType = SelectedUser.User.RoleName;
                 return userType;
             }
             set
@@ -48,7 +48,7 @@ namespace AnimaLost2.ViewModel
         public string Login
         {
             get {
-                if (user != null && login == null) login = user.UserName;
+                if (user != null && login == null) login = SelectedUser.User.UserName;
                 return login;
             }
             set
@@ -60,7 +60,7 @@ namespace AnimaLost2.ViewModel
         public string Password
         {
             get {
-                if (user != null && password == null) password = user.Password;
+                if (user != null && password == null) password = SelectedUser.User.Password;
                 return password;
             }
             set
@@ -72,7 +72,7 @@ namespace AnimaLost2.ViewModel
         public string Email
         {
             get {
-                if (user != null && email == null) email = user.Email;
+                if (user != null && email == null) email = SelectedUser.User.Email;
                 return email;
             }
             set
@@ -84,7 +84,7 @@ namespace AnimaLost2.ViewModel
         public int Tel
         {
             get {
-                if (user != null && tel == 0) tel = user.Phone;
+                if (user != null && tel == 0) tel = SelectedUser.User.Phone;
                 return tel;
             }
             set
@@ -155,6 +155,7 @@ namespace AnimaLost2.ViewModel
                         var responsePut = await SingleConnection.Client.PutAsJsonAsync(SingleConnection.Client.BaseAddress + "Account/" + user.UserName, userFinal);
                         if (responsePut.IsSuccessStatusCode)
                         {
+                            await dialogService.ShowMessageBox("La modification de l'utilisateur s'est bien passée", "Erreur");
                             GoHomeBack();
                         }
                         else
@@ -190,11 +191,11 @@ namespace AnimaLost2.ViewModel
         {
             navPage.NavigateTo("UserManagement");
         }
-        public ModificationUserViewModel(INavigationService lg, IDialogService service,ApplicationUser user)
+        public ModificationUserViewModel(INavigationService lg, IDialogService service)
         {
             navPage = lg;
             dialogService = service;
-            this.user=user;
+            this.user= SelectedUser.User;
            
         }
 
