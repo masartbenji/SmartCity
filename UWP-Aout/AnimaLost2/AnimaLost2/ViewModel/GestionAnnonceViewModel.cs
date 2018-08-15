@@ -29,8 +29,8 @@ namespace AnimaLost2.ViewModel
         {
             get
             {
-                userRole = user.RoleName;
-                return userName;
+                userRole = SelectedUser.User.RoleName;
+                return userRole;
             }
             set
             {
