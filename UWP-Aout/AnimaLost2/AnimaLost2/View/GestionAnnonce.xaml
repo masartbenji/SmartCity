@@ -7,127 +7,118 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     DataContext="{Binding Source={StaticResource Locator}, Path=GestionAnnonce}">
-
-    <Frame Margin="10,0,0,0">
-
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,10,0,-10" >
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-             <StackPanel Grid.Row="0">
-                <Button Command="{Binding GoBackHome}" FontSize="25" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="User" Content="Gestion User" Background="LightBlue" />
-            </StackPanel>
-            <Grid Grid.Row="1">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="7*"/>
-                    </Grid.ColumnDefinitions>
-
-
-                    <StackPanel Background="Beige" HorizontalAlignment="Stretch" Grid.Column="0">
-                        <StackPanel.Resources>
-                            <Style TargetType="Button">
-                                <Setter Property="Margin" Value="0,50,0,0"/>
-                                <Setter Property="FontSize" Value="20"/>
-                            </Style>
-                        </StackPanel.Resources>
-                        <TextBlock Grid.Column="0"  >
-                                        <Run Text="Pseudo :"></Run>
-                                        <Run Text="{Binding UserID, Mode=TwoWay}"></Run>
-                        </TextBlock>
-                        <TextBlock Grid.Column="0"  >
-                                        <Run Text="Email :"></Run>
-                                        <Run Text="{Binding EmailUser, Mode=TwoWay}"></Run>
-                        </TextBlock>
-                        <TextBlock Grid.Column="0"  >
-                                        <Run Text="Téléphone :"></Run>
-                                        <Run Text="{Binding PhoneUser, Mode=TwoWay}"></Run>
-                        </TextBlock>
-                        <TextBlock Grid.Column="0"  >
-                                        <Run Text="Nombres d'annonces :"></Run>
-                                        <Run Text="{Binding NbAnnonceUser,Mode=TwoWay}"></Run>
-                        </TextBlock>
-
-                    </StackPanel>
-                    <Grid Grid.Column="1" >
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <SplitView DisplayMode="CompactInline" IsPaneOpen="{Binding IsPaneOpen,Mode=TwoWay}" PaneBackground="White" OpenPaneLength="200" >
+            <SplitView.Pane >
+                <Grid Background="SandyBrown">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="9*"/>
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10,0,0,0">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="1*"/>
-                            <RowDefinition Height="10*"/>
-                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="1*"></ColumnDefinition>
-                                <ColumnDefinition Width="1*"></ColumnDefinition>
-                            </Grid.ColumnDefinitions>
-                            <TextBox Grid.Column="1" Width="100" Height="2" Margin="20,0,0,0" HorizontalAlignment="Left" Text="{Binding Search, Mode=TwoWay}"></TextBox>
-                            <Button Grid.Column="0" HorizontalAlignment="Right" Command="{Binding SearchBt}">Recherche</Button>
-                        </Grid>
-
-                        <ListView Grid.Row="1" ItemsSource="{Binding Announcements,Mode=TwoWay}" SelectedItem="{Binding SelectAnnouncement,Mode=TwoWay}" SelectionMode="Single">
-                            <ListView.ItemContainerStyle>
-                                <Style TargetType="ListViewItem">
-                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-
-                                </Style>
-                            </ListView.ItemContainerStyle>
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <Grid>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="1*"/>
-                                            <RowDefinition Height="1*"/>
-                                            <RowDefinition Height="1*"/>
-                                        </Grid.RowDefinitions>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="1*"/>
-                                            <ColumnDefinition Width="1*"/>
-                                            <ColumnDefinition Width="1*"/>
-                                        </Grid.ColumnDefinitions>
-                                        <TextBlock Grid.Column="0"  >
-                                        <Run Text="Id Annonce :"></Run>
-                                        <Run Text="{Binding idAnnoun}"></Run>
-                                        </TextBlock>
-                                        <TextBlock Grid.Column="1">
-                                        <Run Text="Nom animal :"></Run>
-                                        <Run Text="{Binding NameAnimal}"></Run>
-                                        </TextBlock>
-                                        <TextBlock Grid.Column="2">
-                                            <Run Text="Statut annonce :"></Run>
-                                            <Run Text="{Binding Status}"></Run>
-                                        </TextBlock>
-                                        <TextBlock Grid.Column="0" Grid.Row="1">
-                                        <Run Text="Date annonce :"></Run>
-                                        <Run Text="{Binding DateAnnoun}"></Run>
-                                        </TextBlock>
-                                        <TextBlock Grid.Column="1" Grid.Row="1">
-                                        <Run Text="Espèce :"></Run>
-                                        <Run Text="{Binding Species}"></Run>
-                                        </TextBlock>
-                                        <TextBlock Grid.Column="2" Grid.Row="1">
-                                        <Run Text="Race :"></Run>
-                                        <Run Text="{Binding Breed}"></Run>
-                                        </TextBlock>
-                                        <TextBlock Grid.Row="2">
-                                        <Run Text="Description :"></Run>
-                                        <Run Text="{Binding Description}"></Run>
-                                        </TextBlock>
-                                    </Grid>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
-
-                        <Button Grid.Row="2"  HorizontalAlignment="Center" FontSize="20" Command="{Binding Suppression}">Supprimer</Button>
-                        <Button Grid.Row="2"  HorizontalAlignment="Left" Margin="20" FontSize="20" Command="{Binding RefreshList}">Rafraichir</Button>
-
+                        <Button Width="50" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Height="50" Background="Transparent"  Command="{Binding Buttton_hamburger}" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                        <TextBlock Grid.Row="1"  FontSize="20" HorizontalAlignment="Left"  Text="{Binding UserName}"/>
+                        <TextBlock Grid.Row="2" HorizontalAlignment="Left" Text="{Binding UserRole}"/>
+                        <TextBlock Grid.Row="3" HorizontalAlignment="Left"  Text="{Binding PhoneUser}"/>
+                        <TextBlock  Grid.Row="4" HorizontalAlignment="Left" Text="{Binding EmailUser}"/>
+                        <StackPanel Grid.Row="5" >
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.Column="0" />
+                                <Button Grid.Column="1"  Command="{Binding Return}" Content="Back" Background="Transparent" FontSize="19"/>
+                            </Grid>
+                        </StackPanel>
                     </Grid>
-
+                    <StackPanel Grid.Row="2" HorizontalAlignment="Stretch">
+                        <Button  Content="Déconnexion" HorizontalAlignment="Left"  Foreground="DarkGreen" Background="Transparent" Command="{Binding Deconnexion}"/>
+                    </StackPanel>
 
                 </Grid>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="10*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" VerticalAlignment="Bottom" Width="300" BorderThickness="2" BorderBrush="Black">
+                        <Grid >
+                            <TextBox  Background="Transparent" BorderBrush="{StaticResource ButtonPointerOverForegroundThemeBrush}" Text="{Binding ResearchLabel,Mode=TwoWay}" />
+                            <Button Width="95" Height="33" HorizontalAlignment="Right"  Content="Recherche" Command="{Binding SearchBt}"/>
+                            
+                        </Grid>
+                    </StackPanel>
+                    <ListView Grid.Row="1" ItemsSource="{Binding Announcements,Mode=TwoWay}" SelectedItem="{Binding SelectedAnnonce,Mode=TwoWay}" SelectionMode="Single">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="1*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0"  >
+                                        <Run Text="Id Annonce :"></Run>
+                                        <Run Text="{Binding idAnnoun}"></Run>
+                                    </TextBlock>
+                                    <TextBlock Grid.Column="1">
+                                        <Run Text="Nom animal :"></Run>
+                                        <Run Text="{Binding NameAnimal}"></Run>
+                                    </TextBlock>
+                                    <TextBlock Grid.Column="2">
+                                            <Run Text="Statut annonce :"></Run>
+                                            <Run Text="{Binding Status}"></Run>
+                                    </TextBlock>
+                                    <TextBlock Grid.Column="0" Grid.Row="1">
+                                        <Run Text="Date annonce :"></Run>
+                                        <Run Text="{Binding DateAnnoun}"></Run>
+                                    </TextBlock>
+                                    <TextBlock Grid.Column="1" Grid.Row="1">
+                                        <Run Text="Espèce :"></Run>
+                                        <Run Text="{Binding Species}"></Run>
+                                    </TextBlock>
+                                    <TextBlock Grid.Column="2" Grid.Row="1">
+                                        <Run Text="Race :"></Run>
+                                        <Run Text="{Binding Breed}"></Run>
+                                    </TextBlock>
+                                    <TextBlock Grid.Row="2">
+                                        <Run Text="Description :"></Run>
+                                        <Run Text="{Binding Description}"></Run>
+                                    </TextBlock>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <Button Grid.Row="2"  HorizontalAlignment="Center" FontSize="20" Command="{Binding Suppression}">Supprimer</Button>
+                    <Button Grid.Row="2"  HorizontalAlignment="Left" Margin="20,0,0,0" FontSize="20" Command="{Binding RefreshList}">Rafraichir</Button>
+                </Grid>
+            </SplitView.Content>
 
-            </Grid>
-        </Grid>
-    </Frame>
+        </SplitView>
+
+    </Grid>
+
 </Page>

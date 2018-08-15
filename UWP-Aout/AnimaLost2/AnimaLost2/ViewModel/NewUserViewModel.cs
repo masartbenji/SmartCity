@@ -3,15 +3,13 @@ using AnimaLost2.Model;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Views;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Text.RegularExpressions;
+using System.Collections.ObjectModel;
 
 namespace AnimaLost2.ViewModel
 {
@@ -24,22 +22,48 @@ namespace AnimaLost2.ViewModel
         private string login;
         private string password;
         private string email;
-        private int tel; //Maybe need to change de type of the box to only allowed numbers
-        private string typeUser;
-
-        public string TypeUser
+        private string tel;
+        private string _typeUserSelected;
+        public string TypeUserSelected
         {
             get
             {
-                return typeUser;
+                return _typeUserSelected;
             }
             set
             {
-                typeUser = value;
-                RaisePropertyChanged("TypeUser");
+                _typeUserSelected = value;
+                if (_typeUserSelected != null)
+                {
+                    RaisePropertyChanged("TypeUserSelected");
+                }
+
+
             }
+
         }
-        public int Tel
+        private ObservableCollection<string> _typeUserList;
+        public ObservableCollection<string> TypeUserList
+        {
+            get
+            {
+
+                return _typeUserList;
+            }
+            set
+            {
+                if (_typeUserList == value)
+                {
+                    return;
+                }
+
+                _typeUserList = value;
+                RaisePropertyChanged("TypeUserList");
+            }
+
+        }
+
+        public string Tel
         {
             get
             {
@@ -74,7 +98,6 @@ namespace AnimaLost2.ViewModel
                 password = value;
                 RaisePropertyChanged("Password");
             }
-
         }
         public string Login
         {
@@ -105,9 +128,27 @@ namespace AnimaLost2.ViewModel
         {
             try
             {
+                string typeUserBD;
                 bool testOK = true;
-                if (Login == null || Password == null || Email == null || Tel == 0 || TypeUser == null) { testOK = false; }
-                if (Password == null) { testOK = false; }
+                if (Login == null || Password == null || int.Parse(Tel) == 0 || TypeUserSelected == null) { testOK = false; }
+                if (testOK)
+                {
+                    testOK = IsPhoneAllowed(Tel);
+                    if (!testOK)
+                    {
+                        await dialogService.ShowMessageBox("Numéro de téléphone invalide", "Téléphone");
+                    }
+                }
+                if (testOK)
+                {
+                    testOK = IsEmailAllowed(Email);
+                    if (!testOK)
+                    {
+                        await dialogService.ShowMessageBox("Email invalide", "Email");
+                    }
+                }
+
+                if (TypeUserSelected == "Admin") typeUserBD = "Admin"; else typeUserBD = "User";
                 if (testOK)
                 {
                     var newUser = new ApplicationUser()
@@ -115,8 +156,8 @@ namespace AnimaLost2.ViewModel
                         UserName = Login,
                         Password = Password,
                         Email = Email,
-                        Phone = Tel,
-                        RoleName = TypeUser
+                        Phone = int.Parse(Tel),
+                        RoleName = typeUserBD
                     };
                     SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
                     var response = await SingleConnection.Client.PostAsJsonAsync(SingleConnection.Client.BaseAddress + "Account", newUser);
@@ -125,11 +166,11 @@ namespace AnimaLost2.ViewModel
                         await dialogService.ShowMessageBox("L'utilisateur a bien été créé", "Création");
                         navPage.NavigateTo("UserManagement");
                     }
-                    else if (response.ReasonPhrase == "Unauthorized")
-                    {
-                        await dialogService.ShowMessageBox("Vous n'êtes pas autorisé à effectuer cette action", "Erreur");
-                        navPage.NavigateTo("Login");
-                    }
+                    //else if (response.ReasonPhrase == "Unauthorized")  PAS DE SENS ? 
+                    //{
+                    //    await dialogService.ShowMessageBox("Vous n'êtes pas autorisé à effectuer cette action", "Erreur");
+                    //    navPage.NavigateTo("Login");
+                    //}
                     else
                     {
                         await dialogService.ShowMessageBox("L'utilisateur ne peut être créé", "Erreur");
@@ -138,13 +179,13 @@ namespace AnimaLost2.ViewModel
                 }
                 else
                 {
-                    await dialogService.ShowMessageBox("Vous devez remplir tous les champs", "Erreur");
-                    navPage.NavigateTo("UserManagement");
+                    await dialogService.ShowMessageBox("Vous devez remplir tous les champs obligatoire", "Erreur");
                 }
             }
             catch (HttpRequestException)
             {
-                await dialogService.ShowMessageBox("la connection au serveur a été perdue", "Erreur");
+                await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
+                navPage.NavigateTo("Login");
             }
         }
         public ICommand Cancel
@@ -166,6 +207,37 @@ namespace AnimaLost2.ViewModel
         {
             navPage = lg;
             dialogService = service;
+            initListTypeUser();
         }
+        public bool IsEmailAllowed(string text)
+        {
+            bool blnValidEmail = false;
+            Regex regEMail = new Regex(@"^[a-zA-Z][\w\.-]{2,28}[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
+            if (text.Length > 0)
+            {
+                blnValidEmail = regEMail.IsMatch(text);
+            }
+
+            return blnValidEmail;
+        }
+        public bool IsPhoneAllowed(string text)
+        {
+            bool blnValidPhone = false;
+            Regex regEMail = new Regex(@"^[0-9]*$");
+            if (text.Length > 0)
+            {
+                blnValidPhone = regEMail.IsMatch(text);
+            }
+
+            return blnValidPhone;
+        }
+        public void initListTypeUser()
+        {
+            // on peut faire une requtte pour avoire la liste de la bd des =/= roles 
+            _typeUserList = new ObservableCollection<string>();
+            _typeUserList.Add("Utilisateur");
+            _typeUserList.Add("Admin");
+        }
+
     }
 }

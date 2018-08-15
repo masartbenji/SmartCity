@@ -14,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Windows.UI.Xaml.Navigation;
+using System.Collections.ObjectModel;
 
 namespace AnimaLost2.ViewModel
 {
@@ -23,15 +24,31 @@ namespace AnimaLost2.ViewModel
         private IDialogService dialogService;
         private ICommand cancel;
         private ICommand modif;
+        private ApplicationUser user;
         private string login;
         private string password;
         private string email;
         private int tel;
+        private string userType;
+
+        public string UserType
+        {
+            get
+            {
+                if (user != null && login == null) userType = user.RoleName;
+                return userType;
+            }
+            set
+            {
+                userType = value;
+                RaisePropertyChanged("UserType");
+            }
+        }
 
         public string Login
         {
             get {
-                if (SelectedUser.User != null && login == null) login = SelectedUser.User.UserName;
+                if (user != null && login == null) login = user.UserName;
                 return login;
             }
             set
@@ -42,17 +59,20 @@ namespace AnimaLost2.ViewModel
         }
         public string Password
         {
-            get { return password; }
+            get {
+                if (user != null && password == null) password = user.Password;
+                return password;
+            }
             set
             {
                 password = value;
-                RaisePropertyChanged("password");
+                RaisePropertyChanged("Password");
             }
         }
         public string Email
         {
             get {
-                if (SelectedUser.User != null && email == null) email = SelectedUser.User.Email;
+                if (user != null && email == null) email = user.Email;
                 return email;
             }
             set
@@ -64,7 +84,7 @@ namespace AnimaLost2.ViewModel
         public int Tel
         {
             get {
-                if (SelectedUser.User != null && tel == 0) tel = SelectedUser.User.Phone;
+                if (user != null && tel == 0) tel = user.Phone;
                 return tel;
             }
             set
@@ -102,52 +122,66 @@ namespace AnimaLost2.ViewModel
             try
             {
                 SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/" + Login);
-                if (response.IsSuccessStatusCode)
+                if (Token.Id == null)
                 {
-                    var userJson = await response.Content.ReadAsStringAsync();
-                    var user = ApplicationUser.Deserialize(userJson);
-                    if (Password == "") Password = user.Password;
-                    if (Email == "") Email = user.Email;
-                    if (Tel == 0) Tel = user.Phone;
-                    var roleResponse = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Role/" + user.UserName);
-                    var jsonRoleName = await roleResponse.Content.ReadAsStringAsync();
-                    user.RoleName = ApplicationUser.GetRoleUser(jsonRoleName);
-                    var userFinal = new ApplicationUser()
-                    {
-                        UserName = user.UserName,
-                        Password = Password,
-                        Email = Email,
-                        Phone = Tel,
-                        RoleName = user.RoleName
-                    };
-                    var responsePut = await SingleConnection.Client.PutAsJsonAsync(SingleConnection.Client.BaseAddress + "Account/" + user.UserName, userFinal);
-                    if (responsePut.IsSuccessStatusCode)
-                    {
-                        GoHomeBack();
-                    }
-                    else
-                    {
-                        await dialogService.ShowMessageBox("Il s'est produit une erreur lors de la modification", "Erreur");
-                        navPage.NavigateTo("ModificationUser");
-                    }
+                    navPage.NavigateTo("Login");
+                    await dialogService.ShowMessageBox("Acces non autorisé aux utilisateurs", "Session expire");
                 }
                 else
                 {
-                    if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                    var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/" + Login);
+                    if (response.IsSuccessStatusCode)
                     {
-                        await dialogService.ShowMessageBox("L'utilisateur que vous essayé de modifier n'existe pas", "Erreur");
+                        var userJson = await response.Content.ReadAsStringAsync();
+                        var user = ApplicationUser.Deserialize(userJson);
+                        // a quoi servent ces if ? 
+
+                        if (Password == "") Password = user.Password;
+                        if (Email == "") Email = user.Email;
+                        if (Tel == 0) Tel = user.Phone;
+
+
+                        var roleResponse = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Role/" + user.UserName);
+                        var jsonRoleName = await roleResponse.Content.ReadAsStringAsync();
+                        user.RoleName = ApplicationUser.GetRoleUser(jsonRoleName);
+                        var userFinal = new ApplicationUser()
+                        {
+                            UserName = user.UserName,
+                            Password = Password,
+                            Email = Email,
+                            Phone = Tel,
+                            RoleName = user.RoleName
+                        };
+                        var responsePut = await SingleConnection.Client.PutAsJsonAsync(SingleConnection.Client.BaseAddress + "Account/" + user.UserName, userFinal);
+                        if (responsePut.IsSuccessStatusCode)
+                        {
+                            GoHomeBack();
+                        }
+                        else
+                        {
+                            await dialogService.ShowMessageBox("Il s'est produit une erreur lors de la modification", "Erreur");
+                            navPage.NavigateTo("ModificationUser");
+                        }
                     }
-                    else if(response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
+                    else
                     {
-                        await dialogService.ShowMessageBox("Une erreur du serveur est survenue, il se peut que vous ayez été déconnecté", "Erreur");
+                        if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                        {
+                            await dialogService.ShowMessageBox("L'utilisateur que vous essayé de modifier n'existe pas", "Erreur");
+                        }
+                        else if (response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
+                        {
+                            await dialogService.ShowMessageBox("Une erreur du serveur est survenue, il se peut que vous ayez été déconnecté", "Erreur");
+                        }
+                        navPage.NavigateTo("ModificationUser");
                     }
-                    navPage.NavigateTo("ModificationUser");
                 }
+
             }
             catch (HttpRequestException)
             {
-                await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
+                await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur connection");
+                navPage.NavigateTo("Login");
             }
 
         }
@@ -156,10 +190,13 @@ namespace AnimaLost2.ViewModel
         {
             navPage.NavigateTo("UserManagement");
         }
-        public ModificationUserViewModel(INavigationService lg, IDialogService service)
+        public ModificationUserViewModel(INavigationService lg, IDialogService service,ApplicationUser user)
         {
             navPage = lg;
             dialogService = service;
+            this.user=user;
+           
         }
+
     }
 }

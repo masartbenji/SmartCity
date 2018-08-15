@@ -1,1 +1,1 @@
-d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\AnimaLost2.csproj;x86
+C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\AnimaLost2.csproj;x86

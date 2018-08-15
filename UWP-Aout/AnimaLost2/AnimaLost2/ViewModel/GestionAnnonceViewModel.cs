@@ -18,11 +18,39 @@ namespace AnimaLost2.ViewModel
     {
         private INavigationService navPage;
         private ICommand goBackHome;
-        private string userID;
+        private DialogService dialogService;
+        private ApplicationUser user;
+        private string userName;
         private string emailUser;
         private string phone;
         private int nbAnnouncement;
-        private IDialogService dialogService;
+        private string userRole;
+        public string UserRole
+        {
+            get
+            {
+                userRole = user.RoleName;
+                return userName;
+            }
+            set
+            {
+                userRole = value;
+                RaisePropertyChanged("UserRole");
+            }
+        }
+        private AnnouncementVisu selectedAnnonce;
+        public AnnouncementVisu SelectedAnnonce
+        {
+            get
+            {
+                return selectedAnnonce;
+            }
+            set
+            {
+                selectedAnnonce = value;
+                RaisePropertyChanged("SelectedAnnonce");
+            }
+        }
         private ObservableCollection<AnnouncementVisu> announcements;
         public ObservableCollection<AnnouncementVisu> Announcements
         {
@@ -36,12 +64,32 @@ namespace AnimaLost2.ViewModel
                 RaisePropertyChanged("Announcements");
             }
         }
+        private ICommand suppression;
+        public ICommand Suppression
+        {
+            get
+            {
+                if (suppression == null)
+                {
+                    //suppression = new RelayCommand(() => SuppressionAnnonce(SelectedAnnonce));
+                }
+                return suppression;
+            }
 
-        public GestionAnnonceViewModel(INavigationService lg,IDialogService service)
+        }
+        //public async Task SuppressionAnnonce(AnnouncementVisu selectedAnnonce)
+        //{
+        //    // supression d une annnonce selectioner ok ? ou on fair pluseirs ? 
+
+        //}
+
+
+        public GestionAnnonceViewModel(INavigationService lg,DialogService dialogService, ApplicationUser user)
         {
             InitializeAsync();
-            dialogService = service;
             navPage = lg;
+            this.user = user;
+            this.dialogService = dialogService;
         }
         private async void InitializeAsync()
         {
@@ -59,24 +107,24 @@ namespace AnimaLost2.ViewModel
             }
 
         }
-        public string UserID
+        public string UserName
         {
             get
             {
-                userID = SelectedUser.User.UserName;
-                return userID;
+                userName = user.UserName;
+                return userName;
             }
             set
             {
-                userID = value;
-                RaisePropertyChanged("UserID");
+                userName = value;
+                RaisePropertyChanged("UserName");
             }
         }
         public string EmailUser
         {
             get
             {
-                emailUser = SelectedUser.User.Email;
+                emailUser = user.Email;
                 return emailUser;
             }
             set
@@ -89,7 +137,7 @@ namespace AnimaLost2.ViewModel
         {
             get
             {
-                phone = "0" + SelectedUser.User.Phone.ToString() ;
+                phone = "0" + user.Phone.ToString() ;
                 return phone;
             }
             set
@@ -112,23 +160,7 @@ namespace AnimaLost2.ViewModel
         }
         private ICommand refreshList;
         private ICommand searchBt;
-        private string search;
-        private AnnouncementVisu selectAnnouncement;
-        public AnnouncementVisu SelectAnnouncement
-        {
-            get
-            {
-                return selectAnnouncement;
-            }
-            set
-            {
-                selectAnnouncement = value;
-                if (selectAnnouncement != null)
-                {
-                    RaisePropertyChanged("SelectUser");
-                }
-            }
-        }
+        private string researchLabel;
         public ICommand RefreshList
         {
             get
@@ -151,28 +183,16 @@ namespace AnimaLost2.ViewModel
                 return searchBt;
             }
         }
-        private ICommand suppression;
-        public ICommand Suppression
+        public string ResearchLabel
         {
             get
             {
-                if (suppression == null)
-                {
-                    suppression = new RelayCommand(async () => await SuppressionAnnouncement());
-                }
-                return suppression;
-            }
-        }
-        public string Search
-        {
-            get
-            {
-                return search;
+                return researchLabel;
             }
             set
             {
-                search = value;
-                RaisePropertyChanged("Search");
+                researchLabel = value;
+                RaisePropertyChanged("ResearchLabel");
             }
         }
         public void Home()
@@ -185,24 +205,35 @@ namespace AnimaLost2.ViewModel
             try
             {
                 SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Announcement/" + SelectedUser.User.UserName);
-                if (response.IsSuccessStatusCode)
+                if (Token.Id == null)
                 {
-                    var jsonAnnouncement = response.Content.ReadAsStringAsync().Result;
-                    Announcements = AnnouncementVisu.Deserialize(jsonAnnouncement);
-                    
+                    navPage.NavigateTo("Login");
+                    await dialogService.ShowMessageBox("Acces non autorisé aux utilisateurs", "Session expire");
+                }else
+                {
+                    var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Announcement/" + user.UserName);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var jsonAnnouncement = response.Content.ReadAsStringAsync().Result;
+                        Announcements = AnnouncementVisu.Deserialize(jsonAnnouncement);
+                    }
+                    else
+                    {
+                        await dialogService.ShowMessageBox("Impossible de retrouve la liste des annonces, veuillez réessayer", "Error");
+                    }
                 }
+
             }
             catch (HttpRequestException)
             {
-
+                await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur connection");
+                navPage.NavigateTo("Login");
             }
             NbAnnonceUser = Announcements.Count;
             return Announcements;
         }
         public async Task Recherche()
         {
-            
             bool trouvé = false;
             var AnnouncementsTemp = await GetAnnouncementsUser();
             Announcements.Clear();
@@ -210,7 +241,7 @@ namespace AnimaLost2.ViewModel
             {
                 AnnouncementVisu anouncementTemp = new AnnouncementVisu();
                 if (trouvé) break;
-                if(announc.idAnnoun == Int32.Parse(Search))
+                if(announc.idAnnoun == Int32.Parse(ResearchLabel))
                 {
                     trouvé = true;
                     anouncementTemp = announc;
@@ -219,26 +250,33 @@ namespace AnimaLost2.ViewModel
             }
             
         }
-        public async Task SuppressionAnnouncement()
+        private bool openPane;
+        public bool IsPaneOpen
         {
-            try
+            get
             {
-                if(SelectAnnouncement != null)
-                {
-                    SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                    var response = await SingleConnection.Client.DeleteAsync(SingleConnection.Client.BaseAddress + "Announcement/" + SelectAnnouncement.idAnnoun);
-                    if (response.IsSuccessStatusCode)
-                    {
-                        await dialogService.ShowMessageBox("La suppression de l'annonce s'est bien déroulée", "Suppression");
-                        Announcements.Remove(SelectAnnouncement);
-                    }
-                    else await dialogService.ShowMessageBox("L'annonce que vous essayé de supprimé n'existe pas", "Non autorisé");
-                }
-                else await dialogService.ShowMessageBox("Vous n'avez pas selectionné d'annonce à supprimer", "Erreur");
+                return openPane;
             }
-            catch (HttpRequestException)
+            set
             {
-                await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
+                openPane = value;
+                RaisePropertyChanged("IsPaneOpen");
+            }
+        }
+        public void menuHamburger()
+        {
+            IsPaneOpen = !IsPaneOpen;
+        }
+        private ICommand menuBare;
+        public ICommand Buttton_hamburger
+        {
+            get
+            {
+                if (menuBare == null)
+                {
+                    menuBare = new RelayCommand(() => menuHamburger());
+                }
+                return menuBare;
             }
         }
     }
