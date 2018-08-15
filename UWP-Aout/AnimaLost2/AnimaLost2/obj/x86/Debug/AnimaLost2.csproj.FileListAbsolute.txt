@@ -1815,5 +1815,8 @@ C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86
 C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\resources.en-us.resfiles.intermediate
 C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\GalaSoft.MvvmLight.Platform.pri.xml
 C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\ProjectArchitectures.txt
+<<<<<<< HEAD
 C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\add_user.png
 C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Ressources\add_user.png
+=======
+>>>>>>> parent of e405cc0... 15/08/18

@@ -236,18 +236,29 @@ namespace AnimaLost2.ViewModel
         {
             bool trouvé = false;
             var AnnouncementsTemp = await GetAnnouncementsUser();
+<<<<<<< HEAD
             AnnouncementVisu anouncementTemp = new AnnouncementVisu();
             foreach(AnnouncementVisu announc in AnnouncementsTemp)
+=======
+            Announcements.Clear();
+            foreach (AnnouncementVisu announc in AnnouncementsTemp)
+>>>>>>> parent of e405cc0... 15/08/18
             {
+                AnnouncementVisu anouncementTemp = new AnnouncementVisu();
                 if (trouvé) break;
                 if(announc.idAnnoun == Int32.Parse(ResearchLabel))
                 {
                     trouvé = true;
                     anouncementTemp = announc;
                 }
+                Announcements.Add(anouncementTemp);
             }
+<<<<<<< HEAD
             Announcements.Clear();
             Announcements.Add(anouncementTemp);
+=======
+            
+>>>>>>> parent of e405cc0... 15/08/18
         }
         private bool openPane;
         public bool IsPaneOpen

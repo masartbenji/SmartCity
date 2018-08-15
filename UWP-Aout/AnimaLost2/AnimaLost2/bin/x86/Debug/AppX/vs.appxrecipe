@@ -31,13 +31,29 @@
     <AppXManifest Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+<<<<<<< HEAD
       <Modified>2018-08-15T11:29:18.197</Modified>
+=======
+<<<<<<< HEAD
+      <Modified>2018-08-10T12:02:02.674</Modified>
+=======
+      <Modified>2018-08-14T22:12:57.191</Modified>
+>>>>>>> 1ea62d3ecaa7694ef521304d60501706fecce122
+>>>>>>> parent of e405cc0... 15/08/18
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.exe">
       <PackagePath>entrypoint\AnimaLost2.exe</PackagePath>
+<<<<<<< HEAD
       <Modified>2018-08-15T11:29:16.322</Modified>
+=======
+<<<<<<< HEAD
+      <Modified>2018-08-10T12:02:00.983</Modified>
+=======
+      <Modified>2018-08-14T22:12:56.700</Modified>
+>>>>>>> 1ea62d3ecaa7694ef521304d60501706fecce122
+>>>>>>> parent of e405cc0... 15/08/18
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ruben\.nuget\packages\commonservicelocator\2.0.2\lib\netstandard1.0\CommonServiceLocator.dll">
       <PackagePath>CommonServiceLocator.dll</PackagePath>
@@ -547,9 +563,15 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T21:15:04.000</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\add_user.png">
       <PackagePath>add_user.png</PackagePath>
       <Modified>2018-08-15T11:25:28.875</Modified>
+=======
+    <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2018-08-06T03:35:08.000</Modified>
+>>>>>>> parent of e405cc0... 15/08/18
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -584,6 +606,7 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-08-06T03:35:08.000</Modified>
+<<<<<<< HEAD
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\Ressources\add_user.png">
       <PackagePath>Ressources\add_user.png</PackagePath>
@@ -616,6 +639,12 @@
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.xr.xml">
       <PackagePath>AnimaLost2.xr.xml</PackagePath>
       <Modified>2018-08-15T11:29:15.828</Modified>
+=======
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.xr.xml">
+      <PackagePath>AnimaLost2.xr.xml</PackagePath>
+      <Modified>2018-08-14T22:09:37.565</Modified>
+>>>>>>> parent of e405cc0... 15/08/18
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -627,7 +656,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\View\Login.xbf">
       <PackagePath>View\Login.xbf</PackagePath>
+<<<<<<< HEAD
       <Modified>2018-08-15T11:29:15.913</Modified>
+=======
+      <Modified>2018-08-10T21:17:32.511</Modified>
+>>>>>>> parent of e405cc0... 15/08/18
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\View\ModificationUser.xbf">
       <PackagePath>View\ModificationUser.xbf</PackagePath>
@@ -639,7 +672,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\View\UserManagement.xbf">
       <PackagePath>View\UserManagement.xbf</PackagePath>
+<<<<<<< HEAD
       <Modified>2018-08-15T11:29:15.914</Modified>
+=======
+      <Modified>2018-08-10T22:01:16.756</Modified>
+>>>>>>> parent of e405cc0... 15/08/18
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -648,11 +685,23 @@
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+<<<<<<< HEAD
       <Modified>2018-08-15T11:29:17.447</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AnimaLost2.exe">
       <PackagePath>AnimaLost2.exe</PackagePath>
       <Modified>2018-08-15T11:29:18.186</Modified>
+=======
+      <Modified>2018-08-13T22:00:45.436</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Core\AnimaLost2.exe">
+      <PackagePath>AnimaLost2.exe</PackagePath>
+<<<<<<< HEAD
+      <Modified>2018-08-10T12:02:02.656</Modified>
+=======
+      <Modified>2018-08-14T22:12:57.185</Modified>
+>>>>>>> 1ea62d3ecaa7694ef521304d60501706fecce122
+>>>>>>> parent of e405cc0... 15/08/18
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -33,15 +33,3 @@ C:\Users\Ruben\Documents\GitHub\SmartCity\api\SmartCity3\obj\Debug\netcoreapp2.0
 C:\Users\Ruben\Documents\GitHub\SmartCity\api\SmartCity3\obj\Debug\netcoreapp2.0\SmartCity3.AssemblyInfo.cs
 C:\Users\Ruben\Documents\GitHub\SmartCity\api\SmartCity3\obj\Debug\netcoreapp2.0\SmartCity3.dll
 C:\Users\Ruben\Documents\GitHub\SmartCity\api\SmartCity3\obj\Debug\netcoreapp2.0\SmartCity3.pdb
-d:\Users\Nicolas\Documents\GitHub\SmartCity\api\SmartCity3\bin\Debug\netcoreapp2.0\_1718_etu32294_DB_SmartContext.cs
-d:\Users\Nicolas\Documents\GitHub\SmartCity\api\SmartCity3\bin\Debug\netcoreapp2.0\SmartCity3.deps.json
-d:\Users\Nicolas\Documents\GitHub\SmartCity\api\SmartCity3\bin\Debug\netcoreapp2.0\SmartCity3.runtimeconfig.json
-d:\Users\Nicolas\Documents\GitHub\SmartCity\api\SmartCity3\bin\Debug\netcoreapp2.0\SmartCity3.runtimeconfig.dev.json
-d:\Users\Nicolas\Documents\GitHub\SmartCity\api\SmartCity3\bin\Debug\netcoreapp2.0\SmartCity3.dll
-d:\Users\Nicolas\Documents\GitHub\SmartCity\api\SmartCity3\bin\Debug\netcoreapp2.0\SmartCity3.pdb
-d:\Users\Nicolas\Documents\GitHub\SmartCity\api\SmartCity3\obj\Debug\netcoreapp2.0\SmartCity3.csprojAssemblyReference.cache
-d:\Users\Nicolas\Documents\GitHub\SmartCity\api\SmartCity3\obj\Debug\netcoreapp2.0\SmartCity3.csproj.CoreCompileInputs.cache
-d:\Users\Nicolas\Documents\GitHub\SmartCity\api\SmartCity3\obj\Debug\netcoreapp2.0\SmartCity3.AssemblyInfoInputs.cache
-d:\Users\Nicolas\Documents\GitHub\SmartCity\api\SmartCity3\obj\Debug\netcoreapp2.0\SmartCity3.AssemblyInfo.cs
-d:\Users\Nicolas\Documents\GitHub\SmartCity\api\SmartCity3\obj\Debug\netcoreapp2.0\SmartCity3.dll
-d:\Users\Nicolas\Documents\GitHub\SmartCity\api\SmartCity3\obj\Debug\netcoreapp2.0\SmartCity3.pdb

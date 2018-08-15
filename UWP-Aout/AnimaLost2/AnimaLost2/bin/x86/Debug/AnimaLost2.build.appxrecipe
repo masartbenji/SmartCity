@@ -409,8 +409,13 @@
     <AppxPackagedFile Include="C:\Users\Ruben\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\add_user.png">
       <PackagePath>add_user.png</PackagePath>
+=======
+    <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+>>>>>>> parent of e405cc0... 15/08/18
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -439,6 +444,7 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\Ressources\add_user.png">
       <PackagePath>Ressources\add_user.png</PackagePath>
     </AppxPackagedFile>
@@ -460,6 +466,8 @@
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
+=======
+>>>>>>> parent of e405cc0... 15/08/18
     <AppxPackagedFile Include="C:\Users\Ruben\Documents\GitHub\SmartCity\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\AnimaLost2.xr.xml">
       <PackagePath>AnimaLost2.xr.xml</PackagePath>
     </AppxPackagedFile>
