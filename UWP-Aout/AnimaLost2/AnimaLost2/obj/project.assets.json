@@ -30939,24 +30939,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nicolas\\.nuget\\packages\\": {},
+    "C:\\Users\\Ruben\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Users\\Nicolas\\Documents\\GitHub\\SmartCity\\UWP-Aout\\AnimaLost2\\AnimaLost2\\AnimaLost2.csproj",
+      "projectUniqueName": "C:\\Users\\Ruben\\Documents\\GitHub\\SmartCity\\UWP-Aout\\AnimaLost2\\AnimaLost2\\AnimaLost2.csproj",
       "projectName": "AnimaLost2",
-      "projectPath": "d:\\Users\\Nicolas\\Documents\\GitHub\\SmartCity\\UWP-Aout\\AnimaLost2\\AnimaLost2\\AnimaLost2.csproj",
-      "packagesPath": "C:\\Users\\Nicolas\\.nuget\\packages\\",
-      "outputPath": "d:\\Users\\Nicolas\\Documents\\GitHub\\SmartCity\\UWP-Aout\\AnimaLost2\\AnimaLost2\\obj\\",
+      "projectPath": "C:\\Users\\Ruben\\Documents\\GitHub\\SmartCity\\UWP-Aout\\AnimaLost2\\AnimaLost2\\AnimaLost2.csproj",
+      "packagesPath": "C:\\Users\\Ruben\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ruben\\Documents\\GitHub\\SmartCity\\UWP-Aout\\AnimaLost2\\AnimaLost2\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Nicolas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ruben\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

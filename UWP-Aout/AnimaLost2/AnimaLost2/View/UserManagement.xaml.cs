@@ -27,9 +27,5 @@ namespace AnimaLost2
             this.InitializeComponent();
         }
 
-        private void Button_ContextCanceled(UIElement sender, RoutedEventArgs args)
-        {
-
-        }
     }
 }

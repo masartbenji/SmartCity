@@ -32,6 +32,7 @@
                 <RowDefinition></RowDefinition>
 
             </Grid.RowDefinitions>
+
    
             <TextBlock FontSize="20"  VerticalAlignment="Center" HorizontalAlignment="Right" Text="Login :" Grid.Column="0" Grid.Row="1"></TextBlock>
             <TextBox  HorizontalAlignment="Center"  x:Name="login" Grid.Column="1" Grid.Row="1" Margin="4,0,-76,0" Width="143" Text="{Binding ULogin,Mode=TwoWay}"/>

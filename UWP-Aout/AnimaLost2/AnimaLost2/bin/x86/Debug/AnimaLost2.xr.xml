@@ -4,7 +4,7 @@
     <RootPropertyPathName Name="GestionAnnonce" />
     <RootPropertyPathName Name="IsPaneOpen" />
     <RootPropertyPathName Name="Deconnexion" />
-    <RootPropertyPathName Name="GoBackHome" />
+    <RootPropertyPathName Name="Return" />
     <RootPropertyPathName Name="EmailUser" />
     <RootPropertyPathName Name="PhoneUser" />
     <RootPropertyPathName Name="UserRole" />
@@ -27,6 +27,7 @@
     <RootPropertyPathName Name="SingIn" />
     <RootPropertyPathName Name="Password" />
     <RootPropertyPathName Name="ULogin" />
+    <RootPropertyPathName Name="AjoutUser" />
     <RootPropertyPathName Name="ModificationUser" />
     <RootPropertyPathName Name="Cancel" />
     <RootPropertyPathName Name="Modif" />
@@ -39,7 +40,6 @@
     <RootPropertyPathName Name="TypeUserSelected" />
     <RootPropertyPathName Name="UserManagement" />
     <RootPropertyPathName Name="ModifUser" />
-    <RootPropertyPathName Name="AjoutUser" />
     <RootPropertyPathName Name="Users" />
     <RootPropertyPathName Name="SelectUser" />
     <RootPropertyPathName Name="Phone" />
@@ -128,7 +128,12 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Image" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedItem" />

@@ -179,7 +179,7 @@ namespace AnimaLost2.ViewModel
             if (SelectUser != null)
             {
 
-                navPage.NavigateTo("ModificationUser");
+                navPage.NavigateTo("ModificationUser", SelectUser);
             }
             else
             {
@@ -190,7 +190,7 @@ namespace AnimaLost2.ViewModel
         {
             if(SelectUser != null)
             { 
-                navPage.NavigateTo("GestionAnnonce");
+                navPage.NavigateTo("GestionAnnonce",SelectUser);
             }
             else
             {
