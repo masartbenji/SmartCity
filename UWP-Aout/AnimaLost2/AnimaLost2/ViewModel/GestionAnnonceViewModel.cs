@@ -18,7 +18,7 @@ namespace AnimaLost2.ViewModel
     {
         private INavigationService navPage;
         private ICommand goBackHome;
-        private DialogService dialogService;
+        private IDialogService dialogService;
         private ApplicationUser user;
         private string userName;
         private string emailUser;
@@ -71,24 +71,19 @@ namespace AnimaLost2.ViewModel
             {
                 if (suppression == null)
                 {
-                    //suppression = new RelayCommand(() => SuppressionAnnonce(SelectedAnnonce));
+                    suppression = new RelayCommand(async() => await SuppressionAnnouncement());
                 }
                 return suppression;
             }
 
         }
-        //public async Task SuppressionAnnonce(AnnouncementVisu selectedAnnonce)
-        //{
-        //    // supression d une annnonce selectioner ok ? ou on fair pluseirs ? 
-
-        //}
 
 
-        public GestionAnnonceViewModel(INavigationService lg,DialogService dialogService, ApplicationUser user)
+        public GestionAnnonceViewModel(INavigationService lg, IDialogService dialogService)
         {
+            user = SelectedUser.User;
             InitializeAsync();
             navPage = lg;
-            this.user = user;
             this.dialogService = dialogService;
         }
         private async void InitializeAsync()
@@ -111,7 +106,7 @@ namespace AnimaLost2.ViewModel
         {
             get
             {
-                userName = user.UserName;
+                userName = SelectedUser.User.UserName;
                 return userName;
             }
             set
@@ -124,7 +119,7 @@ namespace AnimaLost2.ViewModel
         {
             get
             {
-                emailUser = user.Email;
+                emailUser = SelectedUser.User.Email;
                 return emailUser;
             }
             set
@@ -137,7 +132,7 @@ namespace AnimaLost2.ViewModel
         {
             get
             {
-                phone = "0" + user.Phone.ToString() ;
+                phone = "0" + SelectedUser.User.Phone.ToString();
                 return phone;
             }
             set
@@ -208,10 +203,11 @@ namespace AnimaLost2.ViewModel
                 if (Token.Id == null)
                 {
                     navPage.NavigateTo("Login");
-                    await dialogService.ShowMessageBox("Acces non autorisé aux utilisateurs", "Session expire");
-                }else
+                    await dialogService.ShowMessageBox("Votre session est expirée", "Session expiré");
+                }
+                else
                 {
-                    var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Announcement/" + user.UserName);
+                    var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Announcement/" + SelectedUser.User.UserName);
                     if (response.IsSuccessStatusCode)
                     {
                         var jsonAnnouncement = response.Content.ReadAsStringAsync().Result;
@@ -222,7 +218,6 @@ namespace AnimaLost2.ViewModel
                         await dialogService.ShowMessageBox("Impossible de retrouve la liste des annonces, veuillez réessayer", "Error");
                     }
                 }
-
             }
             catch (HttpRequestException)
             {
@@ -234,31 +229,45 @@ namespace AnimaLost2.ViewModel
         }
         public async Task Recherche()
         {
-            bool trouvé = false;
-            var AnnouncementsTemp = await GetAnnouncementsUser();
-<<<<<<< HEAD
-            AnnouncementVisu anouncementTemp = new AnnouncementVisu();
-            foreach(AnnouncementVisu announc in AnnouncementsTemp)
-=======
-            Announcements.Clear();
-            foreach (AnnouncementVisu announc in AnnouncementsTemp)
->>>>>>> parent of e405cc0... 15/08/18
+            if(ResearchLabel == null)
             {
+                bool trouvé = false;
+                var AnnouncementsTemp = await GetAnnouncementsUser();
                 AnnouncementVisu anouncementTemp = new AnnouncementVisu();
-                if (trouvé) break;
-                if(announc.idAnnoun == Int32.Parse(ResearchLabel))
+                foreach (AnnouncementVisu announc in AnnouncementsTemp)
                 {
-                    trouvé = true;
-                    anouncementTemp = announc;
+                    if (trouvé) break;
+                    if (announc.idAnnoun == Int32.Parse(ResearchLabel))
+                    {
+                        trouvé = true;
+                        anouncementTemp = announc;
+                    }
                 }
+                Announcements.Clear();
                 Announcements.Add(anouncementTemp);
             }
-<<<<<<< HEAD
-            Announcements.Clear();
-            Announcements.Add(anouncementTemp);
-=======
-            
->>>>>>> parent of e405cc0... 15/08/18
+        }
+        public async Task SuppressionAnnouncement()
+        {
+            try
+            {
+                if (SelectedAnnonce != null)
+                {
+                    SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
+                    var response = await SingleConnection.Client.DeleteAsync(SingleConnection.Client.BaseAddress + "Announcement/" + SelectedAnnonce.idAnnoun);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        await dialogService.ShowMessageBox("La suppression de l'annonce s'est bien déroulée", "Suppression");
+                        Announcements.Remove(SelectedAnnonce);
+                    }
+                    else await dialogService.ShowMessageBox("L'annonce que vous essayé de supprimé n'existe pas", "Non autorisé");
+                }
+                else await dialogService.ShowMessageBox("Vous n'avez pas selectionné d'annonce à supprimer", "Erreur");
+            }
+            catch (HttpRequestException)
+            {
+                await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
+            }
         }
         private bool openPane;
         public bool IsPaneOpen

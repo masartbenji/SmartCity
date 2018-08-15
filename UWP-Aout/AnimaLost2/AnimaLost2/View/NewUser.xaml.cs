@@ -26,6 +26,5 @@ namespace AnimaLost2
         {
             this.InitializeComponent();
         }
-
     }
 }

@@ -18,6 +18,7 @@ namespace AnimaLost2.ViewModel
         private string password;
         private ICommand singIn;
         private INavigationService navPage;
+        private string exception;
         private IDialogService dialogService;
 
         public LoginViewModel(INavigationService lg, IDialogService dialogService)
@@ -25,6 +26,19 @@ namespace AnimaLost2.ViewModel
             navPage = lg;
             this.dialogService = dialogService;
 
+        }
+
+        public string Exception
+        {
+            get
+            {
+                return exception;
+            }
+            set
+            {
+                exception = value;
+                RaisePropertyChanged("Exception");
+            }
         }
         public string ULogin
         {
@@ -77,47 +91,37 @@ namespace AnimaLost2.ViewModel
                     if (Token.Id == null)
                     {
                         navPage.NavigateTo("Login");
-                       // pas de sens vu qu il retournera une erru , un status code 403 !!!!!!!!!!!!!!!!!!!!!
-                        // await dialogService.ShowMessageBox("Acces non autorisé aux utilisateurs", "Session expire");
                     }
                     else
                     {
                         SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
                         var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Role/" + idUser.UserName);
                         string roleName = await response.Content.ReadAsStringAsync();
-                        if (ApplicationUser.GetRoleUser(roleName) != "Admin")
+                        if (ApplicationUser.GetRoleUser(roleName) != "Admin") 
                         {
                             await dialogService.ShowMessageBox("Acces non autorisé aux utilisateurs", "Non autorisé");
                         }
                         else
                         {
-                            navPage.NavigateTo("UserManagement");
-                        }
-                    }
+                            navPage.NavigateTo("UserManagement", ULogin);
+                        }    
+                    }                 
                 }
                 else
                 {
-                    if ((int)stringInput.StatusCode == 400 || (int)stringInput.StatusCode == 401)
+                    if ((int)stringInput.StatusCode == 400)
                     {
-                        await dialogService.ShowMessageBox("Le compte ou le mot de passe est incorrecte", "Erreur authentification");
+                        await dialogService.ShowMessageBox("Le mot de passe est incorrect", "Error 400");
                     }
-                    if ((int)stringInput.StatusCode == 403)
+                    if ((int)stringInput.StatusCode == 401)
                     {
-                        await dialogService.ShowMessageBox("Acces non autorisé aux utilisateurs", "Non autorisé");
-                    }
-                    if ((int)stringInput.StatusCode > 403 && (int)stringInput.StatusCode < 499)
-                    {
-                        await dialogService.ShowMessageBox("Une erreur est intervenu veuillez réessayer", "Erreur");
-                    }
-                    if ((int)stringInput.StatusCode > 499 && (int)stringInput.StatusCode < 600)
-                    {
-                        await dialogService.ShowMessageBox("Impossible de se connecter au serveur","Erreur connection");
+                        await dialogService.ShowMessageBox("Identifiant invalide", "Error 401");
                     }
                 }
             }
             catch(HttpRequestException e)
             {
-                await dialogService.ShowMessageBox("Impossible de se connecter au serveur", "Erreur connection");
+                await dialogService.ShowMessageBox("Impossible de se connecter au serveur","Error");
             }
         }
     }

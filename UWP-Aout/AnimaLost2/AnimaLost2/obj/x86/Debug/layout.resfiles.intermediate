@@ -1,5 +1,4 @@
 WinMetadata\Windows.winmd
-add_user.png
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -15,9 +14,8 @@ View\ModificationUser.xbf
 View\NewUser.xbf
 View\UserManagement.xbf
 Properties\Default.rd.xml
-Ressources\add_user.png
+Ressources\add.png
 Ressources\back.png
-Ressources\delet_icon.png
-Ressources\desconect.png
+Ressources\disconnect.png
 Ressources\edit_user.png
-Ressources\info.png
+Ressources\gestion_annonce.png

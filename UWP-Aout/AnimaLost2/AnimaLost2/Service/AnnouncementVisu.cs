@@ -22,14 +22,10 @@ namespace AnimaLost2.Service
             ObservableCollection<AnnouncementVisu> announcements = new ObservableCollection<AnnouncementVisu>();
             if(json != "[]")
             {
-                var splitAnnouncement = json.Split(new string[] { "},{" }, StringSplitOptions.RemoveEmptyEntries);
-                foreach (var announ in splitAnnouncement)
+                var split = json.Split(new string[] { "},{" }, StringSplitOptions.RemoveEmptyEntries);
+                foreach (var announ in split)
                 {
-<<<<<<< HEAD
-                    splitAnnouncement = announ.Split(new char[] { ',', '"', '{', '}', '[', ']', ':', '-', 'T' }, StringSplitOptions.RemoveEmptyEntries);
-=======
                     var splitAnnouncement = announ.Split(new char[] { ',', '"', '{', '}', '[', ']', ':', '-', 'T' }, StringSplitOptions.RemoveEmptyEntries);
->>>>>>> parent of e405cc0... 15/08/18
                     AnnouncementVisu announcement = new AnnouncementVisu()
                     {
                         idAnnoun = Int32.Parse(splitAnnouncement[1]),

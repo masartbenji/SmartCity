@@ -7,6 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     DataContext="{Binding Source={StaticResource Locator}, Path=Login}">
+
     <Grid Background="Silver">
         <Grid.RowDefinitions>
             <RowDefinition Height="6*" ></RowDefinition>
@@ -14,30 +15,29 @@
         </Grid.RowDefinitions>
         <StackPanel VerticalAlignment="Bottom">
             <TextBlock FontSize="35"  Foreground="Green" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Animal Lost">
-                
+
             </TextBlock>
         </StackPanel>
-    <Grid Grid.Row="1"  >
-        
-        <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,150,0,0" >
-            <Grid.ColumnDefinitions>
-                
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
+        <Grid Grid.Row="1"  >
 
-            </Grid.RowDefinitions>
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,150,0,0" >
+                <Grid.ColumnDefinitions>
 
-   
-            <TextBlock FontSize="20"  VerticalAlignment="Center" HorizontalAlignment="Right" Text="Login :" Grid.Column="0" Grid.Row="1"></TextBlock>
-            <TextBox  HorizontalAlignment="Center"  x:Name="login" Grid.Column="1" Grid.Row="1" Margin="4,0,-76,0" Width="143" Text="{Binding ULogin,Mode=TwoWay}"/>
-            <TextBlock FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Mot de passe :" Grid.Column="0" Grid.Row="2"></TextBlock>
-            <PasswordBox HorizontalAlignment="Center"  PasswordChar="*" x:Name="password" Grid.Column="1" Grid.Row="2" Margin="4,0,-76,0" Width="143" Password="{Binding Password,Mode=TwoWay}"/>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+
+                </Grid.RowDefinitions>
+
+                <TextBlock FontSize="20"  VerticalAlignment="Center" HorizontalAlignment="Right" Text="Login :" Grid.Column="0" Grid.Row="1"></TextBlock>
+                <TextBox  HorizontalAlignment="Center"  x:Name="login" Grid.Column="1" Grid.Row="1" Margin="4,0,-76,0" Width="143" Text="{Binding ULogin,Mode=TwoWay}"/>
+                <TextBlock FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Mot de passe :" Grid.Column="0" Grid.Row="2"></TextBlock>
+                <PasswordBox HorizontalAlignment="Center"  PasswordChar="*" x:Name="password" Grid.Column="1" Grid.Row="2" Margin="4,0,-76,0" Width="143" Password="{Binding Password,Mode=TwoWay}"/>
                 <Button Content="Connexion" 
                      Command="{Binding SingIn}"
                      HorizontalAlignment="Center"  d:LayoutRounding="Auto"
@@ -49,6 +49,6 @@
 
             </Grid>
 
-    </Grid>
+        </Grid>
     </Grid>
 </Page>

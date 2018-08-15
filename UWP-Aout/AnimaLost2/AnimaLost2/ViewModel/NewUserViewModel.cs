@@ -3,13 +3,17 @@ using AnimaLost2.Model;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Views;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using System.Text.RegularExpressions;
 using System.Collections.ObjectModel;
+using System.Text.RegularExpressions;
 
 namespace AnimaLost2.ViewModel
 {
@@ -130,7 +134,10 @@ namespace AnimaLost2.ViewModel
             {
                 string typeUserBD;
                 bool testOK = true;
-                if (Login == null || Password == null || int.Parse(Tel) == 0 || TypeUserSelected == null) { testOK = false; }
+                if (Login == null || Password == null || TypeUserSelected == null || Email == null || Tel == null) {
+                    testOK = false;
+                    await dialogService.ShowMessageBox("Vous devez remplir correctement tous les champs.", "Erreur");
+                }
                 if (testOK)
                 {
                     testOK = IsPhoneAllowed(Tel);
@@ -166,20 +173,20 @@ namespace AnimaLost2.ViewModel
                         await dialogService.ShowMessageBox("L'utilisateur a bien été créé", "Création");
                         navPage.NavigateTo("UserManagement");
                     }
-                    //else if (response.ReasonPhrase == "Unauthorized")  PAS DE SENS ? 
-                    //{
-                    //    await dialogService.ShowMessageBox("Vous n'êtes pas autorisé à effectuer cette action", "Erreur");
-                    //    navPage.NavigateTo("Login");
-                    //}
+                    else if (response.ReasonPhrase == "Unauthorized")
+                    {
+                        await dialogService.ShowMessageBox("Votre session a expiré", "Erreur");
+                        navPage.NavigateTo("Login");
+                    }
+                    else if(response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
+                    {
+                        await dialogService.ShowMessageBox("Le mot de passe n'a pas été entré correctement, celui ci doit contenir 8 caractères, une majuscule, un caractère spécial et au moins un chiffre", "Erreur");
+                    }
                     else
                     {
                         await dialogService.ShowMessageBox("L'utilisateur ne peut être créé", "Erreur");
                         navPage.NavigateTo("NewUser");
                     }
-                }
-                else
-                {
-                    await dialogService.ShowMessageBox("Vous devez remplir tous les champs obligatoire", "Erreur");
                 }
             }
             catch (HttpRequestException)
@@ -223,10 +230,10 @@ namespace AnimaLost2.ViewModel
         public bool IsPhoneAllowed(string text)
         {
             bool blnValidPhone = false;
-            Regex regEMail = new Regex(@"^[0-9]*$");
+            Regex regPhone = new Regex(@"^[0-9]*$");
             if (text.Length > 0)
             {
-                blnValidPhone = regEMail.IsMatch(text);
+                blnValidPhone = regPhone.IsMatch(text);
             }
 
             return blnValidPhone;
@@ -238,6 +245,6 @@ namespace AnimaLost2.ViewModel
             _typeUserList.Add("Utilisateur");
             _typeUserList.Add("Admin");
         }
-
-    }
+        
+}
 }
