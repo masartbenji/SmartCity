@@ -18,7 +18,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 
-public class ColorJsonDao {
+public class ColorJsonDao implements IColorDAO {
 
     private Gson gsonObject = new GsonBuilder()
             .setDateFormat("yyyy-MM-dd")
@@ -40,7 +40,7 @@ public class ColorJsonDao {
             return JsonToColor(json);
     }
 
-    private ArrayList<Color> JsonToColor(String json)throws JSONException {
+    public ArrayList<Color> JsonToColor(String json)throws JSONException {
         ArrayList<Color> colors = new ArrayList<>();
         JSONArray jsonArray = new JSONArray(json);
         JSONObject jsonColor;

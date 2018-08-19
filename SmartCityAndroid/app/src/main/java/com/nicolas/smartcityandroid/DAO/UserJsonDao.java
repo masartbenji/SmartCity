@@ -1,11 +1,7 @@
 package com.nicolas.smartcityandroid.DAO;
 
-import android.media.browse.MediaBrowser;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonIOException;
-import com.google.gson.JsonObject;
 import com.nicolas.smartcityandroid.Exceptions.ConnectionException;
 import com.nicolas.smartcityandroid.Exceptions.InscriptionException;
 import com.nicolas.smartcityandroid.Model.TokenReceived;
@@ -29,7 +25,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-public class UserJsonDao implements UserDAO {
+public class UserJsonDao implements IUserDAO {
     private Gson gsonUser = new GsonBuilder()
             .setDateFormat("yyyy-MM-dd")
             .serializeNulls()

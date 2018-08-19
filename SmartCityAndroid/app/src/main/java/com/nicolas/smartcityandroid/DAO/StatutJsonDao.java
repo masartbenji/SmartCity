@@ -20,7 +20,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class StatutJsonDao {
+public class StatutJsonDao implements IStatutDAO {
     public ArrayList<Statut> GetAllStatut() throws StatutException, JSONException{
         String json = "";
         try{
@@ -41,7 +41,7 @@ public class StatutJsonDao {
         return jsonToStatut(json);
     }
 
-    private ArrayList<Statut> jsonToStatut(String json)throws JSONException {
+    public ArrayList<Statut> jsonToStatut(String json)throws JSONException {
         ArrayList<Statut> statuts = new ArrayList<>();
         JSONArray jsonArray = new JSONArray(json);
 

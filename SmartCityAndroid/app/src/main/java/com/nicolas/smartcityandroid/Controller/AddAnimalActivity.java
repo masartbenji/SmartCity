@@ -67,7 +67,7 @@ public class AddAnimalActivity extends AppCompatActivity {
         token = Constantes.token;
         connectivityManager = (ConnectivityManager) AddAnimalActivity.this.getSystemService(Context.CONNECTIVITY_SERVICE);
         Bundle bundle = this.getIntent().getExtras();
-        nameUser = bundle.getString("nameUser");
+        nameUser = bundle.getString(getString(R.string.nameUser));
 
         nameAnimal = findViewById(R.id.nameAddAnimal);
         addAnimalButton = findViewById(R.id.addAnimalButton);
@@ -88,9 +88,16 @@ public class AddAnimalActivity extends AppCompatActivity {
                     if(!nameAnimalCheck.equals("") && !speciesSelected.equals("") && !breedSelected.equals("") && !colorSelected.equals("")){
                         new LoadAnimal().execute();
                     }
+                    else{
+                        Toast.makeText(AddAnimalActivity.this, R.string.errorInputField,Toast.LENGTH_LONG).show();
+                    }
                 }
             });
         }
+        else{
+            Toast.makeText(AddAnimalActivity.this, R.string.errorNoConnected,Toast.LENGTH_LONG).show();
+        }
+
     }
 
     @Override
@@ -116,6 +123,11 @@ public class AddAnimalActivity extends AppCompatActivity {
                 intentAddAnimal.putExtra("nameUser",nameUser);
                 startActivity(intentAddAnimal);
                 break;
+            case R.id.listinOwnAnnouncement:
+                Intent intentListingAnnouncement = new Intent(AddAnimalActivity.this,ListingAnnouncementActivity.class);
+                intentListingAnnouncement.putExtra("nameUser",nameUser);
+                startActivity(intentListingAnnouncement);
+                break;
 
         }
         return true;
@@ -138,7 +150,7 @@ public class AddAnimalActivity extends AppCompatActivity {
                 }
             }
             catch (Exception e){
-            Log.i("pk", e.toString());
+                Toast.makeText(AddAnimalActivity.this, R.string.errorException,Toast.LENGTH_LONG).show();
             }
             return colors;
         }
@@ -174,7 +186,7 @@ public class AddAnimalActivity extends AppCompatActivity {
                 }
             }
             catch (Exception e){
-                Log.i("pk", e.toString());
+                Toast.makeText(AddAnimalActivity.this, R.string.errorException,Toast.LENGTH_LONG).show();
             }
             return speciesList;
         }
@@ -221,7 +233,7 @@ public class AddAnimalActivity extends AppCompatActivity {
                 }
             }
             catch (Exception e){
-                Log.i("pk", e.toString());
+                Toast.makeText(AddAnimalActivity.this, R.string.errorException,Toast.LENGTH_LONG).show();
             }
             return breedList;
         }
@@ -260,7 +272,7 @@ public class AddAnimalActivity extends AppCompatActivity {
                 }
             }
             catch (Exception e){
-                Log.i("pk", e.toString());
+                Toast.makeText(AddAnimalActivity.this, R.string.errorException,Toast.LENGTH_LONG).show();
             }
             return user;
         }
@@ -288,7 +300,7 @@ public class AddAnimalActivity extends AppCompatActivity {
                 }
             }
             catch (Exception e){
-                Log.i("pk", e.toString());
+                Toast.makeText(AddAnimalActivity.this, R.string.errorException,Toast.LENGTH_LONG).show();
             }
             return animal;
         }
@@ -317,10 +329,10 @@ public class AddAnimalActivity extends AppCompatActivity {
                 tokenReceived.setCode(animalJsonDAO.CreateNewAnimal(newAnimal));
             }
             catch (AddAnimalException e){
-                //todo
+                Toast.makeText(AddAnimalActivity.this, R.string.errorAddAnimal,Toast.LENGTH_LONG).show();
             }
             catch(JSONException e){
-                //todo
+                Toast.makeText(AddAnimalActivity.this, R.string.errorAddAnimal,Toast.LENGTH_LONG).show();
             }
             return null;
         }

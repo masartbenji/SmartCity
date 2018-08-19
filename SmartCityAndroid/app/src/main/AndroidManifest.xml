@@ -46,8 +46,10 @@
         <activity
             android:name=".Controller.AddAnimalActivity"
             android:label="@string/nameApp"
-            android:parentActivityName=".Controller.AnnouncementsConnectedActivity"
-            ></activity>
+            android:parentActivityName=".Controller.AnnouncementsConnectedActivity" />
+        <activity android:name=".Controller.ListingAnnouncementActivity"
+            android:label="@string/nameApp"
+            android:parentActivityName=".Controller.AnnouncementsConnectedActivity"></activity>
     </application>
 
 </manifest>

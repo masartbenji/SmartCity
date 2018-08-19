@@ -21,7 +21,7 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class BreedJsonDao {
+public class BreedJsonDao implements IBreedDAO {
     private Gson gsonObject = new GsonBuilder()
             .setDateFormat("yyyy-MM-dd")
             .serializeNulls()
@@ -46,7 +46,7 @@ public class BreedJsonDao {
         return jsonToBreed(json);
     }
 
-    private Breed jsonToBreed(String json)throws JSONException {
+    public Breed jsonToBreed(String json)throws JSONException {
         return gsonObject.fromJson(json,Breed.class);
     }
 
@@ -66,7 +66,7 @@ public class BreedJsonDao {
         return jsonToBreeds(json);
     }
 
-    private ArrayList<Breed> jsonToBreeds(String json)throws JSONException {
+    public ArrayList<Breed> jsonToBreeds(String json)throws JSONException {
         ArrayList<Breed> breeds = new ArrayList<>();
         JSONArray jsonArray = new JSONArray(json);
         JSONObject jsonBreed;

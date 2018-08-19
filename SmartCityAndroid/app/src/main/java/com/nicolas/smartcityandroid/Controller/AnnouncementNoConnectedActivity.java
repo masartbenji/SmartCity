@@ -1,8 +1,10 @@
 package com.nicolas.smartcityandroid.Controller;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.nicolas.smartcityandroid.Model.Announcement;
@@ -41,5 +43,19 @@ public class AnnouncementNoConnectedActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         this.getMenuInflater().inflate(R.menu.no_connection,menu);
         return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.connectionButton:
+                startActivity(new Intent(AnnouncementNoConnectedActivity.this,ConnectionActivity.class));
+                return true;
+            case R.id.inscriptionButton:
+                startActivity(new Intent(AnnouncementNoConnectedActivity.this,InscriptionActivity.class));
+                return true;
+            case R.id.questionButton://todo
+                return true;
+            default:return super.onOptionsItemSelected(item);
+        }
     }
 }

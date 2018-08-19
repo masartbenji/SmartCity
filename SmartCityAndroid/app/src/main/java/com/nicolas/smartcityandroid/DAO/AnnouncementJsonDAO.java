@@ -1,9 +1,6 @@
 package com.nicolas.smartcityandroid.DAO;
 
 
-import android.renderscript.ScriptGroup;
-import android.util.Log;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.nicolas.smartcityandroid.Exceptions.AddAnnouncementException;
@@ -16,10 +13,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
@@ -28,7 +23,7 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class AnnouncementJsonDAO implements AnnouncementDAO {
+public class AnnouncementJsonDAO implements IAnnouncementDAO {
     private Gson gsonObject = new GsonBuilder()
             .setDateFormat("yyyy-MM-dd")
             .serializeNulls()
@@ -64,7 +59,7 @@ public class AnnouncementJsonDAO implements AnnouncementDAO {
             return jsonToAnnouncements(stringJson);
         }
 
-    private ArrayList<Announcement> jsonToAnnouncements(String stringJson) throws JSONException {
+    public ArrayList<Announcement> jsonToAnnouncements(String stringJson) throws JSONException {
             ArrayList<Announcement> announcements = new ArrayList<>();
             JSONArray jsonArray = new JSONArray(stringJson);
             JSONObject jsonAnnouncement;
@@ -95,7 +90,7 @@ public class AnnouncementJsonDAO implements AnnouncementDAO {
         return jsonToAnnouncement(json);
     }
 
-    private Announcement jsonToAnnouncement(String json) {
+    public Announcement jsonToAnnouncement(String json) {
             return gsonObject.fromJson(json,Announcement.class);
     }
 
@@ -132,5 +127,21 @@ public class AnnouncementJsonDAO implements AnnouncementDAO {
             throw new AddAnnouncementException();
         }
         return code;
+    }
+
+    public ArrayList<Announcement> getAllAnnouncementOfAUser(String nameUser, String nameStatut) throws AnnouncementsException,JSONException {
+        String stringJson;
+        try{
+            URL url = new URL(Constantes.url + "Announcement/" + nameUser + "/" + nameStatut);
+            URLConnection connection = url.openConnection();
+
+            InputStream streamReader = new BufferedInputStream(connection.getInputStream());
+            java.util.Scanner scanner = new java.util.Scanner(streamReader).useDelimiter("\\A");
+            stringJson = scanner.hasNext()?scanner.next():"";
+        }
+        catch (IOException e){
+            throw new AnnouncementsException();
+        }
+        return jsonToAnnouncements(stringJson);
     }
 }

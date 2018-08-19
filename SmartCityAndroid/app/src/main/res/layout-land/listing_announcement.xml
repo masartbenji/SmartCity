@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/foundButtonListingAnnouncement"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Trouvé" />
+
+    <Button
+        android:id="@+id/lostButtonListingAnnouncement"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Perdu" />
+
+    <Button
+        android:id="@+id/spaListingAnnouncement"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/a_adopter" />
+
+    <ListView
+        android:id="@+id/listOwnAnnouncement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/foundButtonListingAnnouncement" />
+</RelativeLayout>

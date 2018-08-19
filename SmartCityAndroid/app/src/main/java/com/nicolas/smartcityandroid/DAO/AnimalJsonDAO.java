@@ -29,7 +29,7 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class AnimalJsonDAO {
+public class AnimalJsonDAO implements IAnimalDAO {
     private Gson gsonObject = new GsonBuilder()
             .setDateFormat("yyyy-MM-dd")
             .serializeNulls()
@@ -57,7 +57,7 @@ public class AnimalJsonDAO {
         }
         return jsonToAnimals(json);
     }
-    private ArrayList<Animal> jsonToAnimals(String stringJson) throws JSONException {
+    public ArrayList<Animal> jsonToAnimals(String stringJson) throws JSONException {
         ArrayList<Animal> animals = new ArrayList<>();
         JSONArray jsonArray = new JSONArray(stringJson);
 
@@ -89,7 +89,7 @@ public class AnimalJsonDAO {
         return jsonToAnimal(json);
     }
 
-    private Animal jsonToAnimal(String json) {
+    public Animal jsonToAnimal(String json) {
         return gsonObject.fromJson(json,Animal.class);
     }
 

@@ -51,11 +51,11 @@ public class ConnectionActivity extends AppCompatActivity {
                         new VerifUser().execute(new UserConnection(log,pw));
                     }
                     else{
-                        Toast.makeText(ConnectionActivity.this,"Vous avez perdu votre connection internet",Toast.LENGTH_LONG).show();
+                        Toast.makeText(ConnectionActivity.this,R.string.errorNoConnected,Toast.LENGTH_LONG).show();
                     }
                 }
                 else{
-                    Toast.makeText(ConnectionActivity.this,"Un champ est manquant",Toast.LENGTH_LONG).show();
+                    Toast.makeText(ConnectionActivity.this,R.string.errorInputField,Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -70,10 +70,10 @@ public class ConnectionActivity extends AppCompatActivity {
                 tokenReceived = userJsonDao.verifUser(userConnections[0]);
             }
             catch (ConnectionException e){
-                tokenReceived.setErrorException("Mot de passe ou login invalide");
+                tokenReceived.setErrorException(getString(R.string.errorInputField));
             }
             catch(JSONException e){
-                tokenReceived.setErrorException("Erreur json rencontrée");
+                tokenReceived.setErrorException(getString(R.string.errorJson));
             }
             return tokenReceived;
         }
@@ -90,5 +90,4 @@ public class ConnectionActivity extends AppCompatActivity {
             }
         }
     }
-    //todo
 }

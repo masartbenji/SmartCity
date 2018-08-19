@@ -65,34 +65,27 @@ public class AddAnnouncementActivity extends AppCompatActivity {
         setContentView(R.layout.add_announcement);
         connectivityManager = (ConnectivityManager) AddAnnouncementActivity.this.getSystemService(Context.CONNECTIVITY_SERVICE);
         Bundle bundle = this.getIntent().getExtras();
-        nameUser = bundle.getString("nameUser");
+        nameUser = bundle.getString(getString(R.string.nameUser));
         token = Constantes.token;
         description = findViewById(R.id.descriptionAddAnnouncement);
 
         networkInfo = connectivityManager.getActiveNetworkInfo();
         boolean isConnected = networkInfo != null && networkInfo.isConnectedOrConnecting();
-        if(isConnected){
+        if(isConnected) {
             new LoadAnimal().execute();
             new LoadStatut().execute();
+
+            bouttonAddAnnouncement = findViewById(R.id.buttonAddAnnouncement);
+            bouttonAddAnnouncement.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    new LoadMaxIdAnnouncement().execute();
+                }
+            });
         }
-        bouttonAddAnnouncement = findViewById(R.id.buttonAddAnnouncement);
-        bouttonAddAnnouncement.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                new LoadMaxIdAnnouncement().execute();
-
-
-
-
-            }
-        });
-
-
-
-
-
-
-
+        else{
+            Toast.makeText(AddAnnouncementActivity.this, R.string.errorNoConnected,Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
@@ -110,15 +103,19 @@ public class AddAnnouncementActivity extends AppCompatActivity {
                 break;
             case R.id.add_announcement:
                 Intent intentAddAnnouncement = new Intent(AddAnnouncementActivity.this,AddAnnouncementActivity.class);
-                intentAddAnnouncement.putExtra("nameUser",nameUser);
+                intentAddAnnouncement.putExtra(getString(R.string.nameUser),nameUser);
                 startActivity(intentAddAnnouncement);
                 break;
             case R.id.addAnimal:
                 Intent intentAddAnimal = new Intent(AddAnnouncementActivity.this,AddAnimalActivity.class);
-                intentAddAnimal.putExtra("nameUser",nameUser);
+                intentAddAnimal.putExtra(getString(R.string.nameUser),nameUser);
                 startActivity(intentAddAnimal);
                 break;
-
+            case R.id.listinOwnAnnouncement:
+                Intent intentListingAnnouncement = new Intent(AddAnnouncementActivity.this,ListingAnnouncementActivity.class);
+                intentListingAnnouncement.putExtra(getString(R.string.nameUser),nameUser);
+                startActivity(intentListingAnnouncement);
+                break;
         }
         return true;
     }
@@ -141,7 +138,7 @@ public class AddAnnouncementActivity extends AppCompatActivity {
                 }
             }
             catch (Exception e){
-                Log.i("pk", e.toString());
+                Toast.makeText(AddAnnouncementActivity.this, R.string.errorException,Toast.LENGTH_LONG).show();
             }
             return animalList;
         }
@@ -179,7 +176,7 @@ public class AddAnnouncementActivity extends AppCompatActivity {
                 }
             }
             catch (Exception e){
-
+                Toast.makeText(AddAnnouncementActivity.this, R.string.errorException,Toast.LENGTH_LONG).show();
             }
             return statutList;
         }
@@ -211,7 +208,7 @@ public class AddAnnouncementActivity extends AppCompatActivity {
                 }
             }
             catch(Exception e){
-                //todo
+                Toast.makeText(AddAnnouncementActivity.this, R.string.errorException,Toast.LENGTH_LONG).show();
             }
             return announcement;
         }
@@ -234,7 +231,7 @@ public class AddAnnouncementActivity extends AppCompatActivity {
                 }
             }
             catch(Exception e){
-                //todo
+                Toast.makeText(AddAnnouncementActivity.this, R.string.errorException,Toast.LENGTH_LONG).show();
             }
             return null;
         }
@@ -261,10 +258,10 @@ public class AddAnnouncementActivity extends AppCompatActivity {
                 tokenReceived.setCode(announcementJsonDAO.createNewAnnouncement(announcement));
             }
             catch (AddAnnouncementException e){
-                //todo
+                Toast.makeText(AddAnnouncementActivity.this, R.string.errorAddAnnouncement,Toast.LENGTH_LONG).show();
             }
             catch(JSONException e){
-                //todo
+                Toast.makeText(AddAnnouncementActivity.this, R.string.errorAddAnnouncement,Toast.LENGTH_LONG).show();
             }
             return null;
         }

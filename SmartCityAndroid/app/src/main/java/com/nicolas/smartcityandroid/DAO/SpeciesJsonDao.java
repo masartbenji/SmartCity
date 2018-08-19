@@ -17,7 +17,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 
-public class SpeciesJsonDao {
+public class SpeciesJsonDao implements ISpeciesDAO {
     private Gson gsonObject = new GsonBuilder()
             .setDateFormat("yyyy-MM-dd")
             .serializeNulls()
@@ -39,7 +39,7 @@ public class SpeciesJsonDao {
         return JsonToSpecies(json);
     }
 
-    private ArrayList<Species> JsonToSpecies(String json) throws JSONException {
+    public ArrayList<Species> JsonToSpecies(String json) throws JSONException {
         ArrayList<Species> species = new ArrayList<>();
         JSONArray jsonArray = new JSONArray(json);
         JSONObject jsonSpecies;

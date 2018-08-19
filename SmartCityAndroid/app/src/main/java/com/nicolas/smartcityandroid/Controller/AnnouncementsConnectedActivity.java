@@ -1,6 +1,9 @@
 package com.nicolas.smartcityandroid.Controller;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -36,69 +39,80 @@ public class AnnouncementsConnectedActivity extends AppCompatActivity {
     private String nameStatus;
     private TokenReceived token;
     private String nameUser;
+    private NetworkInfo networkInfo;
+    private ConnectivityManager connectivityManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.general_page);
         token = Constantes.token;
         Bundle bundle = this.getIntent().getExtras();
-        nameUser = bundle.getString("nameUser");
+        nameUser = bundle.getString(getString(R.string.nameUser));
+        connectivityManager = (ConnectivityManager) AnnouncementsConnectedActivity.this.getSystemService(Context.CONNECTIVITY_SERVICE);
+        networkInfo = connectivityManager.getActiveNetworkInfo();
+        boolean isConnected = networkInfo != null && networkInfo.isConnectedOrConnecting();
+        if(isConnected){
+            announcementsList = findViewById(R.id.listAnnouncements);
+            nameStatus = getString(R.string.trouve);
+            new LoadAnnouncements().execute();
+            foundButton = findViewById(R.id.Trouve);
+            foundButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    nameStatus = getString(R.string.trouve);
+                    new LoadAnnouncements().execute();
+                }
+            });
 
-        announcementsList = findViewById(R.id.listAnnouncements);
-        nameStatus = "Trouvé";
-        new LoadAnnouncements().execute();
-        foundButton = findViewById(R.id.Trouve);
-        foundButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                nameStatus = "Trouvé";
-                new LoadAnnouncements().execute();
-            }
-        });
+            lostButton = findViewById(R.id.perdu);
+            lostButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    nameStatus = getString(R.string.perdu);
+                    new LoadAnnouncements().execute();
+                }
+            });
 
-        lostButton = findViewById(R.id.perdu);
-        lostButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                nameStatus = "Perdu";
-                new LoadAnnouncements().execute();
-            }
-        });
+            spaButton = findViewById(R.id.a_adopter);
+            spaButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    nameStatus = getString(R.string.a_adopter);
+                    new LoadAnnouncements().execute();
+                }
+            });
 
-        spaButton = findViewById(R.id.a_adopter);
-        spaButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                nameStatus = "A adopter";
-                new LoadAnnouncements().execute();
-            }
-        });
+            searchView = findViewById(R.id.search);
+            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                @Override
+                public boolean onQueryTextSubmit(String s) {
+                    new LoadAnnouncementSearch().execute();
+                    return false;
+                }
 
-        searchView = findViewById(R.id.search);
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String s) {
-                new LoadAnnouncementSearch().execute();
-                return false;
-            }
+                @Override
+                public boolean onQueryTextChange(String s) {
+                    idSearch = s;
+                    return true;
+                }
+            });
 
-            @Override
-            public boolean onQueryTextChange(String s) {
-                idSearch = s;
-                return true;
-            }
-        });
+            announcementsList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                    Intent announcement = new Intent(AnnouncementsConnectedActivity.this,AnnouncementConnectedActivity.class);
 
-        announcementsList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Intent announcement = new Intent(AnnouncementsConnectedActivity.this,AnnouncementConnectedActivity.class);
-                Bundle bundle = new Bundle();
-                bundle.putSerializable("Announcement",(Serializable)announcementsList.getItemAtPosition(position));
-                announcement.putExtras(bundle);
-                startActivity(announcement);
-            }
-        });
+                    Bundle bundle = new Bundle();
+                    bundle.putSerializable("Announcement",(Serializable)announcementsList.getItemAtPosition(position));
+                    announcement.putExtras(bundle);
+                    announcement.putExtra(getString(R.string.nameUser),nameUser);
+                    startActivity(announcement);
+                }
+            });
+        }
+        else{
+            Toast.makeText(AnnouncementsConnectedActivity.this, R.string.errorNoConnected,Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
@@ -116,15 +130,19 @@ public class AnnouncementsConnectedActivity extends AppCompatActivity {
                 break;
             case R.id.add_announcement:
                 Intent intentAddAnnouncement = new Intent(AnnouncementsConnectedActivity.this,AddAnnouncementActivity.class);
-                intentAddAnnouncement.putExtra("nameUser",nameUser);
+                intentAddAnnouncement.putExtra(getString(R.string.nameUser),nameUser);
                 startActivity(intentAddAnnouncement);
                 break;
             case R.id.addAnimal:
                 Intent intentAddAnimal = new Intent(AnnouncementsConnectedActivity.this,AddAnimalActivity.class);
-                intentAddAnimal.putExtra("nameUser",nameUser);
+                intentAddAnimal.putExtra(getString(R.string.nameUser),nameUser);
                 startActivity(intentAddAnimal);
                 break;
-
+            case R.id.listinOwnAnnouncement:
+                Intent intentListingAnnouncement = new Intent(AnnouncementsConnectedActivity.this,ListingAnnouncementActivity.class);
+                intentListingAnnouncement.putExtra(getString(R.string.nameUser),nameUser);
+                startActivity(intentListingAnnouncement);
+                break;
         }
         return true;
     }
@@ -147,7 +165,7 @@ public class AnnouncementsConnectedActivity extends AppCompatActivity {
                 }
             }
             catch (Exception e){
-                //todo
+                Toast.makeText(AnnouncementsConnectedActivity.this, R.string.errorException,Toast.LENGTH_LONG).show();
             }
             return announcements;
         }
@@ -179,7 +197,7 @@ public class AnnouncementsConnectedActivity extends AppCompatActivity {
                 }
             }
             catch (Exception e){
-                //todo
+                Toast.makeText(AnnouncementsConnectedActivity.this, R.string.errorException,Toast.LENGTH_LONG).show();
             }
             return announcements;
         }

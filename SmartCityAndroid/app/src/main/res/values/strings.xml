@@ -20,4 +20,17 @@
     <string name="trouve">Trouvé</string>
     <string name="disconnectMessage">Vous avez été déconnecté</string>
     <string name="ajout_animal">Ajout animal</string>
+    <string name="nameUser">nameUser</string>
+    <string name="errorException">Une erreur inattendue est survenue</string>
+    <string name="errorAddAnnouncement">Une erreur est survenue lors de l\'ajout de l\'annonce</string>
+    <string name="errorInputField">Il semblerait que vous n\'ayez pas rempli tout les champs correctement</string>
+    <string name="errorNoConnected">Il semblerait que vous n\'êtes pas connecté</string>
+    <string name="errorAddAnimal">Une erreur est survenue lors de la création de votre animal</string>
+    <string name="errorJson">Erreur json rencontrée</string>
+    <string name="inscriptionRight">Vous avez été bien inscrit</string>
+    <string name="userNameAlreadyExist">Ce nom de user est déja utilisé</string>
+    <string name="errorServor">Une erreur coté serveur est survenue</string>
+    <string name="errorInscription">Il s\'est produit une erreur pendant votre inscription</string>
+    <string name="errorTelephone">Le numéro de téléphone ne doit contenir rien d\'autre que des chiffres</string>
+    <string name="errorAdresseMail">Tous les champs a l\'exception de l\'adresse email sont obligatoire</string>
 </resources>

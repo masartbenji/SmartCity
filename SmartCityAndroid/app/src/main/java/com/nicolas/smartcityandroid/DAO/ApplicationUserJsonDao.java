@@ -20,7 +20,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Scanner;
 
-public class ApplicationUserJsonDao {
+public class ApplicationUserJsonDao implements IApplicationUserDAO {
     private Gson gsonObject = new GsonBuilder()
             .setDateFormat("yyyy-MM-dd")
             .serializeNulls()
@@ -44,7 +44,7 @@ public class ApplicationUserJsonDao {
         return jsonToPerson(json);
     }
 
-    private ApplicationUser jsonToPerson(String json)throws JSONException {
+    public ApplicationUser jsonToPerson(String json)throws JSONException {
 
         Gson object = new GsonBuilder().create();
 

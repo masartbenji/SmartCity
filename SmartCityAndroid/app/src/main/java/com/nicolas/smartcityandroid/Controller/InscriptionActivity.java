@@ -56,15 +56,15 @@ public class InscriptionActivity extends AppCompatActivity {
                             new CreateUser().execute(user);
                         }
                         else{
-                            Toast.makeText(InscriptionActivity.this,"Il semblerait que vous ayez été déconnecté",Toast.LENGTH_LONG).show();
+                            Toast.makeText(InscriptionActivity.this,R.string.errorNoConnected,Toast.LENGTH_LONG).show();
                         }
                     }
                     else{
-                        Toast.makeText(InscriptionActivity.this,"Le numéro de téléphone ne doit contenir rien d'autre que des chiffres",Toast.LENGTH_LONG).show();
+                        Toast.makeText(InscriptionActivity.this, R.string.errorTelephone,Toast.LENGTH_LONG).show();
                     }
                 }
                 else{
-                    Toast.makeText(InscriptionActivity.this,"Tous les champs a l'exception de l'adresse email sont obligatoire",Toast.LENGTH_LONG).show();
+                    Toast.makeText(InscriptionActivity.this, R.string.errorAdresseMail,Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -86,10 +86,10 @@ public class InscriptionActivity extends AppCompatActivity {
                 tokenReceived.setCode(userJsonDao.InscriptionUser(users[0]));
             }
             catch (InscriptionException e){
-                //todo
+                Toast.makeText(InscriptionActivity.this, R.string.errorInscription,Toast.LENGTH_LONG).show();
             }
             catch(JSONException e){
-                //todo
+                Toast.makeText(InscriptionActivity.this, R.string.errorJson,Toast.LENGTH_LONG).show();
             }
             return tokenReceived;
         }
@@ -99,14 +99,14 @@ public class InscriptionActivity extends AppCompatActivity {
             super.onPostExecute(tokenReceived);
             switch (tokenReceived.getCode()){
                 case 200:
-                    Toast.makeText(InscriptionActivity.this,"Vous avez été bien inscrit",Toast.LENGTH_LONG).show();
+                    Toast.makeText(InscriptionActivity.this, R.string.inscriptionRight,Toast.LENGTH_LONG).show();
                     startActivity(new Intent(InscriptionActivity.this,AnnouncementsNoConnectedActivity.class));
                     break;
                 case 400:
-                    Toast.makeText(InscriptionActivity.this,"Ce nom de user est déja utilisé",Toast.LENGTH_LONG).show();
+                    Toast.makeText(InscriptionActivity.this, R.string.userNameAlreadyExist,Toast.LENGTH_LONG).show();
                     break;
                 case 500:
-                    Toast.makeText(InscriptionActivity.this,"Une erreur coté serveur est survenue",Toast.LENGTH_LONG).show();
+                    Toast.makeText(InscriptionActivity.this, R.string.errorServor,Toast.LENGTH_LONG).show();
                     startActivity(new Intent(InscriptionActivity.this,AnnouncementsNoConnectedActivity.class));
                     break;
                 default:
