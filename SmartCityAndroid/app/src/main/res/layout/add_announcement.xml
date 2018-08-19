@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/animalSpinner"
+        android:layout_width="193dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="66dp"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/animalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/animalSpinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:text="Animal :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/StatutView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/statutSpinner"
+        android:layout_alignStart="@+id/animalView"
+        android:text="Statut :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <Spinner
+        android:id="@+id/statutSpinner"
+        android:layout_width="193dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/animalSpinner"
+        android:layout_marginTop="91dp" />
+
+    <TextView
+        android:id="@+id/DescriptionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="151dp"
+        android:layout_toStartOf="@+id/buttonAddAnnouncement"
+        android:text="Description :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/descriptionAddAnnouncement"
+        android:layout_width="338dp"
+        android:layout_height="159dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/DescriptionView"
+        android:layout_marginTop="187dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/buttonAddAnnouncement"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:text="Ajouter annonce" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SmartCityAndroid</string>
+    <string name="connection">Connection</string>
+    <string name="inscription">Inscription</string>
+    <string name="question">Question</string>
+    <string name="num_ro_de_l_annonce">Numéro de l\'annonce :</string>
+    <string name="perdu">Perdu</string>
+    <string name="trouv">Trouvé</string>
+    <string name="a_adopter">A adopter</string>
+    <string name="image">image</string>
+    <string name="nameApp">AnimaLost</string>
+    <string name="login">Login :</string>
+    <string name="se_d_connecter">Se déconnecter</string>
+    <string name="contact">Contact</string>
+    <string name="connectionLabel">Connection</string>
+    <string name="inscriptionLabel">Inscription</string>
+    <string name="mot_de_passe">Mot de passe :</string>
+    <string name="email">Email :</string>
+    <string name="confirmer">Confirmer</string>
+    <string name="trouve">Trouvé</string>
+    <string name="disconnectMessage">Vous avez été déconnecté</string>
+    <string name="ajout_animal">Ajout animal</string>
+</resources>

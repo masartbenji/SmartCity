@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/add_announcement"
+        android:icon="@android:drawable/ic_input_get"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/addAnimal"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/ajout_animal"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/contactButton"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="@string/contact"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/disconnectButton"
+        android:icon="@android:drawable/ic_menu_set_as"
+        android:title="@string/se_d_connecter"
+        app:showAsAction="ifRoom" />
+</menu>

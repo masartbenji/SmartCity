@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="110dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/image"
+        android:visibility="visible"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="146dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="59dp"
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:id="@+id/numAnnouncementTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/search"
+        android:layout_alignTop="@+id/imageView"
+        android:text="@string/num_ro_de_l_annonce" />
+
+    <Button
+        android:id="@+id/Trouve"
+        style="@android:style/Widget.Material.Button.Toggle"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listAnnouncements"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-163dp"
+        android:text="Trouvé" />
+
+    <Button
+        android:id="@+id/perdu"
+        style="@android:style/Widget.Material.Button.Toggle"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listAnnouncements"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-163dp"
+        android:text="Perdu" />
+
+    <Button
+        android:id="@+id/a_adopter"
+        style="@android:style/Widget.Material.Button.Toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listAnnouncements"
+        android:layout_marginBottom="-163dp"
+        android:layout_toEndOf="@+id/perdu"
+        android:text="@string/a_adopter" />
+
+    <ListView
+        android:id="@+id/listAnnouncements"
+        android:layout_width="match_parent"
+        android:layout_height="347dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="163dp" />
+
+</RelativeLayout>
