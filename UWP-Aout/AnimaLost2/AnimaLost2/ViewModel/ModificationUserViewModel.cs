@@ -61,7 +61,7 @@ namespace AnimaLost2.ViewModel
         {
             get
             {
-                if (User != null) password = SelectedUser.User.Password;
+                if (User != null && password == null) email = SelectedUser.User.Email;
                 return password;
             }
             set
@@ -74,7 +74,7 @@ namespace AnimaLost2.ViewModel
         {
             get
             {
-                if (User != null) email = SelectedUser.User.Email;
+                if (User != null && email == null) email = SelectedUser.User.Email;
                 return email;
             }
             set
@@ -135,7 +135,6 @@ namespace AnimaLost2.ViewModel
         {
             try
             {
-                SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
                 if (Token.Id == null)
                 {
                     navPage.NavigateTo("Login");
@@ -143,13 +142,14 @@ namespace AnimaLost2.ViewModel
                 }
                 else
                 {
+                    SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
                     var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/" + Login);
                     if (response.IsSuccessStatusCode)
                     {
                         var userJson = await response.Content.ReadAsStringAsync();
                         var user = ApplicationUser.Deserialize(userJson);
-                        if (Password == "") Password = user.Password;
-                        if (Email == "") Email = user.Email;
+                        if (Password == null) Password = user.Password;
+                        if (Email == null) Email = user.Email;
                         if (Tel == 0) Tel = user.Phone;
 
 
@@ -167,6 +167,7 @@ namespace AnimaLost2.ViewModel
                         var responsePut = await SingleConnection.Client.PutAsJsonAsync(SingleConnection.Client.BaseAddress + "Account/" + user.UserName, userFinal);
                         if (responsePut.IsSuccessStatusCode)
                         {
+                            await dialogService.ShowMessageBox("La modification s'est bien déroulée", "Modification");
                             GoHomeBack();
                         }
                         else
@@ -184,6 +185,7 @@ namespace AnimaLost2.ViewModel
                         else if (response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
                         {
                             await dialogService.ShowMessageBox("Une erreur du serveur est survenue, il se peut que vous ayez été déconnecté", "Erreur");
+                            navPage.NavigateTo("Login");
                         }
                         navPage.NavigateTo("ModificationUser");
                     }
@@ -195,7 +197,6 @@ namespace AnimaLost2.ViewModel
                 await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur connection");
                 navPage.NavigateTo("Login");
             }
-
         }
 
         public void GoHomeBack()

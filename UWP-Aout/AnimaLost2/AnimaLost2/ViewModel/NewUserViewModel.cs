@@ -175,8 +175,7 @@ namespace AnimaLost2.ViewModel
                     }
                     else if (response.ReasonPhrase == "Unauthorized")
                     {
-                        await dialogService.ShowMessageBox("Votre session a expiré", "Erreur");
-                        navPage.NavigateTo("Login");
+                        await dialogService.ShowMessageBox("Vous n'êtes pas autorisé a effectué cette action", "Erreur");
                     }
                     else if(response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
                     {
@@ -184,7 +183,7 @@ namespace AnimaLost2.ViewModel
                     }
                     else
                     {
-                        await dialogService.ShowMessageBox("L'utilisateur ne peut être créé", "Erreur");
+                        await dialogService.ShowMessageBox("L'utilisateur ne peut être créé, il se peut que la connection au serveur ait été perdue", "Erreur");
                         navPage.NavigateTo("NewUser");
                     }
                 }
@@ -240,7 +239,6 @@ namespace AnimaLost2.ViewModel
         }
         public void initListTypeUser()
         {
-            // on peut faire une requtte pour avoire la liste de la bd des =/= roles 
             _typeUserList = new ObservableCollection<string>();
             _typeUserList.Add("Utilisateur");
             _typeUserList.Add("Admin");

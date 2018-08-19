@@ -68,8 +68,8 @@
                     <StackPanel Grid.Row="0" VerticalAlignment="Bottom" Width="300" BorderThickness="2" BorderBrush="Black">
                         <Grid >
 
-                            <TextBox  Background="Transparent" BorderBrush="{StaticResource ButtonPointerOverForegroundThemeBrush}" Text="{Binding ResearchLabel,Mode=TwoWay}" />
-                            <Button Width="95" Height="33" HorizontalAlignment="Right"  Content="Recherche" Command="{Binding rechercheBox}"/>
+                            <TextBox  Background="Transparent" BorderBrush="{StaticResource ButtonPointerOverForegroundThemeBrush}" Text="{Binding Search,Mode=TwoWay}" />
+                            <Button Width="95" Height="33" HorizontalAlignment="Right"  Content="Recherche" Command="{Binding SearchBt}"/>
                         </Grid>
                     </StackPanel>
                     <ListView Grid.Row="1" ItemsSource="{Binding Users,Mode=TwoWay}" SelectedItem="{Binding SelectUser,Mode=TwoWay}" SelectionMode="Single">

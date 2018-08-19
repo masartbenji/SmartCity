@@ -1179,7 +1179,6 @@ d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaL
 d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XDocument.dll
 d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XmlDocument.dll
 d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\System.Xml.XmlSerializer.dll
-d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csprojAssemblyReference.cache
 d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\App.g.i.cs
 d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\App.g.cs
 d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\View\GestionAnnonce.g.i.cs
@@ -1301,3 +1300,4 @@ d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaL
 d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Ressources\disconnect.png
 d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Ressources\edit_user.png
 d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\bin\x86\Debug\Ressources\gestion_annonce.png
+d:\Users\Nicolas\Downloads\SmartCity-master (1)\SmartCity-master\UWP-Aout\AnimaLost2\AnimaLost2\obj\x86\Debug\AnimaLost2.csprojAssemblyReference.cache

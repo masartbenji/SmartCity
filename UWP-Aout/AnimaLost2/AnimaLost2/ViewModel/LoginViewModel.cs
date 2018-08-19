@@ -83,6 +83,7 @@ namespace AnimaLost2.ViewModel
             try
             {
                 var stringInput = await SingleConnection.Client.PostAsJsonAsync(SingleConnection.Client.BaseAddress + "Jwt", idUser);
+
                 if (stringInput.IsSuccessStatusCode)
                 {
                     var content2 = await stringInput.Content.ReadAsStringAsync();
@@ -109,19 +110,27 @@ namespace AnimaLost2.ViewModel
                 }
                 else
                 {
-                    if ((int)stringInput.StatusCode == 400)
+                    if ((int)stringInput.StatusCode == 400 && (int)stringInput.StatusCode == 401)
                     {
-                        await dialogService.ShowMessageBox("Le mot de passe est incorrect", "Error 400");
+                        await dialogService.ShowMessageBox("Le compte ou le mot de passe est incorrecte", "Erreur authentification");
                     }
-                    if ((int)stringInput.StatusCode == 401)
+                    else if ((int)stringInput.StatusCode == 403)
                     {
-                        await dialogService.ShowMessageBox("Identifiant invalide", "Error 401");
+                        await dialogService.ShowMessageBox("Accès non autorisé aux utilisateurs", "Non autorisé");
+                    }
+                    else if ((int)stringInput.StatusCode > 403 && (int)stringInput.StatusCode < 409)
+                    {
+                        await dialogService.ShowMessageBox("Une erreur est intervenue veuillez réésayer", "Erreur");
+                    }
+                    else if ((int)stringInput.StatusCode > 499 && (int)stringInput.StatusCode < 600)
+                    {
+                        await dialogService.ShowMessageBox("Impossible de se connecter au serveur", "Erreur connection");
                     }
                 }
             }
             catch(HttpRequestException e)
             {
-                await dialogService.ShowMessageBox("Impossible de se connecter au serveur","Error");
+                await dialogService.ShowMessageBox("Impossible de se connecter au serveur","Erreur");
             }
         }
     }

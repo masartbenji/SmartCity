@@ -45,7 +45,7 @@
     <RootPropertyPathName Name="SelectUser" />
     <RootPropertyPathName Name="Phone" />
     <RootPropertyPathName Name="RoleName" />
-    <RootPropertyPathName Name="rechercheBox" />
+    <RootPropertyPathName Name="Search" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -181,6 +181,10 @@
       <RootProperty Name="TranslateY" />
     </RootType>
     <RootType FullName="AnimaLost2.Login" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
+      <RootMethod Name="GetToolTip" />
+      <RootMethod Name="SetToolTip" />
+    </RootType>
     <RootType FullName="AnimaLost2.ModificationUser" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="HorizontalAlignment" />
@@ -188,10 +192,6 @@
       <RootProperty Name="Width" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedItem" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
-      <RootMethod Name="GetToolTip" />
-      <RootMethod Name="SetToolTip" />
     </RootType>
     <RootType FullName="AnimaLost2.NewUser" />
     <RootType FullName="AnimaLost2.UserManagement" />

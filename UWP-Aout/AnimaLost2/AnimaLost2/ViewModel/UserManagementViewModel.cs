@@ -25,15 +25,16 @@ namespace AnimaLost2.ViewModel
         private ICommand modifUser;
         private ICommand gestionAnnonce;
         private ICommand suppression;
+        private ICommand deconnexion;
         private INavigationService navPage;
         private string accueil;
         private ICommand menuBare;
         private bool openPane;
         private IDialogService dialogService;
-        
+
         private ICommand searchBt;
         private string search;
-        
+
         public ICommand Buttton_hamburger
         {
             get
@@ -86,7 +87,7 @@ namespace AnimaLost2.ViewModel
             {
                 if (gestionAnnonce == null)
                 {
-                    gestionAnnonce = new RelayCommand(async() => await ManagementUser());
+                    gestionAnnonce = new RelayCommand(async () => await ManagementUser());
                 }
                 return gestionAnnonce;
             }
@@ -125,12 +126,23 @@ namespace AnimaLost2.ViewModel
                 return refreshList;
             }
         }
+        public ICommand Deconnexion
+        {
+            get
+            {
+                if(deconnexion == null)
+                {
+                    deconnexion = new RelayCommand(() => navPage.NavigateTo("Login"));
+                }
+                return deconnexion;
+            }
+        }
         private ApplicationUser selectUser;
         public ApplicationUser SelectUser
         {
             get
             {
-               
+
                 return selectUser;
             }
             set
@@ -194,7 +206,7 @@ namespace AnimaLost2.ViewModel
         }
         public async Task ManagementUser()
         {
-            if(SelectUser != null)
+            if (SelectUser != null)
             {
                 navPage.NavigateTo("GestionAnnonce");
             }
@@ -246,6 +258,13 @@ namespace AnimaLost2.ViewModel
                         users.Add(userApp);
                     }
                 }
+                else
+                {
+                    if (response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
+                    {
+                        await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
+                    }
+                }
             }
             catch (HttpRequestException)
             {
@@ -255,23 +274,37 @@ namespace AnimaLost2.ViewModel
         }
         public async Task Recherche()
         {
-            if (Search != null)
+            try
             {
-                Users.Clear();
+                if (Search != null)
+                {
+                    Users.Clear();
                     SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
                     var response = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/" + Search);
                     if (response.IsSuccessStatusCode)
                     {
                         string userJson = await response.Content.ReadAsStringAsync();
                         ApplicationUser user = ApplicationUser.Deserialize(userJson);
-                    SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
+                        SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
                         var roleResponse = await SingleConnection.Client.GetAsync(SingleConnection.Client.BaseAddress + "Account/Role/" + user.UserName);
                         string roleName = await roleResponse.Content.ReadAsStringAsync();
                         user.RoleName = ApplicationUser.GetRoleUser(roleName);
-                    Users.Add(user);
+                        Users.Add(user);
                     }
-                    navPage.NavigateTo("UserManagement");
+                    else
+                    {
+                        if (response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
+                        {
+                            await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
+                        }
+                    }
                 }
+            }
+            catch (HttpRequestException)
+            {
+                await dialogService.ShowMessageBox("Impossible de se connecter au serveur", "Erreur");
+            }
+
         }
         public async Task SuppUser()
         {
@@ -279,16 +312,26 @@ namespace AnimaLost2.ViewModel
             {
                 if (SelectUser != null)
                 {
-                        SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
-                        var response = await SingleConnection.Client.DeleteAsync(SingleConnection.Client.BaseAddress + "Account/" + SelectedUser.User.UserName);
-                        if (response.IsSuccessStatusCode)
+                    SingleConnection.Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.Id);
+                    var response = await SingleConnection.Client.DeleteAsync(SingleConnection.Client.BaseAddress + "Account/" + SelectedUser.User.UserName);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        await dialogService.ShowMessageBox("La suppression de l'utilisateur s'est bien déroulée", "Suppression");
+                        Users.Remove(SelectedUser.User);
+                    }
+                    else
+                    {
+                        if (response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
                         {
-                            await dialogService.ShowMessageBox("La suppression de l'utilisateur s'est bien déroulée", "Suppression");
-                            Users.Remove(SelectedUser.User);
+                            await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
+                            navPage.NavigateTo("Login");
                         }
-                        else await dialogService.ShowMessageBox("L'utilisateur que vous essayé de supprimé n'existe pas", "Non autorisé");
-
-                        navPage.NavigateTo("UserManagement");
+                        else
+                        {
+                            await dialogService.ShowMessageBox("L'utilisateur que vous essayé de supprimé n'existe pas", "Non autorisé");
+                        }
+                    }
+                    navPage.NavigateTo("UserManagement");
                 }
                 else await dialogService.ShowMessageBox("Vous n'avez pas selectionné d'utilisateur à supprimer", "Erreur");
             }
@@ -296,9 +339,6 @@ namespace AnimaLost2.ViewModel
             {
                 await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
             }
-
         }
-
-
     }
 }

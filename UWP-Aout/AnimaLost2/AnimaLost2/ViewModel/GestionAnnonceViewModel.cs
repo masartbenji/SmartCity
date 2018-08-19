@@ -77,6 +77,18 @@ namespace AnimaLost2.ViewModel
             }
 
         }
+        private ICommand deconnexion;
+        public ICommand Deconnexion
+        {
+            get
+            {
+                if (deconnexion == null)
+                {
+                    deconnexion = new RelayCommand(() => navPage.NavigateTo("Login"));
+                }
+                return deconnexion;
+            }
+        }
 
 
         public GestionAnnonceViewModel(INavigationService lg, IDialogService dialogService)
@@ -215,7 +227,15 @@ namespace AnimaLost2.ViewModel
                     }
                     else
                     {
-                        await dialogService.ShowMessageBox("Impossible de retrouve la liste des annonces, veuillez réessayer", "Error");
+                        if (response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
+                        {
+                            await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
+                            navPage.NavigateTo("Login");
+                        }
+                        else
+                        {
+                            await dialogService.ShowMessageBox("Impossible de retrouve la liste des annonces, veuillez réessayer", "Erreur");
+                        }
                     }
                 }
             }
@@ -229,11 +249,12 @@ namespace AnimaLost2.ViewModel
         }
         public async Task Recherche()
         {
-            if(ResearchLabel == null)
+            if(ResearchLabel != null)
             {
+                Announcements.Clear();
                 bool trouvé = false;
                 var AnnouncementsTemp = await GetAnnouncementsUser();
-                AnnouncementVisu anouncementTemp = new AnnouncementVisu();
+                AnnouncementVisu anouncementTemp = null;
                 foreach (AnnouncementVisu announc in AnnouncementsTemp)
                 {
                     if (trouvé) break;
@@ -243,8 +264,7 @@ namespace AnimaLost2.ViewModel
                         anouncementTemp = announc;
                     }
                 }
-                Announcements.Clear();
-                Announcements.Add(anouncementTemp);
+                if(anouncementTemp != null)Announcements.Add(anouncementTemp);
             }
         }
         public async Task SuppressionAnnouncement()
@@ -269,6 +289,7 @@ namespace AnimaLost2.ViewModel
                 await dialogService.ShowMessageBox("La connection au serveur a été perdue", "Erreur");
             }
         }
+
         private bool openPane;
         public bool IsPaneOpen
         {
