@@ -62,6 +62,28 @@ namespace SmartCity3.Controllers
             }
             return animalAndroid;
         }
+        [HttpGet("MaxId")]
+        public AnimalAndroid GetAnimalWithMaxId()
+        {
+            int maxId = 0;
+            Animal animal = new Animal();
+            foreach(Animal ani in ctx.Animal)
+            {
+                if(ani.Id > maxId)
+                {
+                    maxId = ani.Id;
+                    animal = ani;
+                }
+            }
+            return new AnimalAndroid()
+            {
+                Name = animal.Name,
+                Id = animal.Id,
+                IdBreed = animal.IdBreed,
+                IdColor = animal.IdColor,
+                IdPerson = animal.IdUser
+            };
+        }
 
         //PUT: api/ApplicationUser/5
         [HttpPut("{id}")]
@@ -127,6 +149,41 @@ namespace SmartCity3.Controllers
             }
 
             return CreatedAtAction("GetAnimal", new { id = animal.Id }, animal);
+        }
+        [HttpPost("Android")]
+        public async Task<IActionResult> PostAnimalAndroid([FromBody] AnimalAndroid animalAndroid)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            Animal animal = new Animal()
+            {
+                Id = animalAndroid.Id,
+                Name = animalAndroid.Name,
+                IdBreed = animalAndroid.IdBreed,
+                IdColor = animalAndroid.IdColor,
+                IdUser = animalAndroid.IdPerson,
+                IdBreedNavigation = null,
+                IdColorNavigation = null
+            };
+            ctx.Animal.Add(animal);
+            try
+            {
+                await ctx.SaveChangesAsync();
+            }
+            catch (DbUpdateException)
+            {
+                if (AnimalExists(animal.Id))
+                {
+                    return new StatusCodeResult(StatusCodes.Status409Conflict);
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return Ok();
         }
 
         //DELETE: api/ApplicationUser/5

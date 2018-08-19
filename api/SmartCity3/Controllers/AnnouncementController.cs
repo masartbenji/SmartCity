@@ -30,12 +30,6 @@ namespace SmartCity3.Controllers
             return ctx.Announcement;
         }
         [AllowAnonymous]
-        [HttpGet("MaxId")]
-        public int GetMaxId()
-        {
-            return ctx.Announcement.Count();
-        }
-        [AllowAnonymous]
         [HttpGet("android/{nameStatus}")]
         public IEnumerable<AnnouncementAndroid> GetAnnouncementsAndroid(String nameStatus)
         {
@@ -62,7 +56,35 @@ namespace SmartCity3.Controllers
             }
             return announcements;
         } 
-
+        [HttpGet("MaxId")]
+        public async Task<AnnouncementAndroid> GetAnnouncementWithMaxId()
+        {
+            int maxId = 0;
+            Announcement announcement = new Announcement();
+            foreach (Announcement anounc in ctx.Announcement)
+            {
+                if (anounc.Id > maxId)
+                {
+                    maxId = anounc.Id;
+                    announcement = anounc;
+                }
+            }
+            Animal animal = await ctx.Animal.Where(a => a.Id == announcement.IdAnimal).FirstAsync();
+            Breed breed = await ctx.Breed.Where(b => b.id == animal.IdBreed).FirstAsync();
+            return new AnnouncementAndroid()
+            {
+                Id = announcement.Id,
+                Name = animal.Name,
+                Species = breed.IdSpecies,
+                Breed = breed.Name,
+                Color = animal.IdColor,
+                Date = announcement.Date,
+                Description = announcement.Description,
+                IdStatut = announcement.IdStatut,
+                IdAnimal = announcement.IdAnimal
+            };
+        }
+    
         //Get: api/Announcement/5
         [AllowAnonymous]
         [HttpGet("{id}")]
@@ -114,7 +136,7 @@ namespace SmartCity3.Controllers
         }
 
         [AllowAnonymous]
-        [HttpGet("Status")]
+        [HttpGet("Status/{statusName}")]
         public IActionResult GetAnnouncementOfStatus([FromRoute]string statusName)
         {
             var status = ctx.Statut;
@@ -124,7 +146,38 @@ namespace SmartCity3.Controllers
             if (announcement == null) return NotFound();
             return Ok(announcement);
         }
+        [AllowAnonymous]
+        [HttpGet("{nameUser}/{nameStatut}")]
+        public async Task<IEnumerable<AnnouncementAndroid>> GetAnnouncementForAUserWithStatus([FromRoute]string nameUser,[FromRoute]string nameStatut)
+        {
+            ApplicationUser user = await ctx.User.FirstAsync(u => u.UserName == nameUser);
+            List<AnnouncementAndroid> announcements = new List<AnnouncementAndroid>();
+            Statut statut = await ctx.Statut.FirstAsync(s => s.State == nameStatut);
+            var announcementsStatus = ctx.Announcement.Where(a => a.IdStatut == statut.Id);
+            foreach(Announcement announcement in announcementsStatus)
+            {
+                Animal animal = await ctx.Animal.FirstAsync(a => a.Id == announcement.IdAnimal);
+                if(animal.IdUser == user.Id)
+                {
+                    Breed breed = ctx.Breed.Where(b => b.id == animal.IdBreed).First();
+                    announcements.Add(new AnnouncementAndroid()
+                    {
+                        Id = announcement.Id,
+                        IdAnimal = announcement.IdAnimal,
+                        Breed = breed.Name,
+                        Species = breed.IdSpecies,
+                        Name = animal.Name,
+                        Color = animal.IdColor,
+                        Date = announcement.Date,
+                        Description = announcement.Description,
+                        IdStatut = announcement.IdStatut
+                    });
+                }
+            }
+            return announcements;
+        }
         //PUT: api/Announcement/5
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAnnouncement([FromRoute]int id, [FromBody] Announcement announcement)
         {
@@ -167,10 +220,7 @@ namespace SmartCity3.Controllers
             {
                 return BadRequest(ModelState);
             }
-
-            ApplicationUser user = await GetCurrentUserAsync();
-            var roleSearch = ctx.UserRoles.Where(e => e.UserId == user.Id && e.RoleId == "Admin");
-            if (roleSearch == null) return Unauthorized();
+            
 
             ctx.Announcement.Add(announcement);
             try

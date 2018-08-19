@@ -21,7 +21,7 @@ namespace SmartCity3.Controllers
         public BreedController(UserManager<ApplicationUser> userManager, _1718_etu32294_DB_SmartContext ctx)
             :base(userManager)
         {
-            this.ctx = ctx;
+           this.ctx = ctx;
         }
 
         //GET :api/Breed
@@ -54,6 +54,12 @@ namespace SmartCity3.Controllers
                 IdSpecies = breed.IdSpecies,
                 Name = breed.Name
             };
+        }
+        [AllowAnonymous]
+        [HttpGet("Species/{nameSpecies}")]
+        public IEnumerable<Breed> GetBreedFromSpecies([FromRoute] String nameSpecies)
+        {
+            return ctx.Breed.Where(b => b.IdSpecies.Equals(nameSpecies));
         }
 
         //PUT: api/Breed/5

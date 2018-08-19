@@ -50,6 +50,16 @@ namespace SmartCity3.Controllers
             return Ok(user);
 
         }
+        [HttpGet("Name/{nameUser}")]
+        public async Task<ApplicationUserAndroid> getUserWithHisName(String nameUser)
+        {
+            ApplicationUser user = await _context.User.FirstAsync(u => u.UserName == nameUser);
+            return new ApplicationUserAndroid()
+            {
+                Id = user.Id,
+                UserName = user.UserName
+            };
+        }
         [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]NewUserDTO dto)
@@ -73,9 +83,7 @@ namespace SmartCity3.Controllers
                 ApplicationUser current = await _userManager.FindByNameAsync(dto.UserName);
                 result = await _userManager.AddToRoleAsync(current, dto.RoleName);
             }
-            roleResult = await _userManager.AddToRoleAsync(newUser, dto.RoleName);
-            // TODO: retourner un Created à la place du Ok;
-            return (result.Succeeded ) ? Ok() : (IActionResult)BadRequest();
+            return (result.Succeeded ) ? Ok() : (IActionResult)Unauthorized();
         }
         [HttpPost("Admin")]
         public IActionResult Admin([FromBody] NewUserDTO dto)
@@ -208,6 +216,11 @@ namespace SmartCity3.Controllers
         public string Species { get; set; }
         public string Description { get; set; }
         public string Status { get; set; }
+    }
+    public class ApplicationUserAndroid
+    {
+        public string Id { get; set; }
+        public string UserName { get; set; }
     }
 }
 
