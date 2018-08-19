@@ -22,6 +22,7 @@ import com.nicolas.smartcityandroid.DAO.AnimalJsonDAO;
 import com.nicolas.smartcityandroid.DAO.AnnouncementJsonDAO;
 import com.nicolas.smartcityandroid.DAO.BreedJsonDao;
 import com.nicolas.smartcityandroid.DAO.StatutJsonDao;
+import com.nicolas.smartcityandroid.Exceptions.AddAnnouncementException;
 import com.nicolas.smartcityandroid.Model.Animal;
 import com.nicolas.smartcityandroid.Model.Announcement;
 import com.nicolas.smartcityandroid.Model.Breed;
@@ -29,6 +30,8 @@ import com.nicolas.smartcityandroid.Model.Statut;
 import com.nicolas.smartcityandroid.Model.TokenReceived;
 import com.nicolas.smartcityandroid.R;
 import com.nicolas.smartcityandroid.Services.Constantes;
+
+import org.json.JSONException;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -76,7 +79,6 @@ public class AddAnnouncementActivity extends AppCompatActivity {
         bouttonAddAnnouncement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 new LoadMaxIdAnnouncement().execute();
 
 
@@ -244,8 +246,27 @@ public class AddAnnouncementActivity extends AppCompatActivity {
             Statut statut = statutsList.get(statutSpinner.getSelectedItemPosition());
             if(!description.getText().equals("")){
                 Announcement newAnnouncement = new Announcement(idNewAnnouncement,new Date(),description.getText().toString(),animal.getId(),statut.getId(),breedOfAnimal.getName(),breedOfAnimal.getSpecies(),animal.getName(),animal.getIdColor());
-
+                new PostAnnouncement().execute(newAnnouncement);
             }
+        }
+    }
+    private class PostAnnouncement extends AsyncTask<Announcement,Void,TokenReceived>{
+
+        @Override
+        protected TokenReceived doInBackground(Announcement... announcements) {
+            TokenReceived tokenReceived = new TokenReceived();
+            AnnouncementJsonDAO announcementJsonDAO = new AnnouncementJsonDAO();
+            Announcement announcement = announcements[0];
+            try{
+                tokenReceived.setCode(announcementJsonDAO.createNewAnnouncement(announcement));
+            }
+            catch (AddAnnouncementException e){
+                //todo
+            }
+            catch(JSONException e){
+                //todo
+            }
+            return null;
         }
     }
 }

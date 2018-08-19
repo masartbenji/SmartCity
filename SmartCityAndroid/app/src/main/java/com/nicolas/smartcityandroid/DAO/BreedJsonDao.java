@@ -47,17 +47,7 @@ public class BreedJsonDao {
     }
 
     private Breed jsonToBreed(String json)throws JSONException {
-        Breed breed = null;
-        JSONArray jsonArray = new JSONArray(json);
-
-        for (int i = 0; i < jsonArray.length();i++){
-            JSONObject jsonBreed = jsonArray.getJSONObject(i);
-            Gson object = new GsonBuilder().create();
-
-            breed = object.fromJson(jsonBreed.toString(),Breed.class);
-
-        }
-        return breed;
+        return gsonObject.fromJson(json,Breed.class);
     }
 
     public ArrayList<Breed> getAllBreed(String nameSpecies) throws BreedException,JSONException {

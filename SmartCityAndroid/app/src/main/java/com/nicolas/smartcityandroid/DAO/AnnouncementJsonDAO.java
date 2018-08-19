@@ -6,6 +6,7 @@ import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.nicolas.smartcityandroid.Exceptions.AddAnnouncementException;
 import com.nicolas.smartcityandroid.Exceptions.AnnouncementsException;
 import com.nicolas.smartcityandroid.Model.Announcement;
 import com.nicolas.smartcityandroid.Services.Constantes;
@@ -19,6 +20,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
@@ -94,5 +97,40 @@ public class AnnouncementJsonDAO implements AnnouncementDAO {
 
     private Announcement jsonToAnnouncement(String json) {
             return gsonObject.fromJson(json,Announcement.class);
+    }
+
+    public int createNewAnnouncement(Announcement announcement)throws AddAnnouncementException,JSONException {
+        int code;
+        try{
+            URL url = new URL(Constantes.url + "Announcement");
+            HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+
+            connection.setRequestMethod("POST");
+            connection.setRequestProperty("Content-type","application/json");
+            connection.setRequestProperty("Accept","application/json");
+            connection.setRequestProperty("Authorization","Bearer " + Constantes.token.getToken());
+
+            connection.setDoInput(true);
+            connection.setDoOutput(true);
+            connection.connect();
+
+            OutputStream outputStream = connection.getOutputStream();
+            OutputStreamWriter streamWriter = new OutputStreamWriter(outputStream);
+
+            String json = gsonObject.toJson(announcement,Announcement.class);
+
+            streamWriter.write(json);
+            streamWriter.flush();
+            streamWriter.close();
+
+            code = connection.getResponseCode();
+            outputStream.close();
+            connection.disconnect();
+
+        }
+        catch (IOException e){
+            throw new AddAnnouncementException();
+        }
+        return code;
     }
 }

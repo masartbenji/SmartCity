@@ -33,6 +33,7 @@
             android:parentActivityName=".Controller.AnnouncementsNoConnectedActivity" />
         <activity
             android:name=".Controller.AnnouncementNoConnectedActivity"
+            android:label="@string/nameApp"
             android:parentActivityName=".Controller.AnnouncementsNoConnectedActivity" />
         <activity
             android:name=".Controller.AnnouncementConnectedActivity"
